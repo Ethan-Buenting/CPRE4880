@@ -1,0 +1,10 @@
+2026-01-26T13:46:18.182881500255-13:46:18 **** Incremental Build of configuration Debug for project lab1_vitis ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-make[1]: Nothing to be done for 'main-build'.
+00255-
+13:46:18 Build Finished (took 217ms)
+

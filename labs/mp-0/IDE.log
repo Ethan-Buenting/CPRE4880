@@ -1,0 +1,37 @@
+13:39:42 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\buenting\cpre4880\labs\mp-0\temp_xsdb_launch_script.tcl
+13:39:42 INFO  : Registering command handlers for Vitis TCF services
+13:39:43 INFO  : XSCT server has started successfully.
+13:39:43 INFO  : Successfully done setting XSCT server connection channel  
+13:39:43 INFO  : Platform repository initialization has completed.
+13:39:43 INFO  : Successfully done setting workspace for the tool. 
+13:39:43 INFO  : Successfully done query RDI_DATADIR 
+13:39:43 INFO  : plnx-install-location is set to ''
+13:40:53 ERROR : Failed to extract bitstream during creation of 'design_1_wrapper'
+13:40:54 INFO  : Result from executing command 'getProjects': design_1_wrapper
+13:40:54 INFO  : Result from executing command 'getPlatforms': 
+13:40:54 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+13:41:00 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+13:41:46 INFO  : Result from executing command 'getProjects': design_1_wrapper
+13:41:46 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+13:41:47 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+13:46:18 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+13:48:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:49:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:51:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:53:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:59:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\buenting\cpre4880\labs\mp-0\temp_xsdb_launch_script.tcl
+13:59:03 INFO  : XSCT server has started successfully.
+13:59:03 INFO  : Successfully done setting XSCT server connection channel  
+13:59:03 INFO  : plnx-install-location is set to ''
+13:59:03 INFO  : Successfully done setting workspace for the tool. 
+13:59:05 INFO  : Platform repository initialization has completed.
+13:59:05 INFO  : Registering command handlers for Vitis TCF services
+13:59:05 INFO  : Successfully done query RDI_DATADIR 
+13:59:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:00:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:10:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:24:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.

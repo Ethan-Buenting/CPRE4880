@@ -45,17 +45,46 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
+#include <stdbool.h>
 #include <stdio.h>
+#include <unistd.h>
+#include <xparameters.h>
 #include "platform.h"
+#include "xil_io.h"
 #include "xil_printf.h"
 
+#define LEDS_ADDRESS 		0x41200000
+#define BUTTONS_ADDRESS 	0x41210000
+#define SWITCHES_ADDRESS 	0x41220000
 
 int main()
 {
     init_platform();
 
     print("Hello World\n\r");
-    print("Successfully ran Hello World application");
+    print("Successfully ran Hello World application\n\r");
+
+//    u32 led_activation;
+//    bool run = TRUE;
+
+
+    /*
+     * This while loop was a test for the hardware. LEDS are turned on when their respective switch
+     * is flipped. Press any button to exit the loop.
+     */
+//    while(run) {
+//    	led_activation = Xil_In32(SWITCHES_ADDRESS);
+//    	Xil_Out32(LEDS_ADDRESS, led_activation);
+//
+//    	u32 buttons = Xil_In32(BUTTONS_ADDRESS);
+//
+//    	if (buttons != 0x0000000) {
+//    		run = FALSE;
+//    	}
+//    }
+
+    print("Exiting program\n\r");
+
     cleanup_platform();
     return 0;
 }

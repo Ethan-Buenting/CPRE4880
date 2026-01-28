@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Mon Jan 26 12:56:59 2026
---Host        : CO2041-11 running 64-bit major release  (build 9200)
+--Date        : Wed Jan 28 14:47:29 2026
+--Host        : CO2041-16 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -36,13 +36,21 @@ entity design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
     leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    sws_8bits_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    sws_8bits_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    vga_b : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    vga_g : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    vga_hsync : out STD_LOGIC;
+    vga_r : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    vga_vsync : out STD_LOGIC
   );
 end design_1_wrapper;
 
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is
   port (
+    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    sws_8bits_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -64,9 +72,11 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    sws_8bits_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    vga_r : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    vga_g : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    vga_b : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    vga_hsync : out STD_LOGIC;
+    vga_vsync : out STD_LOGIC
   );
   end component design_1;
 begin
@@ -95,6 +105,11 @@ design_1_i: component design_1
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       btns_5bits_tri_i(4 downto 0) => btns_5bits_tri_i(4 downto 0),
       leds_8bits_tri_o(7 downto 0) => leds_8bits_tri_o(7 downto 0),
-      sws_8bits_tri_i(7 downto 0) => sws_8bits_tri_i(7 downto 0)
+      sws_8bits_tri_i(7 downto 0) => sws_8bits_tri_i(7 downto 0),
+      vga_b(3 downto 0) => vga_b(3 downto 0),
+      vga_g(3 downto 0) => vga_g(3 downto 0),
+      vga_hsync => vga_hsync,
+      vga_r(3 downto 0) => vga_r(3 downto 0),
+      vga_vsync => vga_vsync
     );
 end STRUCTURE;

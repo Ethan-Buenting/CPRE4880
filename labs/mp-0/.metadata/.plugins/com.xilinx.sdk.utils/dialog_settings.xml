@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="C:\Users\buenting\cpre4880\labs\mp-0\design_1_wrapper\bitstream" key="sdx_program_fpga_view_bit_bmm_browse_key"/>
+	<item value="C:\Users\buenting\cpre4880\labs\mp-0\lab1" key="scw_hwspec_file_selection"/>
 	<item value="C:\Users\buenting\cpre4880\labs\mp-0\lab1" key="scw_hwspec"/>
 </section>

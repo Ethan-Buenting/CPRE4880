@@ -76,6 +76,31 @@ ENTITY design_1_system_ila_0_0 IS
     SLOT_1_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
     SLOT_1_AXI_rvalid : IN STD_LOGIC;
     SLOT_1_AXI_rready : IN STD_LOGIC;
+    SLOT_2_AXI_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    SLOT_2_AXI_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SLOT_2_AXI_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    SLOT_2_AXI_awcache : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SLOT_2_AXI_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    SLOT_2_AXI_awvalid : IN STD_LOGIC;
+    SLOT_2_AXI_awready : IN STD_LOGIC;
+    SLOT_2_AXI_wdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    SLOT_2_AXI_wlast : IN STD_LOGIC;
+    SLOT_2_AXI_wvalid : IN STD_LOGIC;
+    SLOT_2_AXI_wready : IN STD_LOGIC;
+    SLOT_2_AXI_bvalid : IN STD_LOGIC;
+    SLOT_2_AXI_bready : IN STD_LOGIC;
+    SLOT_2_AXI_araddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    SLOT_2_AXI_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SLOT_2_AXI_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    SLOT_2_AXI_arcache : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SLOT_2_AXI_arprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    SLOT_2_AXI_arvalid : IN STD_LOGIC;
+    SLOT_2_AXI_arready : IN STD_LOGIC;
+    SLOT_2_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    SLOT_2_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    SLOT_2_AXI_rlast : IN STD_LOGIC;
+    SLOT_2_AXI_rvalid : IN STD_LOGIC;
+    SLOT_2_AXI_rready : IN STD_LOGIC;
     resetn : IN STD_LOGIC
   );
 END design_1_system_ila_0_0;
@@ -106,6 +131,31 @@ ARCHITECTURE design_1_system_ila_0_0_arch OF design_1_system_ila_0_0 IS
       SLOT_1_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
       SLOT_1_AXI_rvalid : IN STD_LOGIC;
       SLOT_1_AXI_rready : IN STD_LOGIC;
+      SLOT_2_AXI_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      SLOT_2_AXI_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      SLOT_2_AXI_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      SLOT_2_AXI_awcache : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      SLOT_2_AXI_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      SLOT_2_AXI_awvalid : IN STD_LOGIC;
+      SLOT_2_AXI_awready : IN STD_LOGIC;
+      SLOT_2_AXI_wdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      SLOT_2_AXI_wlast : IN STD_LOGIC;
+      SLOT_2_AXI_wvalid : IN STD_LOGIC;
+      SLOT_2_AXI_wready : IN STD_LOGIC;
+      SLOT_2_AXI_bvalid : IN STD_LOGIC;
+      SLOT_2_AXI_bready : IN STD_LOGIC;
+      SLOT_2_AXI_araddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      SLOT_2_AXI_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      SLOT_2_AXI_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      SLOT_2_AXI_arcache : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      SLOT_2_AXI_arprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      SLOT_2_AXI_arvalid : IN STD_LOGIC;
+      SLOT_2_AXI_arready : IN STD_LOGIC;
+      SLOT_2_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      SLOT_2_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      SLOT_2_AXI_rlast : IN STD_LOGIC;
+      SLOT_2_AXI_rvalid : IN STD_LOGIC;
+      SLOT_2_AXI_rready : IN STD_LOGIC;
       resetn : IN STD_LOGIC
     );
   END COMPONENT bd_f60c;
@@ -113,6 +163,33 @@ ARCHITECTURE design_1_system_ila_0_0_arch OF design_1_system_ila_0_0 IS
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF resetn: SIGNAL IS "XIL_INTERFACENAME RST.resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF resetn: SIGNAL IS "xilinx.com:signal:reset:1.0 RST.resetn RST";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_rlast: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RLAST";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RRESP";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_rdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RDATA";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_arready: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_arvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_arprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARPROT";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_arcache: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARCACHE";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_arsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARSIZE";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_arlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARLEN";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_araddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARADDR";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_bready: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI BREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_bvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI BVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_wready: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_wvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_wlast: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WLAST";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_wdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WDATA";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_awready: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_awvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_awprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWPROT";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_awcache: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWCACHE";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_awsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWSIZE";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_awlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWLEN";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF SLOT_2_AXI_awaddr: SIGNAL IS "XIL_INTERFACENAME SLOT_2_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREA" & 
+"DS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF SLOT_2_AXI_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF SLOT_1_AXI_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_1_AXI RREADY";
   ATTRIBUTE X_INTERFACE_INFO OF SLOT_1_AXI_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_1_AXI RVALID";
   ATTRIBUTE X_INTERFACE_INFO OF SLOT_1_AXI_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_1_AXI RRESP";
@@ -135,7 +212,7 @@ ARCHITECTURE design_1_system_ila_0_0_arch OF design_1_system_ila_0_0 IS
 "READS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF SLOT_1_AXI_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 SLOT_1_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF SLOT_0_GPIO_tri_o: SIGNAL IS "xilinx.com:interface:gpio:1.0 SLOT_0_GPIO TRI_O";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF SLOT_1_AXI, ASSOCIATED_RESET resetn, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF SLOT_1_AXI:SLOT_2_AXI, ASSOCIATED_RESET resetn, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 CLK.clk CLK";
 BEGIN
   U0 : bd_f60c
@@ -161,6 +238,31 @@ BEGIN
       SLOT_1_AXI_rresp => SLOT_1_AXI_rresp,
       SLOT_1_AXI_rvalid => SLOT_1_AXI_rvalid,
       SLOT_1_AXI_rready => SLOT_1_AXI_rready,
+      SLOT_2_AXI_awaddr => SLOT_2_AXI_awaddr,
+      SLOT_2_AXI_awlen => SLOT_2_AXI_awlen,
+      SLOT_2_AXI_awsize => SLOT_2_AXI_awsize,
+      SLOT_2_AXI_awcache => SLOT_2_AXI_awcache,
+      SLOT_2_AXI_awprot => SLOT_2_AXI_awprot,
+      SLOT_2_AXI_awvalid => SLOT_2_AXI_awvalid,
+      SLOT_2_AXI_awready => SLOT_2_AXI_awready,
+      SLOT_2_AXI_wdata => SLOT_2_AXI_wdata,
+      SLOT_2_AXI_wlast => SLOT_2_AXI_wlast,
+      SLOT_2_AXI_wvalid => SLOT_2_AXI_wvalid,
+      SLOT_2_AXI_wready => SLOT_2_AXI_wready,
+      SLOT_2_AXI_bvalid => SLOT_2_AXI_bvalid,
+      SLOT_2_AXI_bready => SLOT_2_AXI_bready,
+      SLOT_2_AXI_araddr => SLOT_2_AXI_araddr,
+      SLOT_2_AXI_arlen => SLOT_2_AXI_arlen,
+      SLOT_2_AXI_arsize => SLOT_2_AXI_arsize,
+      SLOT_2_AXI_arcache => SLOT_2_AXI_arcache,
+      SLOT_2_AXI_arprot => SLOT_2_AXI_arprot,
+      SLOT_2_AXI_arvalid => SLOT_2_AXI_arvalid,
+      SLOT_2_AXI_arready => SLOT_2_AXI_arready,
+      SLOT_2_AXI_rdata => SLOT_2_AXI_rdata,
+      SLOT_2_AXI_rresp => SLOT_2_AXI_rresp,
+      SLOT_2_AXI_rlast => SLOT_2_AXI_rlast,
+      SLOT_2_AXI_rvalid => SLOT_2_AXI_rvalid,
+      SLOT_2_AXI_rready => SLOT_2_AXI_rready,
       resetn => resetn
     );
 END design_1_system_ila_0_0_arch;

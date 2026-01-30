@@ -18,6 +18,7 @@
  *****************************************************************************/
 
 #include <stdio.h>
+#include <unistd.h>
 #include "platform.h"
 #include "xparameters.h"
 #include "xil_cache.h"
@@ -64,28 +65,23 @@ int main() {
       }
     }
 
+    print("Sleep start\n\r");
+    sleep(5);
+    print("Sleep end\n\r");
+
 	// Make sure Display information gets flushed from cache to DDR Memory
     Xil_DCacheFlush();  
 
     // Set up VDMA config registers
 //	#define CHANGE_ME 0x43000000
 
-    u32 image_address = (u32)test_image;
-
-    printf("%#08X\r\n", XPAR_AXI_VDMA_0_BASEADDR);
-    printf("%#08X\r\n", image_address);
-    printf("%#08X\r\n", image_address + 2);
-    printf("%#08X\r\n", image_address + 4);
-
     // Simple function abstraction by Vendor for writing VDMA registers
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_CR_OFFSET,  0x00000003);  // Read Channel: VDMA MM2S Circular Mode and Start bits set, VDMA MM2S Control
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_HI_FRMBUF_OFFSET, 0);  // Read Channel: VDMA MM2S Reg_Index
-    XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_START_ADDR_OFFSET, image_address);  // Read Channel: VDMA MM2S Frame buffer Start Addr 1
-    XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_START_ADDR_OFFSET + 0x4, image_address + 2);
-    XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_START_ADDR_OFFSET + 0x8, image_address + 4);
+    XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_START_ADDR_OFFSET, test_image);  // Read Channel: VDMA MM2S Frame buffer Start Addr 1
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_STRD_FRMDLY_OFFSET, 0x00000500);  // Read Channel: VDMA MM2S FRM_Delay, and Stride
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_HSIZE_OFFSET, 0x00000500);  // Read Channel: VDMA MM2S HSIZE
-    XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_VSIZE_OFFSET, 0x000003C0);  // Read Channel: VDMA MM2S VSIZE  (Note: Also Starts VDMA transaction)
+    XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_VSIZE_OFFSET, 0x000001E0);  // Read Channel: VDMA MM2S VSIZE  (Note: Also Starts VDMA transaction)
 
 
     // Low-level register acess using pointers

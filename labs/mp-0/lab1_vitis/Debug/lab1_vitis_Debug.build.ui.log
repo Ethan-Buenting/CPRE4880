@@ -1,25 +1,45 @@
-2026-01-28T11:08:25.174941900255-11:08:25 **** Incremental Build of configuration Debug for project lab1_vitis ****
+2026-01-30T10:47:57.524627700255-10:47:57 **** Incremental Build of configuration Debug for project lab1_vitis ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000-' '
 000-make --no-print-directory main-build
-000-'Building file: ../src/helloworld.c'
+000-'Building file: ../src/vga_test.c'
 000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-000-'Finished building: ../src/helloworld.c'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/vga_test.d" -MT"src/vga_test.o" -o "src/vga_test.o" "../src/vga_test.c"
+000-../src/vga_test.c: In function 'main':
+000/lab1_vitis/src/vga_test.c76-1-1format '%X' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]1-../src/vga_test.c:76:17: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+000-   76 |     printf("%#08X\r\n", image_address);
+000-      |             ~~~~^       ~~~~~~~~~~~~~
+000-      |                 |       |
+000-      |                 |       u32 {aka long unsigned int}
+000-      |                 unsigned int
+000-      |             %#08lX
+000/lab1_vitis/src/vga_test.c77-1-1format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]1-../src/vga_test.c:77:17: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+000-   77 |     printf("%#08X\r\n", image_address + 4);
+000-      |             ~~~~^       ~~~~~~~~~~~~~~~~~
+000-      |                 |                     |
+000-      |                 unsigned int          long unsigned int
+000-      |             %#08lX
+000/lab1_vitis/src/vga_test.c78-1-1format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]1-../src/vga_test.c:78:17: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+000-   78 |     printf("%#08X\r\n", image_address + 8);
+000-      |             ~~~~^       ~~~~~~~~~~~~~~~~~
+000-      |                 |                     |
+000-      |                 unsigned int          long unsigned int
+000-      |             %#08lX
+000-'Finished building: ../src/vga_test.c'
 000-' '
 000-'Building target: lab1_vitis.elf'
 000-'Invoking: ARM v7 gcc linker'
-000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "lab1_vitis.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "lab1_vitis.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_test.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 000-'Finished building target: lab1_vitis.elf'
 000-' '
 000-'Invoking: ARM v7 Print Size'
 000-arm-none-eabi-size lab1_vitis.elf  |tee "lab1_vitis.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000-  19320	   1144	  22568	  43032	   a818	lab1_vitis.elf
+000-  55291	   2556	 637040	 694887	  a9a67	lab1_vitis.elf
 000-'Finished building: lab1_vitis.elf.size'
 000-' '
 00255-
-11:08:25 Build Finished (took 624ms)
+10:47:58 Build Finished (took 683ms)
 

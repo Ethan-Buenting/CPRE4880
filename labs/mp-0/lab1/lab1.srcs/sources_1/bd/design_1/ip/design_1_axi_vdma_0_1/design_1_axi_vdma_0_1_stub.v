@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Jan 28 14:48:25 2026
-// Host        : CO2041-16 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1_stub.v
+// Date        : Fri Jan 30 11:22:32 2026
+// Host        : CO2041-10 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_axi_vdma_0_1 -prefix
+//               design_1_axi_vdma_0_1_ design_1_axi_vdma_0_1_stub.v
 // Design      : design_1_axi_vdma_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Fri Jan 30 15:03:46 2026
+--Date        : Mon Feb  2 13:29:25 2026
 --Host        : CO2041-15 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -550,14 +550,11 @@ entity s00_couplers_imp_7HNO1D is
     S_AXI_arready : out STD_LOGIC;
     S_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     S_AXI_arvalid : in STD_LOGIC;
-    S_AXI_awready : out STD_LOGIC;
-    S_AXI_bvalid : out STD_LOGIC;
     S_AXI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     S_AXI_rlast : out STD_LOGIC;
     S_AXI_rready : in STD_LOGIC;
     S_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_rvalid : out STD_LOGIC;
-    S_AXI_wready : out STD_LOGIC
+    S_AXI_rvalid : out STD_LOGIC
   );
 end s00_couplers_imp_7HNO1D;
 
@@ -711,9 +708,6 @@ begin
   s00_couplers_to_auto_pc_ARSIZE(2 downto 0) <= S_AXI_arsize(2 downto 0);
   s00_couplers_to_auto_pc_ARVALID <= S_AXI_arvalid;
   s00_couplers_to_auto_pc_RREADY <= S_AXI_rready;
-  S_AXI_awready <= 'Z';
-  S_AXI_bvalid <= 'Z';
-  S_AXI_wready <= 'Z';
 auto_pc: component design_1_auto_pc_1
      port map (
       aclk => S_ACLK_1,
@@ -1137,14 +1131,11 @@ entity design_1_axi_mem_intercon_0 is
     S00_AXI_arready : out STD_LOGIC;
     S00_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     S00_AXI_arvalid : in STD_LOGIC;
-    S00_AXI_awready : out STD_LOGIC;
-    S00_AXI_bvalid : out STD_LOGIC;
     S00_AXI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     S00_AXI_rlast : out STD_LOGIC;
     S00_AXI_rready : in STD_LOGIC;
     S00_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S00_AXI_rvalid : out STD_LOGIC;
-    S00_AXI_wready : out STD_LOGIC
+    S00_AXI_rvalid : out STD_LOGIC
   );
 end design_1_axi_mem_intercon_0;
 
@@ -1161,14 +1152,11 @@ architecture STRUCTURE of design_1_axi_mem_intercon_0 is
   signal axi_mem_intercon_to_s00_couplers_ARREADY : STD_LOGIC;
   signal axi_mem_intercon_to_s00_couplers_ARSIZE : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal axi_mem_intercon_to_s00_couplers_ARVALID : STD_LOGIC;
-  signal axi_mem_intercon_to_s00_couplers_AWREADY : STD_LOGIC;
-  signal axi_mem_intercon_to_s00_couplers_BVALID : STD_LOGIC;
   signal axi_mem_intercon_to_s00_couplers_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_mem_intercon_to_s00_couplers_RLAST : STD_LOGIC;
   signal axi_mem_intercon_to_s00_couplers_RREADY : STD_LOGIC;
   signal axi_mem_intercon_to_s00_couplers_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_mem_intercon_to_s00_couplers_RVALID : STD_LOGIC;
-  signal axi_mem_intercon_to_s00_couplers_WREADY : STD_LOGIC;
   signal s00_couplers_to_axi_mem_intercon_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal s00_couplers_to_axi_mem_intercon_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal s00_couplers_to_axi_mem_intercon_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1198,13 +1186,10 @@ begin
   S00_ACLK_1 <= S00_ACLK;
   S00_ARESETN_1 <= S00_ARESETN;
   S00_AXI_arready <= axi_mem_intercon_to_s00_couplers_ARREADY;
-  S00_AXI_awready <= axi_mem_intercon_to_s00_couplers_AWREADY;
-  S00_AXI_bvalid <= axi_mem_intercon_to_s00_couplers_BVALID;
   S00_AXI_rdata(31 downto 0) <= axi_mem_intercon_to_s00_couplers_RDATA(31 downto 0);
   S00_AXI_rlast <= axi_mem_intercon_to_s00_couplers_RLAST;
   S00_AXI_rresp(1 downto 0) <= axi_mem_intercon_to_s00_couplers_RRESP(1 downto 0);
   S00_AXI_rvalid <= axi_mem_intercon_to_s00_couplers_RVALID;
-  S00_AXI_wready <= axi_mem_intercon_to_s00_couplers_WREADY;
   axi_mem_intercon_ACLK_net <= M00_ACLK;
   axi_mem_intercon_ARESETN_net <= M00_ARESETN;
   axi_mem_intercon_to_s00_couplers_ARADDR(31 downto 0) <= S00_AXI_araddr(31 downto 0);
@@ -1249,14 +1234,11 @@ s00_couplers: entity work.s00_couplers_imp_7HNO1D
       S_AXI_arready => axi_mem_intercon_to_s00_couplers_ARREADY,
       S_AXI_arsize(2 downto 0) => axi_mem_intercon_to_s00_couplers_ARSIZE(2 downto 0),
       S_AXI_arvalid => axi_mem_intercon_to_s00_couplers_ARVALID,
-      S_AXI_awready => axi_mem_intercon_to_s00_couplers_AWREADY,
-      S_AXI_bvalid => axi_mem_intercon_to_s00_couplers_BVALID,
       S_AXI_rdata(31 downto 0) => axi_mem_intercon_to_s00_couplers_RDATA(31 downto 0),
       S_AXI_rlast => axi_mem_intercon_to_s00_couplers_RLAST,
       S_AXI_rready => axi_mem_intercon_to_s00_couplers_RREADY,
       S_AXI_rresp(1 downto 0) => axi_mem_intercon_to_s00_couplers_RRESP(1 downto 0),
-      S_AXI_rvalid => axi_mem_intercon_to_s00_couplers_RVALID,
-      S_AXI_wready => axi_mem_intercon_to_s00_couplers_WREADY
+      S_AXI_rvalid => axi_mem_intercon_to_s00_couplers_RVALID
     );
 end STRUCTURE;
 library IEEE;
@@ -2234,7 +2216,7 @@ entity design_1 is
     vga_vsync : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=34,numReposBlks=25,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=6,da_bram_cntlr_cnt=2,da_clkrst_cnt=4,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=31,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=6,da_bram_cntlr_cnt=2,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -2333,7 +2315,6 @@ architecture STRUCTURE of design_1 is
     S_AXI_HP0_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP0_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
-    FCLK_CLK1 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     DDR_CAS_n : inout STD_LOGIC;
@@ -2447,6 +2428,8 @@ architecture STRUCTURE of design_1 is
   component design_1_system_ila_0_0 is
   port (
     clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 23 downto 0 );
     SLOT_0_GPIO_tri_o : in STD_LOGIC_VECTOR ( 7 downto 0 );
     SLOT_1_AXI_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     SLOT_1_AXI_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -2492,7 +2475,14 @@ architecture STRUCTURE of design_1 is
     SLOT_2_AXI_rlast : in STD_LOGIC;
     SLOT_2_AXI_rvalid : in STD_LOGIC;
     SLOT_2_AXI_rready : in STD_LOGIC;
-    resetn : in STD_LOGIC
+    resetn : in STD_LOGIC;
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SLOT_3_VIDEO_TIMING_active_video : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hsync : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vsync : in STD_LOGIC
   );
   end component design_1_system_ila_0_0;
   component design_1_v_tc_0_1 is
@@ -2616,20 +2606,6 @@ architecture STRUCTURE of design_1 is
     status : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component design_1_v_axi4s_vid_out_0_1;
-  component design_1_proc_sys_reset_0_0 is
-  port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
-    mb_reset : out STD_LOGIC;
-    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component design_1_proc_sys_reset_0_0;
   component design_1_xlslice_0_0 is
   port (
     Din : in STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -2687,18 +2663,6 @@ architecture STRUCTURE of design_1 is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_xlconstant_1_0;
-  component design_1_system_ila_1_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component design_1_system_ila_1_0;
-  component design_1_system_ila_2_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 23 downto 0 )
-  );
-  end component design_1_system_ila_2_0;
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 7 downto 0 );
   attribute CONN_BUS_INFO : string;
   attribute CONN_BUS_INFO of axi_gpio_0_GPIO_TRI_O : signal is "axi_gpio_0_GPIO xilinx.com:interface:gpio:1.0 None TRI_O";
@@ -2754,14 +2718,6 @@ architecture STRUCTURE of design_1 is
   attribute CONN_BUS_INFO of axi_vdma_0_M_AXI_MM2S_ARVALID : signal is "axi_vdma_0_M_AXI_MM2S xilinx.com:interface:aximm:1.0 AXI4 ARVALID";
   attribute DEBUG of axi_vdma_0_M_AXI_MM2S_ARVALID : signal is "true";
   attribute MARK_DEBUG of axi_vdma_0_M_AXI_MM2S_ARVALID : signal is std.standard.true;
-  signal axi_vdma_0_M_AXI_MM2S_AWREADY : STD_LOGIC;
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXI_MM2S_AWREADY : signal is "axi_vdma_0_M_AXI_MM2S xilinx.com:interface:aximm:1.0 AXI4 AWREADY";
-  attribute DEBUG of axi_vdma_0_M_AXI_MM2S_AWREADY : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXI_MM2S_AWREADY : signal is std.standard.true;
-  signal axi_vdma_0_M_AXI_MM2S_BVALID : STD_LOGIC;
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXI_MM2S_BVALID : signal is "axi_vdma_0_M_AXI_MM2S xilinx.com:interface:aximm:1.0 AXI4 BVALID";
-  attribute DEBUG of axi_vdma_0_M_AXI_MM2S_BVALID : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXI_MM2S_BVALID : signal is std.standard.true;
   signal axi_vdma_0_M_AXI_MM2S_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute CONN_BUS_INFO of axi_vdma_0_M_AXI_MM2S_RDATA : signal is "axi_vdma_0_M_AXI_MM2S xilinx.com:interface:aximm:1.0 AXI4 RDATA";
   attribute DEBUG of axi_vdma_0_M_AXI_MM2S_RDATA : signal is "true";
@@ -2782,17 +2738,10 @@ architecture STRUCTURE of design_1 is
   attribute CONN_BUS_INFO of axi_vdma_0_M_AXI_MM2S_RVALID : signal is "axi_vdma_0_M_AXI_MM2S xilinx.com:interface:aximm:1.0 AXI4 RVALID";
   attribute DEBUG of axi_vdma_0_M_AXI_MM2S_RVALID : signal is "true";
   attribute MARK_DEBUG of axi_vdma_0_M_AXI_MM2S_RVALID : signal is std.standard.true;
-  signal axi_vdma_0_M_AXI_MM2S_WREADY : STD_LOGIC;
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXI_MM2S_WREADY : signal is "axi_vdma_0_M_AXI_MM2S xilinx.com:interface:aximm:1.0 AXI4 WREADY";
-  attribute DEBUG of axi_vdma_0_M_AXI_MM2S_WREADY : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXI_MM2S_WREADY : signal is std.standard.true;
   signal axi_vdma_0_m_axis_mm2s_tdata : STD_LOGIC_VECTOR ( 15 downto 0 );
-  attribute DEBUG of axi_vdma_0_m_axis_mm2s_tdata : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_m_axis_mm2s_tdata : signal is std.standard.true;
   signal axi_vdma_0_m_axis_mm2s_tlast : STD_LOGIC;
   signal axi_vdma_0_m_axis_mm2s_tuser : STD_LOGIC_VECTOR ( 0 to 0 );
   signal axi_vdma_0_m_axis_mm2s_tvalid : STD_LOGIC;
-  signal proc_sys_reset_0_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -2809,7 +2758,6 @@ architecture STRUCTURE of design_1 is
   signal processing_system7_0_DDR_RESET_N : STD_LOGIC;
   signal processing_system7_0_DDR_WE_N : STD_LOGIC;
   signal processing_system7_0_FCLK_CLK0 : STD_LOGIC;
-  signal processing_system7_0_FCLK_CLK1 : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRN : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRP : STD_LOGIC;
@@ -3001,13 +2949,34 @@ architecture STRUCTURE of design_1 is
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal v_axi4s_vid_out_0_s_axis_video_tready : STD_LOGIC;
   signal v_axi4s_vid_out_0_vid_data : STD_LOGIC_VECTOR ( 23 downto 0 );
+  attribute DEBUG of v_axi4s_vid_out_0_vid_data : signal is "true";
+  attribute MARK_DEBUG of v_axi4s_vid_out_0_vid_data : signal is std.standard.true;
   signal v_axi4s_vid_out_0_vid_hsync : STD_LOGIC;
+  attribute DEBUG of v_axi4s_vid_out_0_vid_hsync : signal is "true";
+  attribute MARK_DEBUG of v_axi4s_vid_out_0_vid_hsync : signal is std.standard.true;
   signal v_axi4s_vid_out_0_vid_vsync : STD_LOGIC;
+  attribute DEBUG of v_axi4s_vid_out_0_vid_vsync : signal is "true";
+  attribute MARK_DEBUG of v_axi4s_vid_out_0_vid_vsync : signal is std.standard.true;
   signal v_tc_0_vtiming_out_ACTIVE_VIDEO : STD_LOGIC;
+  attribute CONN_BUS_INFO of v_tc_0_vtiming_out_ACTIVE_VIDEO : signal is "v_tc_0_vtiming_out xilinx.com:interface:video_timing:2.0 None ACTIVE_VIDEO";
+  attribute DEBUG of v_tc_0_vtiming_out_ACTIVE_VIDEO : signal is "true";
+  attribute MARK_DEBUG of v_tc_0_vtiming_out_ACTIVE_VIDEO : signal is std.standard.true;
   signal v_tc_0_vtiming_out_HBLANK : STD_LOGIC;
+  attribute CONN_BUS_INFO of v_tc_0_vtiming_out_HBLANK : signal is "v_tc_0_vtiming_out xilinx.com:interface:video_timing:2.0 None HBLANK";
+  attribute DEBUG of v_tc_0_vtiming_out_HBLANK : signal is "true";
+  attribute MARK_DEBUG of v_tc_0_vtiming_out_HBLANK : signal is std.standard.true;
   signal v_tc_0_vtiming_out_HSYNC : STD_LOGIC;
+  attribute CONN_BUS_INFO of v_tc_0_vtiming_out_HSYNC : signal is "v_tc_0_vtiming_out xilinx.com:interface:video_timing:2.0 None HSYNC";
+  attribute DEBUG of v_tc_0_vtiming_out_HSYNC : signal is "true";
+  attribute MARK_DEBUG of v_tc_0_vtiming_out_HSYNC : signal is std.standard.true;
   signal v_tc_0_vtiming_out_VBLANK : STD_LOGIC;
+  attribute CONN_BUS_INFO of v_tc_0_vtiming_out_VBLANK : signal is "v_tc_0_vtiming_out xilinx.com:interface:video_timing:2.0 None VBLANK";
+  attribute DEBUG of v_tc_0_vtiming_out_VBLANK : signal is "true";
+  attribute MARK_DEBUG of v_tc_0_vtiming_out_VBLANK : signal is std.standard.true;
   signal v_tc_0_vtiming_out_VSYNC : STD_LOGIC;
+  attribute CONN_BUS_INFO of v_tc_0_vtiming_out_VSYNC : signal is "v_tc_0_vtiming_out xilinx.com:interface:video_timing:2.0 None VSYNC";
+  attribute DEBUG of v_tc_0_vtiming_out_VSYNC : signal is "true";
+  attribute MARK_DEBUG of v_tc_0_vtiming_out_VSYNC : signal is std.standard.true;
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 23 downto 0 );
   attribute DEBUG of xlconcat_0_dout : signal is "true";
   attribute MARK_DEBUG of xlconcat_0_dout : signal is std.standard.true;
@@ -3022,10 +2991,6 @@ architecture STRUCTURE of design_1 is
   signal NLW_axi_vdma_0_mm2s_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_vdma_0_m_axis_mm2s_tkeep_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_axi_vdma_0_mm2s_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
-  signal NLW_proc_sys_reset_0_mb_reset_UNCONNECTED : STD_LOGIC;
-  signal NLW_proc_sys_reset_0_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_proc_sys_reset_0_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_proc_sys_reset_0_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_processing_system7_0_S_AXI_HP0_AWREADY_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_S_AXI_HP0_BVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_S_AXI_HP0_WREADY_UNCONNECTED : STD_LOGIC;
@@ -3194,14 +3159,11 @@ axi_mem_intercon: entity work.design_1_axi_mem_intercon_0
       S00_AXI_arready => axi_vdma_0_M_AXI_MM2S_ARREADY,
       S00_AXI_arsize(2 downto 0) => axi_vdma_0_M_AXI_MM2S_ARSIZE(2 downto 0),
       S00_AXI_arvalid => axi_vdma_0_M_AXI_MM2S_ARVALID,
-      S00_AXI_awready => axi_vdma_0_M_AXI_MM2S_AWREADY,
-      S00_AXI_bvalid => axi_vdma_0_M_AXI_MM2S_BVALID,
       S00_AXI_rdata(31 downto 0) => axi_vdma_0_M_AXI_MM2S_RDATA(31 downto 0),
       S00_AXI_rlast => axi_vdma_0_M_AXI_MM2S_RLAST,
       S00_AXI_rready => axi_vdma_0_M_AXI_MM2S_RREADY,
       S00_AXI_rresp(1 downto 0) => axi_vdma_0_M_AXI_MM2S_RRESP(1 downto 0),
-      S00_AXI_rvalid => axi_vdma_0_M_AXI_MM2S_RVALID,
-      S00_AXI_wready => axi_vdma_0_M_AXI_MM2S_WREADY
+      S00_AXI_rvalid => axi_vdma_0_M_AXI_MM2S_RVALID
     );
 axi_vdma_0: component design_1_axi_vdma_0_1
      port map (
@@ -3220,7 +3182,7 @@ axi_vdma_0: component design_1_axi_vdma_0_1
       m_axi_mm2s_rready => axi_vdma_0_M_AXI_MM2S_RREADY,
       m_axi_mm2s_rresp(1 downto 0) => axi_vdma_0_M_AXI_MM2S_RRESP(1 downto 0),
       m_axi_mm2s_rvalid => axi_vdma_0_M_AXI_MM2S_RVALID,
-      m_axis_mm2s_aclk => processing_system7_0_FCLK_CLK1,
+      m_axis_mm2s_aclk => processing_system7_0_FCLK_CLK0,
       m_axis_mm2s_tdata(15 downto 0) => axi_vdma_0_m_axis_mm2s_tdata(15 downto 0),
       m_axis_mm2s_tkeep(1 downto 0) => NLW_axi_vdma_0_m_axis_mm2s_tkeep_UNCONNECTED(1 downto 0),
       m_axis_mm2s_tlast => axi_vdma_0_m_axis_mm2s_tlast,
@@ -3248,19 +3210,6 @@ axi_vdma_0: component design_1_axi_vdma_0_1
       s_axi_lite_wready => ps7_0_axi_periph_M04_AXI_WREADY,
       s_axi_lite_wvalid => ps7_0_axi_periph_M04_AXI_WVALID
     );
-proc_sys_reset_0: component design_1_proc_sys_reset_0_0
-     port map (
-      aux_reset_in => '1',
-      bus_struct_reset(0) => NLW_proc_sys_reset_0_bus_struct_reset_UNCONNECTED(0),
-      dcm_locked => '1',
-      ext_reset_in => processing_system7_0_FCLK_RESET0_N,
-      interconnect_aresetn(0) => NLW_proc_sys_reset_0_interconnect_aresetn_UNCONNECTED(0),
-      mb_debug_sys_rst => '0',
-      mb_reset => NLW_proc_sys_reset_0_mb_reset_UNCONNECTED,
-      peripheral_aresetn(0) => proc_sys_reset_0_peripheral_aresetn(0),
-      peripheral_reset(0) => NLW_proc_sys_reset_0_peripheral_reset_UNCONNECTED(0),
-      slowest_sync_clk => processing_system7_0_FCLK_CLK1
-    );
 processing_system7_0: component design_1_processing_system7_0_0
      port map (
       DDR_Addr(14 downto 0) => DDR_addr(14 downto 0),
@@ -3281,7 +3230,6 @@ processing_system7_0: component design_1_processing_system7_0_0
       DDR_VRP => FIXED_IO_ddr_vrp,
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
-      FCLK_CLK1 => processing_system7_0_FCLK_CLK1,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
@@ -3565,11 +3513,11 @@ system_ila_0: component design_1_system_ila_0_0
       SLOT_2_AXI_awcache(3 downto 0) => B"0011",
       SLOT_2_AXI_awlen(7 downto 0) => B"00000000",
       SLOT_2_AXI_awprot(2 downto 0) => B"000",
-      SLOT_2_AXI_awready => axi_vdma_0_M_AXI_MM2S_AWREADY,
+      SLOT_2_AXI_awready => '0',
       SLOT_2_AXI_awsize(2 downto 0) => B"010",
       SLOT_2_AXI_awvalid => '0',
       SLOT_2_AXI_bready => '0',
-      SLOT_2_AXI_bvalid => axi_vdma_0_M_AXI_MM2S_BVALID,
+      SLOT_2_AXI_bvalid => '0',
       SLOT_2_AXI_rdata(31 downto 0) => axi_vdma_0_M_AXI_MM2S_RDATA(31 downto 0),
       SLOT_2_AXI_rlast => axi_vdma_0_M_AXI_MM2S_RLAST,
       SLOT_2_AXI_rready => axi_vdma_0_M_AXI_MM2S_RREADY,
@@ -3577,26 +3525,25 @@ system_ila_0: component design_1_system_ila_0_0
       SLOT_2_AXI_rvalid => axi_vdma_0_M_AXI_MM2S_RVALID,
       SLOT_2_AXI_wdata(31 downto 0) => B"00000000000000000000000000000000",
       SLOT_2_AXI_wlast => '0',
-      SLOT_2_AXI_wready => axi_vdma_0_M_AXI_MM2S_WREADY,
+      SLOT_2_AXI_wready => '0',
       SLOT_2_AXI_wvalid => '0',
+      SLOT_3_VIDEO_TIMING_active_video => v_tc_0_vtiming_out_ACTIVE_VIDEO,
+      SLOT_3_VIDEO_TIMING_hblank => v_tc_0_vtiming_out_HBLANK,
+      SLOT_3_VIDEO_TIMING_hsync => v_tc_0_vtiming_out_HSYNC,
+      SLOT_3_VIDEO_TIMING_vblank => v_tc_0_vtiming_out_VBLANK,
+      SLOT_3_VIDEO_TIMING_vsync => v_tc_0_vtiming_out_VSYNC,
       clk => processing_system7_0_FCLK_CLK0,
+      probe0(23 downto 0) => xlconcat_0_dout(23 downto 0),
+      probe1(23 downto 0) => v_axi4s_vid_out_0_vid_data(23 downto 0),
+      probe2(0) => v_axi4s_vid_out_0_vid_hsync,
+      probe3(0) => v_axi4s_vid_out_0_vid_vsync,
       resetn => rst_ps7_0_100M_peripheral_aresetn(0)
-    );
-system_ila_1: component design_1_system_ila_1_0
-     port map (
-      clk => processing_system7_0_FCLK_CLK0,
-      probe0(15 downto 0) => axi_vdma_0_m_axis_mm2s_tdata(15 downto 0)
-    );
-system_ila_2: component design_1_system_ila_2_0
-     port map (
-      clk => processing_system7_0_FCLK_CLK0,
-      probe0(23 downto 0) => xlconcat_0_dout(23 downto 0)
     );
 v_axi4s_vid_out_0: component design_1_v_axi4s_vid_out_0_1
      port map (
-      aclk => processing_system7_0_FCLK_CLK1,
+      aclk => processing_system7_0_FCLK_CLK0,
       aclken => xlconstant_1_dout(0),
-      aresetn => proc_sys_reset_0_peripheral_aresetn(0),
+      aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
       fid => '0',
       fifo_read_level(10 downto 0) => NLW_v_axi4s_vid_out_0_fifo_read_level_UNCONNECTED(10 downto 0),
       locked => NLW_v_axi4s_vid_out_0_locked_UNCONNECTED,
@@ -3628,8 +3575,8 @@ v_tc_0: component design_1_v_tc_0_1
      port map (
       active_video_in => '0',
       active_video_out => v_tc_0_vtiming_out_ACTIVE_VIDEO,
-      clk => processing_system7_0_FCLK_CLK1,
-      clken => '1',
+      clk => processing_system7_0_FCLK_CLK0,
+      clken => xlconstant_1_dout(0),
       det_clken => '1',
       fsync_in => '0',
       fsync_out(0) => NLW_v_tc_0_fsync_out_UNCONNECTED(0),
@@ -3639,9 +3586,9 @@ v_tc_0: component design_1_v_tc_0_1
       hsync_in => '0',
       hsync_out => v_tc_0_vtiming_out_HSYNC,
       irq => NLW_v_tc_0_irq_UNCONNECTED,
-      resetn => proc_sys_reset_0_peripheral_aresetn(0),
+      resetn => rst_ps7_0_100M_peripheral_aresetn(0),
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
-      s_axi_aclken => '1',
+      s_axi_aclken => xlconstant_1_dout(0),
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M03_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
       s_axi_arready => ps7_0_axi_periph_M03_AXI_ARREADY,

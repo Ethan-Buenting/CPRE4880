@@ -55,7 +55,16 @@ entity bd_f60c_wrapper is
     SLOT_2_AXI_wlast : in STD_LOGIC;
     SLOT_2_AXI_wready : in STD_LOGIC;
     SLOT_2_AXI_wvalid : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_active_video : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hsync : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vsync : in STD_LOGIC;
     clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
     resetn : in STD_LOGIC
   );
 end bd_f60c_wrapper;
@@ -64,6 +73,10 @@ architecture STRUCTURE of bd_f60c_wrapper is
   component bd_f60c is
   port (
     clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
     resetn : in STD_LOGIC;
     SLOT_0_GPIO_tri_o : in STD_LOGIC_VECTOR ( 7 downto 0 );
     SLOT_1_AXI_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
@@ -109,7 +122,12 @@ architecture STRUCTURE of bd_f60c_wrapper is
     SLOT_2_AXI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     SLOT_2_AXI_wlast : in STD_LOGIC;
     SLOT_2_AXI_wready : in STD_LOGIC;
-    SLOT_2_AXI_wvalid : in STD_LOGIC
+    SLOT_2_AXI_wvalid : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_active_video : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hsync : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vsync : in STD_LOGIC
   );
   end component bd_f60c;
 begin
@@ -160,7 +178,16 @@ bd_f60c_i: component bd_f60c
       SLOT_2_AXI_wlast => SLOT_2_AXI_wlast,
       SLOT_2_AXI_wready => SLOT_2_AXI_wready,
       SLOT_2_AXI_wvalid => SLOT_2_AXI_wvalid,
+      SLOT_3_VIDEO_TIMING_active_video => SLOT_3_VIDEO_TIMING_active_video,
+      SLOT_3_VIDEO_TIMING_hblank => SLOT_3_VIDEO_TIMING_hblank,
+      SLOT_3_VIDEO_TIMING_hsync => SLOT_3_VIDEO_TIMING_hsync,
+      SLOT_3_VIDEO_TIMING_vblank => SLOT_3_VIDEO_TIMING_vblank,
+      SLOT_3_VIDEO_TIMING_vsync => SLOT_3_VIDEO_TIMING_vsync,
       clk => clk,
+      probe0(23 downto 0) => probe0(23 downto 0),
+      probe1(23 downto 0) => probe1(23 downto 0),
+      probe2(0) => probe2(0),
+      probe3(0) => probe3(0),
       resetn => resetn
     );
 end STRUCTURE;

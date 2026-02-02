@@ -110,14 +110,11 @@
 						"ARREADY": { "actual": "S00_AXI_arready"},
 						"ARSIZE": { "actual": "S00_AXI_arsize"},
 						"ARVALID": { "actual": "S00_AXI_arvalid"},
-						"AWREADY": { "actual": "S00_AXI_awready"},
-						"BVALID": { "actual": "S00_AXI_bvalid"},
 						"RDATA": { "actual": "S00_AXI_rdata"},
 						"RLAST": { "actual": "S00_AXI_rlast"},
 						"RREADY": { "actual": "S00_AXI_rready"},
 						"RRESP": { "actual": "S00_AXI_rresp"},
-						"RVALID": { "actual": "S00_AXI_rvalid"},
-						"WREADY": { "actual": "S00_AXI_wready"}
+						"RVALID": { "actual": "S00_AXI_rvalid"}
 					}
 				},
 				"/axi_mem_intercon/s00_couplers/M_AXI": {
@@ -155,14 +152,11 @@
 						"ARREADY": { "actual": "S_AXI_arready"},
 						"ARSIZE": { "actual": "S_AXI_arsize"},
 						"ARVALID": { "actual": "S_AXI_arvalid"},
-						"AWREADY": { "actual": "S_AXI_awready"},
-						"BVALID": { "actual": "S_AXI_bvalid"},
 						"RDATA": { "actual": "S_AXI_rdata"},
 						"RLAST": { "actual": "S_AXI_rlast"},
 						"RREADY": { "actual": "S_AXI_rready"},
 						"RRESP": { "actual": "S_AXI_rresp"},
-						"RVALID": { "actual": "S_AXI_rvalid"},
-						"WREADY": { "actual": "S_AXI_wready"}
+						"RVALID": { "actual": "S_AXI_rvalid"}
 					}
 				},
 				"/axi_mem_intercon/s00_couplers/auto_pc/M_AXI": {

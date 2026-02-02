@@ -67,3 +67,33 @@ timestamp=[2026-01-30 14:35:30], mode=BUILD, duration=0:00:00.793, duration_ms=7
 timestamp=[2026-01-30 14:43:38], mode=PLATFORM_GENERATION, duration=0:00:01.099, duration_ms=1099, data={name=design_1_wrapper}
 timestamp=[2026-01-30 14:43:41], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=lab1_vitis, configuration=Debug, clean_build=false}
 timestamp=[2026-01-30 14:43:48], mode=BUILD, duration=0:00:03.824, duration_ms=3824, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 11:04:33], mode=WORKBENCH_START, duration=0:00:06.357, duration_ms=6357, data={}
+timestamp=[2026-02-02 11:04:34], mode=WORKBENCH_UI_INIT, duration=0:00:00.570, duration_ms=570, data={editors_count=6, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,lab1_vitis,lab1_vitis_system}
+timestamp=[2026-02-02 11:04:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.079, duration_ms=79, data={}
+timestamp=[2026-02-02 11:05:32], mode=PLATFORM_GENERATION, duration=0:00:17.124, duration_ms=17124, data={name=design_1_wrapper}
+timestamp=[2026-02-02 11:05:42], mode=BUILD, duration=0:00:01.186, duration_ms=1186, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 11:05:49], mode=BUILD, duration=0:00:03.956, duration_ms=3956, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 11:37:57], mode=PLATFORM_GENERATION, duration=0:00:01.034, duration_ms=1034, data={name=design_1_wrapper}
+timestamp=[2026-02-02 11:38:00], mode=BUILD, duration=0:00:00.213, duration_ms=213, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 11:38:06], mode=BUILD, duration=0:00:03.645, duration_ms=3645, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 12:00:54], mode=PLATFORM_GENERATION, duration=0:00:01.037, duration_ms=1037, data={name=design_1_wrapper}
+timestamp=[2026-02-02 12:00:59], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 12:01:06], mode=BUILD, duration=0:00:03.652, duration_ms=3652, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 12:14:27], mode=PLATFORM_GENERATION, duration=0:00:00.976, duration_ms=976, data={name=design_1_wrapper}
+timestamp=[2026-02-02 12:14:47], mode=BUILD, duration=0:00:00.212, duration_ms=212, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 12:14:54], mode=BUILD, duration=0:00:03.712, duration_ms=3712, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 12:27:50], mode=PLATFORM_GENERATION, duration=0:00:00.979, duration_ms=979, data={name=design_1_wrapper}
+timestamp=[2026-02-02 12:27:52], mode=BUILD, duration=0:00:00.212, duration_ms=212, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 12:27:58], mode=BUILD, duration=0:00:03.599, duration_ms=3599, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:05:04], mode=PLATFORM_GENERATION, duration=0:00:01.035, duration_ms=1035, data={name=design_1_wrapper}
+timestamp=[2026-02-02 13:05:05], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:05:13], mode=BUILD, duration=0:00:03.889, duration_ms=3889, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:19:33], mode=PLATFORM_GENERATION, duration=0:00:00.979, duration_ms=979, data={name=design_1_wrapper}
+timestamp=[2026-02-02 13:19:35], mode=BUILD, duration=0:00:00.215, duration_ms=215, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:19:41], mode=BUILD, duration=0:00:03.722, duration_ms=3722, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:24:16], mode=PLATFORM_GENERATION, duration=0:00:00.970, duration_ms=970, data={name=design_1_wrapper}
+timestamp=[2026-02-02 13:24:16], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:24:20], mode=BUILD, duration=0:00:03.605, duration_ms=3605, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:35:59], mode=PLATFORM_GENERATION, duration=0:00:01.098, duration_ms=1098, data={name=design_1_wrapper}
+timestamp=[2026-02-02 13:36:16], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-02 13:36:23], mode=BUILD, duration=0:00:03.757, duration_ms=3757, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}

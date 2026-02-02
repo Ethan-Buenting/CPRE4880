@@ -1,8 +1,8 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri Jan 30 11:22:30 2026
-// Host        : CO2041-10 running 64-bit major release  (build 9200)
+// Date        : Mon Feb  2 11:31:13 2026
+// Host        : CO2041-15 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_sim_netlist.v
 // Design      : design_1_v_tc_0_1
@@ -53,9 +53,9 @@ module design_1_v_tc_0_1
     irq,
     fsync_in,
     fsync_out);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_intf CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF vtiming_in:vtiming_out, ASSOCIATED_RESET resetn, ASSOCIATED_CLKEN clken, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_intf CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF vtiming_in:vtiming_out, ASSOCIATED_RESET resetn, ASSOCIATED_CLKEN clken, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   (* x_interface_info = "xilinx.com:signal:clockenable:1.0 clken_intf CE" *) (* x_interface_parameter = "XIL_INTERFACENAME clken_intf, POLARITY ACTIVE_LOW" *) input clken;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 s_axi_aclk_intf CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 s_axi_aclk_intf CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:clockenable:1.0 s_axi_aclken_intf CE" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aclken_intf, POLARITY ACTIVE_LOW" *) input s_axi_aclken;
   input det_clken;
   input gen_clken;
@@ -71,7 +71,7 @@ module design_1_v_tc_0_1
   (* x_interface_info = "xilinx.com:interface:video_timing:2.0 vtiming_out ACTIVE_VIDEO" *) output active_video_out;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 resetn_intf RST" *) (* x_interface_parameter = "XIL_INTERFACENAME resetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input resetn;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 s_axi_aresetn_intf RST" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aresetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [8:0]s_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 25000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [8:0]s_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWVALID" *) input s_axi_awvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWREADY" *) output s_axi_awready;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl WDATA" *) input [31:0]s_axi_wdata;
@@ -13992,7 +13992,6 @@ module design_1_v_tc_0_1_tc_detector
     active_video_lock_int,
     vsync_lock_int,
     vblank_lock_int,
-    \time_status_regs[6] ,
     \det_v0fp_start_int_reg[11]_0 ,
     hsync0,
     hblank0,
@@ -14005,6 +14004,7 @@ module design_1_v_tc_0_1_tc_detector
     p_0_in__0,
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][0] ,
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11] ,
+    \time_status_regs[6] ,
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][27] ,
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][11] ,
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[25][27] ,
@@ -14079,7 +14079,6 @@ module design_1_v_tc_0_1_tc_detector
   output active_video_lock_int;
   output vsync_lock_int;
   output vblank_lock_int;
-  output [23:0]\time_status_regs[6] ;
   output [11:0]\det_v0fp_start_int_reg[11]_0 ;
   output hsync0;
   output hblank0;
@@ -14092,6 +14091,7 @@ module design_1_v_tc_0_1_tc_detector
   output [11:0]p_0_in__0;
   output \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][0] ;
   output [11:0]\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11] ;
+  output [23:0]\time_status_regs[6] ;
   output [11:0]\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][27] ;
   output [11:0]\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][11] ;
   output [11:0]\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[25][27] ;
@@ -29718,9 +29718,9 @@ module design_1_v_tc_0_1_tc_top
     Q,
     \time_status_regs_int_reg[0] ,
     \time_status_regs_int_reg[3] ,
-    \time_status_regs[6] ,
     \det_v0total_reg[11] ,
     reg_update,
+    \time_status_regs[6] ,
     \time_status_regs[9] ,
     \time_status_regs[8] ,
     \time_status_regs[7] ,
@@ -29758,9 +29758,9 @@ module design_1_v_tc_0_1_tc_top
   output [11:0]Q;
   output [23:0]\time_status_regs_int_reg[0] ;
   output [4:0]\time_status_regs_int_reg[3] ;
-  output [23:0]\time_status_regs[6] ;
   output [11:0]\det_v0total_reg[11] ;
   output reg_update;
+  output [23:0]\time_status_regs[6] ;
   output [23:0]\time_status_regs[9] ;
   output [23:0]\time_status_regs[8] ;
   output [23:0]\time_status_regs[7] ;
@@ -29789,19 +29789,6 @@ module design_1_v_tc_0_1_tc_top
   input [23:0]\time_control_regs[23] ;
   input vsync_in;
 
-  wire \GEN_DETECTION.U_tc_DET_n_103 ;
-  wire \GEN_DETECTION.U_tc_DET_n_104 ;
-  wire \GEN_DETECTION.U_tc_DET_n_105 ;
-  wire \GEN_DETECTION.U_tc_DET_n_106 ;
-  wire \GEN_DETECTION.U_tc_DET_n_107 ;
-  wire \GEN_DETECTION.U_tc_DET_n_108 ;
-  wire \GEN_DETECTION.U_tc_DET_n_109 ;
-  wire \GEN_DETECTION.U_tc_DET_n_110 ;
-  wire \GEN_DETECTION.U_tc_DET_n_111 ;
-  wire \GEN_DETECTION.U_tc_DET_n_112 ;
-  wire \GEN_DETECTION.U_tc_DET_n_113 ;
-  wire \GEN_DETECTION.U_tc_DET_n_114 ;
-  wire \GEN_DETECTION.U_tc_DET_n_115 ;
   wire \GEN_DETECTION.U_tc_DET_n_116 ;
   wire \GEN_DETECTION.U_tc_DET_n_117 ;
   wire \GEN_DETECTION.U_tc_DET_n_118 ;
@@ -29926,7 +29913,20 @@ module design_1_v_tc_0_1_tc_top
   wire \GEN_DETECTION.U_tc_DET_n_311 ;
   wire \GEN_DETECTION.U_tc_DET_n_312 ;
   wire \GEN_DETECTION.U_tc_DET_n_313 ;
+  wire \GEN_DETECTION.U_tc_DET_n_65 ;
+  wire \GEN_DETECTION.U_tc_DET_n_79 ;
+  wire \GEN_DETECTION.U_tc_DET_n_80 ;
+  wire \GEN_DETECTION.U_tc_DET_n_81 ;
+  wire \GEN_DETECTION.U_tc_DET_n_82 ;
+  wire \GEN_DETECTION.U_tc_DET_n_83 ;
+  wire \GEN_DETECTION.U_tc_DET_n_84 ;
+  wire \GEN_DETECTION.U_tc_DET_n_85 ;
+  wire \GEN_DETECTION.U_tc_DET_n_86 ;
+  wire \GEN_DETECTION.U_tc_DET_n_87 ;
+  wire \GEN_DETECTION.U_tc_DET_n_88 ;
   wire \GEN_DETECTION.U_tc_DET_n_89 ;
+  wire \GEN_DETECTION.U_tc_DET_n_90 ;
+  wire \GEN_DETECTION.U_tc_DET_n_91 ;
   wire \GEN_GENERATOR.U_TC_GEN_n_10 ;
   wire \GEN_GENERATOR.U_TC_GEN_n_12 ;
   wire \GEN_GENERATOR.U_TC_GEN_n_13 ;
@@ -30025,10 +30025,10 @@ module design_1_v_tc_0_1_tc_top
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][20] ({\GEN_DETECTION.U_tc_DET_n_299 ,\GEN_DETECTION.U_tc_DET_n_300 ,\GEN_DETECTION.U_tc_DET_n_301 ,\GEN_DETECTION.U_tc_DET_n_302 }),
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][24] ({\GEN_DETECTION.U_tc_DET_n_303 ,\GEN_DETECTION.U_tc_DET_n_304 ,\GEN_DETECTION.U_tc_DET_n_305 ,\GEN_DETECTION.U_tc_DET_n_306 }),
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][27] ({\GEN_DETECTION.U_tc_DET_n_307 ,\GEN_DETECTION.U_tc_DET_n_308 ,\GEN_DETECTION.U_tc_DET_n_309 }),
-        .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][0] (\GEN_DETECTION.U_tc_DET_n_103 ),
+        .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][0] (\GEN_DETECTION.U_tc_DET_n_79 ),
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][11] ({\GEN_DETECTION.U_tc_DET_n_296 ,\GEN_DETECTION.U_tc_DET_n_297 ,\GEN_DETECTION.U_tc_DET_n_298 }),
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][8] ({\GEN_DETECTION.U_tc_DET_n_292 ,\GEN_DETECTION.U_tc_DET_n_293 ,\GEN_DETECTION.U_tc_DET_n_294 ,\GEN_DETECTION.U_tc_DET_n_295 }),
-        .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11] ({\GEN_DETECTION.U_tc_DET_n_104 ,\GEN_DETECTION.U_tc_DET_n_105 ,\GEN_DETECTION.U_tc_DET_n_106 ,\GEN_DETECTION.U_tc_DET_n_107 ,\GEN_DETECTION.U_tc_DET_n_108 ,\GEN_DETECTION.U_tc_DET_n_109 ,\GEN_DETECTION.U_tc_DET_n_110 ,\GEN_DETECTION.U_tc_DET_n_111 ,\GEN_DETECTION.U_tc_DET_n_112 ,\GEN_DETECTION.U_tc_DET_n_113 ,\GEN_DETECTION.U_tc_DET_n_114 ,\GEN_DETECTION.U_tc_DET_n_115 }),
+        .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11] ({\GEN_DETECTION.U_tc_DET_n_80 ,\GEN_DETECTION.U_tc_DET_n_81 ,\GEN_DETECTION.U_tc_DET_n_82 ,\GEN_DETECTION.U_tc_DET_n_83 ,\GEN_DETECTION.U_tc_DET_n_84 ,\GEN_DETECTION.U_tc_DET_n_85 ,\GEN_DETECTION.U_tc_DET_n_86 ,\GEN_DETECTION.U_tc_DET_n_87 ,\GEN_DETECTION.U_tc_DET_n_88 ,\GEN_DETECTION.U_tc_DET_n_89 ,\GEN_DETECTION.U_tc_DET_n_90 ,\GEN_DETECTION.U_tc_DET_n_91 }),
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][27] ({\GEN_DETECTION.U_tc_DET_n_116 ,\GEN_DETECTION.U_tc_DET_n_117 ,\GEN_DETECTION.U_tc_DET_n_118 ,\GEN_DETECTION.U_tc_DET_n_119 ,\GEN_DETECTION.U_tc_DET_n_120 ,\GEN_DETECTION.U_tc_DET_n_121 ,\GEN_DETECTION.U_tc_DET_n_122 ,\GEN_DETECTION.U_tc_DET_n_123 ,\GEN_DETECTION.U_tc_DET_n_124 ,\GEN_DETECTION.U_tc_DET_n_125 ,\GEN_DETECTION.U_tc_DET_n_126 ,\GEN_DETECTION.U_tc_DET_n_127 }),
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[23][11] ({\GEN_DETECTION.U_tc_DET_n_273 ,\GEN_DETECTION.U_tc_DET_n_274 ,\GEN_DETECTION.U_tc_DET_n_275 ,\GEN_DETECTION.U_tc_DET_n_276 ,\GEN_DETECTION.U_tc_DET_n_277 ,\GEN_DETECTION.U_tc_DET_n_278 ,\GEN_DETECTION.U_tc_DET_n_279 ,\GEN_DETECTION.U_tc_DET_n_280 ,\GEN_DETECTION.U_tc_DET_n_281 ,\GEN_DETECTION.U_tc_DET_n_282 ,\GEN_DETECTION.U_tc_DET_n_283 ,\GEN_DETECTION.U_tc_DET_n_284 }),
         .\AXI4_LITE_INTERFACE.time_control_regs2_int_reg[23][27] ({\GEN_DETECTION.U_tc_DET_n_236 ,\GEN_DETECTION.U_tc_DET_n_237 ,\GEN_DETECTION.U_tc_DET_n_238 ,\GEN_DETECTION.U_tc_DET_n_239 ,\GEN_DETECTION.U_tc_DET_n_240 ,\GEN_DETECTION.U_tc_DET_n_241 ,\GEN_DETECTION.U_tc_DET_n_242 ,\GEN_DETECTION.U_tc_DET_n_243 ,\GEN_DETECTION.U_tc_DET_n_244 ,\GEN_DETECTION.U_tc_DET_n_245 ,\GEN_DETECTION.U_tc_DET_n_246 ,\GEN_DETECTION.U_tc_DET_n_247 }),
@@ -30066,7 +30066,7 @@ module design_1_v_tc_0_1_tc_top
         .fsync_in_0(\GEN_DETECTION.U_tc_DET_n_311 ),
         .gen_active_video_d(gen_active_video_d),
         .gen_vblank_d(gen_vblank_d),
-        .gen_vblank_d_reg(\GEN_DETECTION.U_tc_DET_n_89 ),
+        .gen_vblank_d_reg(\GEN_DETECTION.U_tc_DET_n_65 ),
         .\genr_control_regs[0] ({\genr_control_regs[0] [18:14],\genr_control_regs[0] [12:2],\genr_control_regs[0] [0]}),
         .hblank0(hblank0),
         .hblank_in(hblank_in),
@@ -30135,9 +30135,9 @@ module design_1_v_tc_0_1_tc_top
         .hsync0(hsync0),
         .hsync_int_reg_0(\GEN_GENERATOR.U_TC_GEN_n_7 ),
         .hsync_out(hsync_out),
-        .\hsync_start_reg[11]_0 ({\GEN_DETECTION.U_tc_DET_n_104 ,\GEN_DETECTION.U_tc_DET_n_105 ,\GEN_DETECTION.U_tc_DET_n_106 ,\GEN_DETECTION.U_tc_DET_n_107 ,\GEN_DETECTION.U_tc_DET_n_108 ,\GEN_DETECTION.U_tc_DET_n_109 ,\GEN_DETECTION.U_tc_DET_n_110 ,\GEN_DETECTION.U_tc_DET_n_111 ,\GEN_DETECTION.U_tc_DET_n_112 ,\GEN_DETECTION.U_tc_DET_n_113 ,\GEN_DETECTION.U_tc_DET_n_114 ,\GEN_DETECTION.U_tc_DET_n_115 }),
+        .\hsync_start_reg[11]_0 ({\GEN_DETECTION.U_tc_DET_n_80 ,\GEN_DETECTION.U_tc_DET_n_81 ,\GEN_DETECTION.U_tc_DET_n_82 ,\GEN_DETECTION.U_tc_DET_n_83 ,\GEN_DETECTION.U_tc_DET_n_84 ,\GEN_DETECTION.U_tc_DET_n_85 ,\GEN_DETECTION.U_tc_DET_n_86 ,\GEN_DETECTION.U_tc_DET_n_87 ,\GEN_DETECTION.U_tc_DET_n_88 ,\GEN_DETECTION.U_tc_DET_n_89 ,\GEN_DETECTION.U_tc_DET_n_90 ,\GEN_DETECTION.U_tc_DET_n_91 }),
         .intc_if(intc_if[11]),
-        .\intr_status_int_reg[13] (\GEN_DETECTION.U_tc_DET_n_89 ),
+        .\intr_status_int_reg[13] (\GEN_DETECTION.U_tc_DET_n_65 ),
         .p_0_in__0(p_0_in__0),
         .p_5_in(p_5_in),
         .reg_update(reg_update),
@@ -30157,7 +30157,7 @@ module design_1_v_tc_0_1_tc_top
         .\v0sync_start_hori_reg[11]_0 ({\GEN_DETECTION.U_tc_DET_n_212 ,\GEN_DETECTION.U_tc_DET_n_213 ,\GEN_DETECTION.U_tc_DET_n_214 ,\GEN_DETECTION.U_tc_DET_n_215 ,\GEN_DETECTION.U_tc_DET_n_216 ,\GEN_DETECTION.U_tc_DET_n_217 ,\GEN_DETECTION.U_tc_DET_n_218 ,\GEN_DETECTION.U_tc_DET_n_219 ,\GEN_DETECTION.U_tc_DET_n_220 ,\GEN_DETECTION.U_tc_DET_n_221 ,\GEN_DETECTION.U_tc_DET_n_222 ,\GEN_DETECTION.U_tc_DET_n_223 }),
         .\v0sync_start_reg[11]_0 ({\GEN_DETECTION.U_tc_DET_n_224 ,\GEN_DETECTION.U_tc_DET_n_225 ,\GEN_DETECTION.U_tc_DET_n_226 ,\GEN_DETECTION.U_tc_DET_n_227 ,\GEN_DETECTION.U_tc_DET_n_228 ,\GEN_DETECTION.U_tc_DET_n_229 ,\GEN_DETECTION.U_tc_DET_n_230 ,\GEN_DETECTION.U_tc_DET_n_231 ,\GEN_DETECTION.U_tc_DET_n_232 ,\GEN_DETECTION.U_tc_DET_n_233 ,\GEN_DETECTION.U_tc_DET_n_234 ,\GEN_DETECTION.U_tc_DET_n_235 }),
         .\v0total_reg[11]_0 ({\GEN_DETECTION.U_tc_DET_n_296 ,\GEN_DETECTION.U_tc_DET_n_297 ,\GEN_DETECTION.U_tc_DET_n_298 }),
-        .\v0total_reg[4]_0 (\GEN_DETECTION.U_tc_DET_n_103 ),
+        .\v0total_reg[4]_0 (\GEN_DETECTION.U_tc_DET_n_79 ),
         .\v0total_reg[8]_0 ({\GEN_DETECTION.U_tc_DET_n_292 ,\GEN_DETECTION.U_tc_DET_n_293 ,\GEN_DETECTION.U_tc_DET_n_294 ,\GEN_DETECTION.U_tc_DET_n_295 }),
         .vblank0(vblank0),
         .vblank_int_reg_0(\GEN_GENERATOR.U_TC_GEN_n_10 ),

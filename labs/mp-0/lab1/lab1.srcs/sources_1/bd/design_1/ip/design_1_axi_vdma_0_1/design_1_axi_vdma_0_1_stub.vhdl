@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Fri Jan 30 13:55:40 2026
+-- Date        : Mon Feb  2 11:31:14 2026
 -- Host        : CO2041-15 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1_stub.vhdl

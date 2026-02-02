@@ -3,8 +3,6 @@ set_property SRC_FILE_INFO {cfile:C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1
 current_instance design_1_i/processing_system7_0
 set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 create_clock -period 40.000 [get_ports {}]
-set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
-create_clock -period 10.000 [get_ports {}]
 current_instance
 set_property src_info {type:XDC file:2 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V20 [get_ports {vga_r[0]}]

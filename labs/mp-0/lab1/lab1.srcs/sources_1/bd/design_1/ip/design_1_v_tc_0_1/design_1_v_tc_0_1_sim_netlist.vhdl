@@ -1,8 +1,8 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Fri Jan 30 11:22:30 2026
--- Host        : CO2041-10 running 64-bit major release  (build 9200)
+-- Date        : Mon Feb  2 11:31:13 2026
+-- Host        : CO2041-15 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_sim_netlist.vhdl
 -- Design      : design_1_v_tc_0_1
@@ -14798,7 +14798,6 @@ entity design_1_v_tc_0_1_tc_detector is
     active_video_lock_int : out STD_LOGIC;
     vsync_lock_int : out STD_LOGIC;
     vblank_lock_int : out STD_LOGIC;
-    \time_status_regs[6]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \det_v0fp_start_int_reg[11]_0\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     hsync0 : out STD_LOGIC;
     hblank0 : out STD_LOGIC;
@@ -14811,6 +14810,7 @@ entity design_1_v_tc_0_1_tc_detector is
     \p_0_in__0\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][0]\ : out STD_LOGIC;
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    \time_status_regs[6]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][27]\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][11]\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[25][27]\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -47527,9 +47527,9 @@ entity design_1_v_tc_0_1_tc_top is
     Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
     \time_status_regs_int_reg[0]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_status_regs_int_reg[3]\ : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    \time_status_regs[6]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \det_v0total_reg[11]\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     reg_update : out STD_LOGIC;
+    \time_status_regs[6]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_status_regs[9]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_status_regs[8]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_status_regs[7]\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -47563,19 +47563,6 @@ entity design_1_v_tc_0_1_tc_top is
 end design_1_v_tc_0_1_tc_top;
 
 architecture STRUCTURE of design_1_v_tc_0_1_tc_top is
-  signal \GEN_DETECTION.U_tc_DET_n_103\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_104\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_105\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_106\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_107\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_108\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_109\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_110\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_111\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_112\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_113\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_114\ : STD_LOGIC;
-  signal \GEN_DETECTION.U_tc_DET_n_115\ : STD_LOGIC;
   signal \GEN_DETECTION.U_tc_DET_n_116\ : STD_LOGIC;
   signal \GEN_DETECTION.U_tc_DET_n_117\ : STD_LOGIC;
   signal \GEN_DETECTION.U_tc_DET_n_118\ : STD_LOGIC;
@@ -47700,7 +47687,20 @@ architecture STRUCTURE of design_1_v_tc_0_1_tc_top is
   signal \GEN_DETECTION.U_tc_DET_n_311\ : STD_LOGIC;
   signal \GEN_DETECTION.U_tc_DET_n_312\ : STD_LOGIC;
   signal \GEN_DETECTION.U_tc_DET_n_313\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_65\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_79\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_80\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_81\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_82\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_83\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_84\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_85\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_86\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_87\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_88\ : STD_LOGIC;
   signal \GEN_DETECTION.U_tc_DET_n_89\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_90\ : STD_LOGIC;
+  signal \GEN_DETECTION.U_tc_DET_n_91\ : STD_LOGIC;
   signal \GEN_GENERATOR.U_TC_GEN_n_10\ : STD_LOGIC;
   signal \GEN_GENERATOR.U_TC_GEN_n_12\ : STD_LOGIC;
   signal \GEN_GENERATOR.U_TC_GEN_n_13\ : STD_LOGIC;
@@ -47798,7 +47798,7 @@ begin
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][27]\(2) => \GEN_DETECTION.U_tc_DET_n_307\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][27]\(1) => \GEN_DETECTION.U_tc_DET_n_308\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[16][27]\(0) => \GEN_DETECTION.U_tc_DET_n_309\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][0]\ => \GEN_DETECTION.U_tc_DET_n_103\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][0]\ => \GEN_DETECTION.U_tc_DET_n_79\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][11]\(2) => \GEN_DETECTION.U_tc_DET_n_296\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][11]\(1) => \GEN_DETECTION.U_tc_DET_n_297\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][11]\(0) => \GEN_DETECTION.U_tc_DET_n_298\,
@@ -47806,18 +47806,18 @@ begin
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][8]\(2) => \GEN_DETECTION.U_tc_DET_n_293\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][8]\(1) => \GEN_DETECTION.U_tc_DET_n_294\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[21][8]\(0) => \GEN_DETECTION.U_tc_DET_n_295\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(11) => \GEN_DETECTION.U_tc_DET_n_104\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(10) => \GEN_DETECTION.U_tc_DET_n_105\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(9) => \GEN_DETECTION.U_tc_DET_n_106\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(8) => \GEN_DETECTION.U_tc_DET_n_107\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(7) => \GEN_DETECTION.U_tc_DET_n_108\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(6) => \GEN_DETECTION.U_tc_DET_n_109\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(5) => \GEN_DETECTION.U_tc_DET_n_110\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(4) => \GEN_DETECTION.U_tc_DET_n_111\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(3) => \GEN_DETECTION.U_tc_DET_n_112\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(2) => \GEN_DETECTION.U_tc_DET_n_113\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(1) => \GEN_DETECTION.U_tc_DET_n_114\,
-      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(0) => \GEN_DETECTION.U_tc_DET_n_115\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(11) => \GEN_DETECTION.U_tc_DET_n_80\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(10) => \GEN_DETECTION.U_tc_DET_n_81\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(9) => \GEN_DETECTION.U_tc_DET_n_82\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(8) => \GEN_DETECTION.U_tc_DET_n_83\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(7) => \GEN_DETECTION.U_tc_DET_n_84\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(6) => \GEN_DETECTION.U_tc_DET_n_85\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(5) => \GEN_DETECTION.U_tc_DET_n_86\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(4) => \GEN_DETECTION.U_tc_DET_n_87\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(3) => \GEN_DETECTION.U_tc_DET_n_88\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(2) => \GEN_DETECTION.U_tc_DET_n_89\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(1) => \GEN_DETECTION.U_tc_DET_n_90\,
+      \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][11]\(0) => \GEN_DETECTION.U_tc_DET_n_91\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][27]\(11) => \GEN_DETECTION.U_tc_DET_n_116\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][27]\(10) => \GEN_DETECTION.U_tc_DET_n_117\,
       \AXI4_LITE_INTERFACE.time_control_regs2_int_reg[22][27]\(9) => \GEN_DETECTION.U_tc_DET_n_118\,
@@ -47935,7 +47935,7 @@ begin
       fsync_in_0 => \GEN_DETECTION.U_tc_DET_n_311\,
       gen_active_video_d => gen_active_video_d,
       gen_vblank_d => gen_vblank_d,
-      gen_vblank_d_reg => \GEN_DETECTION.U_tc_DET_n_89\,
+      gen_vblank_d_reg => \GEN_DETECTION.U_tc_DET_n_65\,
       \genr_control_regs[0]\(16 downto 12) => \genr_control_regs[0]\(18 downto 14),
       \genr_control_regs[0]\(11 downto 1) => \genr_control_regs[0]\(12 downto 2),
       \genr_control_regs[0]\(0) => \genr_control_regs[0]\(0),
@@ -48035,20 +48035,20 @@ begin
       hsync0 => hsync0,
       hsync_int_reg_0 => \GEN_GENERATOR.U_TC_GEN_n_7\,
       hsync_out => hsync_out,
-      \hsync_start_reg[11]_0\(11) => \GEN_DETECTION.U_tc_DET_n_104\,
-      \hsync_start_reg[11]_0\(10) => \GEN_DETECTION.U_tc_DET_n_105\,
-      \hsync_start_reg[11]_0\(9) => \GEN_DETECTION.U_tc_DET_n_106\,
-      \hsync_start_reg[11]_0\(8) => \GEN_DETECTION.U_tc_DET_n_107\,
-      \hsync_start_reg[11]_0\(7) => \GEN_DETECTION.U_tc_DET_n_108\,
-      \hsync_start_reg[11]_0\(6) => \GEN_DETECTION.U_tc_DET_n_109\,
-      \hsync_start_reg[11]_0\(5) => \GEN_DETECTION.U_tc_DET_n_110\,
-      \hsync_start_reg[11]_0\(4) => \GEN_DETECTION.U_tc_DET_n_111\,
-      \hsync_start_reg[11]_0\(3) => \GEN_DETECTION.U_tc_DET_n_112\,
-      \hsync_start_reg[11]_0\(2) => \GEN_DETECTION.U_tc_DET_n_113\,
-      \hsync_start_reg[11]_0\(1) => \GEN_DETECTION.U_tc_DET_n_114\,
-      \hsync_start_reg[11]_0\(0) => \GEN_DETECTION.U_tc_DET_n_115\,
+      \hsync_start_reg[11]_0\(11) => \GEN_DETECTION.U_tc_DET_n_80\,
+      \hsync_start_reg[11]_0\(10) => \GEN_DETECTION.U_tc_DET_n_81\,
+      \hsync_start_reg[11]_0\(9) => \GEN_DETECTION.U_tc_DET_n_82\,
+      \hsync_start_reg[11]_0\(8) => \GEN_DETECTION.U_tc_DET_n_83\,
+      \hsync_start_reg[11]_0\(7) => \GEN_DETECTION.U_tc_DET_n_84\,
+      \hsync_start_reg[11]_0\(6) => \GEN_DETECTION.U_tc_DET_n_85\,
+      \hsync_start_reg[11]_0\(5) => \GEN_DETECTION.U_tc_DET_n_86\,
+      \hsync_start_reg[11]_0\(4) => \GEN_DETECTION.U_tc_DET_n_87\,
+      \hsync_start_reg[11]_0\(3) => \GEN_DETECTION.U_tc_DET_n_88\,
+      \hsync_start_reg[11]_0\(2) => \GEN_DETECTION.U_tc_DET_n_89\,
+      \hsync_start_reg[11]_0\(1) => \GEN_DETECTION.U_tc_DET_n_90\,
+      \hsync_start_reg[11]_0\(0) => \GEN_DETECTION.U_tc_DET_n_91\,
       intc_if(0) => \^intc_if\(11),
-      \intr_status_int_reg[13]\ => \GEN_DETECTION.U_tc_DET_n_89\,
+      \intr_status_int_reg[13]\ => \GEN_DETECTION.U_tc_DET_n_65\,
       \p_0_in__0\(11 downto 0) => \p_0_in__0\(11 downto 0),
       p_5_in => p_5_in,
       reg_update => reg_update,
@@ -48146,7 +48146,7 @@ begin
       \v0total_reg[11]_0\(2) => \GEN_DETECTION.U_tc_DET_n_296\,
       \v0total_reg[11]_0\(1) => \GEN_DETECTION.U_tc_DET_n_297\,
       \v0total_reg[11]_0\(0) => \GEN_DETECTION.U_tc_DET_n_298\,
-      \v0total_reg[4]_0\ => \GEN_DETECTION.U_tc_DET_n_103\,
+      \v0total_reg[4]_0\ => \GEN_DETECTION.U_tc_DET_n_79\,
       \v0total_reg[8]_0\(3) => \GEN_DETECTION.U_tc_DET_n_292\,
       \v0total_reg[8]_0\(2) => \GEN_DETECTION.U_tc_DET_n_293\,
       \v0total_reg[8]_0\(1) => \GEN_DETECTION.U_tc_DET_n_294\,
@@ -73492,7 +73492,7 @@ architecture STRUCTURE of design_1_v_tc_0_1 is
   attribute x_interface_info of active_video_out : signal is "xilinx.com:interface:video_timing:2.0 vtiming_out ACTIVE_VIDEO";
   attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk_intf CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF vtiming_in:vtiming_out, ASSOCIATED_RESET resetn, ASSOCIATED_CLKEN clken, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0";
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF vtiming_in:vtiming_out, ASSOCIATED_RESET resetn, ASSOCIATED_CLKEN clken, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of clken : signal is "xilinx.com:signal:clockenable:1.0 clken_intf CE";
   attribute x_interface_parameter of clken : signal is "XIL_INTERFACENAME clken_intf, POLARITY ACTIVE_LOW";
   attribute x_interface_info of hblank_in : signal is "xilinx.com:interface:video_timing:2.0 vtiming_in HBLANK";
@@ -73504,7 +73504,7 @@ architecture STRUCTURE of design_1_v_tc_0_1 is
   attribute x_interface_info of resetn : signal is "xilinx.com:signal:reset:1.0 resetn_intf RST";
   attribute x_interface_parameter of resetn : signal is "XIL_INTERFACENAME resetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aclk : signal is "xilinx.com:signal:clock:1.0 s_axi_aclk_intf CLK";
-  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aclken : signal is "xilinx.com:signal:clockenable:1.0 s_axi_aclken_intf CE";
   attribute x_interface_parameter of s_axi_aclken : signal is "XIL_INTERFACENAME s_axi_aclken_intf, POLARITY ACTIVE_LOW";
   attribute x_interface_info of s_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 s_axi_aresetn_intf RST";
@@ -73525,7 +73525,7 @@ architecture STRUCTURE of design_1_v_tc_0_1 is
   attribute x_interface_info of vsync_out : signal is "xilinx.com:interface:video_timing:2.0 vtiming_out VSYNC";
   attribute x_interface_info of s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 ctrl ARADDR";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 ctrl AWADDR";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 25000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 ctrl BRESP";
   attribute x_interface_info of s_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 ctrl RDATA";
   attribute x_interface_info of s_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 ctrl RRESP";

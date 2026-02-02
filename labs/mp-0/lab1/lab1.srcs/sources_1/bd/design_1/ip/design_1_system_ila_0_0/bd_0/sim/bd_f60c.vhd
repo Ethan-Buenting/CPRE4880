@@ -55,7 +55,16 @@ entity bd_f60c is
     SLOT_2_AXI_wlast : in STD_LOGIC;
     SLOT_2_AXI_wready : in STD_LOGIC;
     SLOT_2_AXI_wvalid : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_active_video : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_hsync : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vblank : in STD_LOGIC;
+    SLOT_3_VIDEO_TIMING_vsync : in STD_LOGIC;
     clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
     resetn : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
@@ -68,47 +77,56 @@ architecture STRUCTURE of bd_f60c is
   component bd_f60c_ila_lib_0 is
   port (
     clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe5 : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    probe6 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe0 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe6 : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     probe8 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe9 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe10 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     probe11 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe12 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe13 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe14 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe13 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe14 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe15 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe16 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe17 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe16 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe17 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     probe18 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     probe19 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe20 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe21 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe22 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe23 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe24 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe25 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe26 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe27 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe28 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe29 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe30 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe31 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe32 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe33 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe34 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe35 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe20 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe21 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe22 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe23 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe24 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe25 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe26 : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    probe27 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe28 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe29 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe30 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe31 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe32 : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    probe33 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe34 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe35 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     probe36 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe37 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe37 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe38 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe39 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe40 : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    probe39 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe40 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe41 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe42 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe43 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe44 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe45 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe46 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe47 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe48 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe49 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component bd_f60c_ila_lib_0;
   component bd_f60c_g_inst_0 is
@@ -330,6 +348,11 @@ architecture STRUCTURE of bd_f60c is
   signal Conn_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal Conn_WVALID : STD_LOGIC;
   signal SLOT_0_GPIO_tri_o_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal SLOT_3_VIDEO_TIMING_active_video_1 : STD_LOGIC;
+  signal SLOT_3_VIDEO_TIMING_hblank_1 : STD_LOGIC;
+  signal SLOT_3_VIDEO_TIMING_hsync_1 : STD_LOGIC;
+  signal SLOT_3_VIDEO_TIMING_vblank_1 : STD_LOGIC;
+  signal SLOT_3_VIDEO_TIMING_vsync_1 : STD_LOGIC;
   signal clk_1 : STD_LOGIC;
   signal net_slot_1_axi_ar_cnt : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal net_slot_1_axi_ar_ctrl : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -393,6 +416,10 @@ architecture STRUCTURE of bd_f60c is
   signal net_slot_2_axi_wlast : STD_LOGIC;
   signal net_slot_2_axi_wready : STD_LOGIC;
   signal net_slot_2_axi_wvalid : STD_LOGIC;
+  signal probe0_1 : STD_LOGIC_VECTOR ( 23 downto 0 );
+  signal probe1_1 : STD_LOGIC_VECTOR ( 23 downto 0 );
+  signal probe2_1 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal probe3_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal resetn_1 : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of SLOT_1_AXI_arready : signal is "xilinx.com:interface:aximm:1.0 SLOT_1_AXI ARREADY";
@@ -417,14 +444,19 @@ architecture STRUCTURE of bd_f60c is
   attribute X_INTERFACE_INFO of SLOT_2_AXI_wlast : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WLAST";
   attribute X_INTERFACE_INFO of SLOT_2_AXI_wready : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WREADY";
   attribute X_INTERFACE_INFO of SLOT_2_AXI_wvalid : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WVALID";
+  attribute X_INTERFACE_INFO of SLOT_3_VIDEO_TIMING_active_video : signal is "xilinx.com:interface:video_timing:2.0 SLOT_3_VIDEO_TIMING ACTIVE_VIDEO";
+  attribute X_INTERFACE_INFO of SLOT_3_VIDEO_TIMING_hblank : signal is "xilinx.com:interface:video_timing:2.0 SLOT_3_VIDEO_TIMING HBLANK";
+  attribute X_INTERFACE_INFO of SLOT_3_VIDEO_TIMING_hsync : signal is "xilinx.com:interface:video_timing:2.0 SLOT_3_VIDEO_TIMING HSYNC";
+  attribute X_INTERFACE_INFO of SLOT_3_VIDEO_TIMING_vblank : signal is "xilinx.com:interface:video_timing:2.0 SLOT_3_VIDEO_TIMING VBLANK";
+  attribute X_INTERFACE_INFO of SLOT_3_VIDEO_TIMING_vsync : signal is "xilinx.com:interface:video_timing:2.0 SLOT_3_VIDEO_TIMING VSYNC";
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 CLK.CLK CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_1_AXI:SLOT_2_AXI, ASSOCIATED_RESET resetn, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000";
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_1_AXI:SLOT_2_AXI, ASSOCIATED_RESET resetn, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000";
   attribute X_INTERFACE_INFO of resetn : signal is "xilinx.com:signal:reset:1.0 RST.RESETN RST";
   attribute X_INTERFACE_PARAMETER of resetn : signal is "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW";
   attribute X_INTERFACE_INFO of SLOT_0_GPIO_tri_o : signal is "xilinx.com:interface:gpio:1.0 SLOT_0_GPIO TRI_O";
   attribute X_INTERFACE_INFO of SLOT_1_AXI_araddr : signal is "xilinx.com:interface:aximm:1.0 SLOT_1_AXI ARADDR";
-  attribute X_INTERFACE_PARAMETER of SLOT_1_AXI_araddr : signal is "XIL_INTERFACENAME SLOT_1_AXI, ADDR_WIDTH 9, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
+  attribute X_INTERFACE_PARAMETER of SLOT_1_AXI_araddr : signal is "XIL_INTERFACENAME SLOT_1_AXI, ADDR_WIDTH 9, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 25000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of SLOT_1_AXI_arprot : signal is "xilinx.com:interface:aximm:1.0 SLOT_1_AXI ARPROT";
   attribute X_INTERFACE_INFO of SLOT_1_AXI_awaddr : signal is "xilinx.com:interface:aximm:1.0 SLOT_1_AXI AWADDR";
   attribute X_INTERFACE_INFO of SLOT_1_AXI_awprot : signal is "xilinx.com:interface:aximm:1.0 SLOT_1_AXI AWPROT";
@@ -434,7 +466,7 @@ architecture STRUCTURE of bd_f60c is
   attribute X_INTERFACE_INFO of SLOT_1_AXI_wdata : signal is "xilinx.com:interface:aximm:1.0 SLOT_1_AXI WDATA";
   attribute X_INTERFACE_INFO of SLOT_1_AXI_wstrb : signal is "xilinx.com:interface:aximm:1.0 SLOT_1_AXI WSTRB";
   attribute X_INTERFACE_INFO of SLOT_2_AXI_araddr : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARADDR";
-  attribute X_INTERFACE_PARAMETER of SLOT_2_AXI_araddr : signal is "XIL_INTERFACENAME SLOT_2_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 100000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 16, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 8, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
+  attribute X_INTERFACE_PARAMETER of SLOT_2_AXI_araddr : signal is "XIL_INTERFACENAME SLOT_2_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 25000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 16, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 8, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of SLOT_2_AXI_arcache : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARCACHE";
   attribute X_INTERFACE_INFO of SLOT_2_AXI_arlen : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARLEN";
   attribute X_INTERFACE_INFO of SLOT_2_AXI_arprot : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARPROT";
@@ -493,7 +525,16 @@ begin
   Conn_WSTRB(3 downto 0) <= SLOT_1_AXI_wstrb(3 downto 0);
   Conn_WVALID <= SLOT_1_AXI_wvalid;
   SLOT_0_GPIO_tri_o_1(7 downto 0) <= SLOT_0_GPIO_tri_o(7 downto 0);
+  SLOT_3_VIDEO_TIMING_active_video_1 <= SLOT_3_VIDEO_TIMING_active_video;
+  SLOT_3_VIDEO_TIMING_hblank_1 <= SLOT_3_VIDEO_TIMING_hblank;
+  SLOT_3_VIDEO_TIMING_hsync_1 <= SLOT_3_VIDEO_TIMING_hsync;
+  SLOT_3_VIDEO_TIMING_vblank_1 <= SLOT_3_VIDEO_TIMING_vblank;
+  SLOT_3_VIDEO_TIMING_vsync_1 <= SLOT_3_VIDEO_TIMING_vsync;
   clk_1 <= clk;
+  probe0_1(23 downto 0) <= probe0(23 downto 0);
+  probe1_1(23 downto 0) <= probe1(23 downto 0);
+  probe2_1(0) <= probe2(0);
+  probe3_1(0) <= probe3(0);
   resetn_1 <= resetn;
 g_inst: component bd_f60c_g_inst_0
      port map (
@@ -599,47 +640,56 @@ g_inst: component bd_f60c_g_inst_0
 ila_lib: component bd_f60c_ila_lib_0
      port map (
       clk => clk_1,
-      probe0(7 downto 0) => SLOT_0_GPIO_tri_o_1(7 downto 0),
-      probe1(1 downto 0) => net_slot_1_axi_ar_cnt(1 downto 0),
-      probe10(31 downto 0) => net_slot_1_axi_rdata(31 downto 0),
-      probe11(1 downto 0) => net_slot_1_axi_rresp(1 downto 0),
-      probe12(31 downto 0) => net_slot_1_axi_wdata(31 downto 0),
-      probe13(3 downto 0) => net_slot_1_axi_wstrb(3 downto 0),
-      probe14(1 downto 0) => net_slot_1_axi_aw_ctrl(1 downto 0),
-      probe15(1 downto 0) => net_slot_1_axi_w_ctrl(1 downto 0),
-      probe16(1 downto 0) => net_slot_1_axi_b_ctrl(1 downto 0),
-      probe17(1 downto 0) => net_slot_1_axi_ar_ctrl(1 downto 0),
-      probe18(1 downto 0) => net_slot_1_axi_r_ctrl(1 downto 0),
-      probe19(1 downto 0) => net_slot_2_axi_ar_cnt(1 downto 0),
-      probe2(8 downto 0) => net_slot_1_axi_araddr(8 downto 0),
-      probe20(31 downto 0) => net_slot_2_axi_araddr(31 downto 0),
-      probe21(3 downto 0) => net_slot_2_axi_arcache(3 downto 0),
-      probe22(7 downto 0) => net_slot_2_axi_arlen(7 downto 0),
-      probe23(2 downto 0) => net_slot_2_axi_arprot(2 downto 0),
-      probe24(2 downto 0) => net_slot_2_axi_arsize(2 downto 0),
-      probe25(1 downto 0) => net_slot_2_axi_aw_cnt(1 downto 0),
-      probe26(31 downto 0) => net_slot_2_axi_awaddr(31 downto 0),
-      probe27(3 downto 0) => net_slot_2_axi_awcache(3 downto 0),
-      probe28(7 downto 0) => net_slot_2_axi_awlen(7 downto 0),
-      probe29(2 downto 0) => net_slot_2_axi_awprot(2 downto 0),
-      probe3(2 downto 0) => net_slot_1_axi_arprot(2 downto 0),
-      probe30(2 downto 0) => net_slot_2_axi_awsize(2 downto 0),
-      probe31(1 downto 0) => net_slot_2_axi_b_cnt(1 downto 0),
-      probe32(1 downto 0) => net_slot_2_axi_r_cnt(1 downto 0),
-      probe33(31 downto 0) => net_slot_2_axi_rdata(31 downto 0),
-      probe34(1 downto 0) => net_slot_2_axi_rresp(1 downto 0),
-      probe35(31 downto 0) => net_slot_2_axi_wdata(31 downto 0),
-      probe36(1 downto 0) => net_slot_2_axi_aw_ctrl(1 downto 0),
-      probe37(2 downto 0) => net_slot_2_axi_w_ctrl(2 downto 0),
-      probe38(1 downto 0) => net_slot_2_axi_b_ctrl(1 downto 0),
-      probe39(1 downto 0) => net_slot_2_axi_ar_ctrl(1 downto 0),
-      probe4(1 downto 0) => net_slot_1_axi_aw_cnt(1 downto 0),
-      probe40(2 downto 0) => net_slot_2_axi_r_ctrl(2 downto 0),
-      probe5(8 downto 0) => net_slot_1_axi_awaddr(8 downto 0),
-      probe6(2 downto 0) => net_slot_1_axi_awprot(2 downto 0),
-      probe7(1 downto 0) => net_slot_1_axi_b_cnt(1 downto 0),
-      probe8(1 downto 0) => net_slot_1_axi_bresp(1 downto 0),
-      probe9(1 downto 0) => net_slot_1_axi_r_cnt(1 downto 0)
+      probe0(23 downto 0) => probe0_1(23 downto 0),
+      probe1(23 downto 0) => probe1_1(23 downto 0),
+      probe10(2 downto 0) => net_slot_1_axi_awprot(2 downto 0),
+      probe11(1 downto 0) => net_slot_1_axi_b_cnt(1 downto 0),
+      probe12(1 downto 0) => net_slot_1_axi_bresp(1 downto 0),
+      probe13(1 downto 0) => net_slot_1_axi_r_cnt(1 downto 0),
+      probe14(31 downto 0) => net_slot_1_axi_rdata(31 downto 0),
+      probe15(1 downto 0) => net_slot_1_axi_rresp(1 downto 0),
+      probe16(31 downto 0) => net_slot_1_axi_wdata(31 downto 0),
+      probe17(3 downto 0) => net_slot_1_axi_wstrb(3 downto 0),
+      probe18(1 downto 0) => net_slot_1_axi_aw_ctrl(1 downto 0),
+      probe19(1 downto 0) => net_slot_1_axi_w_ctrl(1 downto 0),
+      probe2(0) => probe2_1(0),
+      probe20(1 downto 0) => net_slot_1_axi_b_ctrl(1 downto 0),
+      probe21(1 downto 0) => net_slot_1_axi_ar_ctrl(1 downto 0),
+      probe22(1 downto 0) => net_slot_1_axi_r_ctrl(1 downto 0),
+      probe23(1 downto 0) => net_slot_2_axi_ar_cnt(1 downto 0),
+      probe24(31 downto 0) => net_slot_2_axi_araddr(31 downto 0),
+      probe25(3 downto 0) => net_slot_2_axi_arcache(3 downto 0),
+      probe26(7 downto 0) => net_slot_2_axi_arlen(7 downto 0),
+      probe27(2 downto 0) => net_slot_2_axi_arprot(2 downto 0),
+      probe28(2 downto 0) => net_slot_2_axi_arsize(2 downto 0),
+      probe29(1 downto 0) => net_slot_2_axi_aw_cnt(1 downto 0),
+      probe3(0) => probe3_1(0),
+      probe30(31 downto 0) => net_slot_2_axi_awaddr(31 downto 0),
+      probe31(3 downto 0) => net_slot_2_axi_awcache(3 downto 0),
+      probe32(7 downto 0) => net_slot_2_axi_awlen(7 downto 0),
+      probe33(2 downto 0) => net_slot_2_axi_awprot(2 downto 0),
+      probe34(2 downto 0) => net_slot_2_axi_awsize(2 downto 0),
+      probe35(1 downto 0) => net_slot_2_axi_b_cnt(1 downto 0),
+      probe36(1 downto 0) => net_slot_2_axi_r_cnt(1 downto 0),
+      probe37(31 downto 0) => net_slot_2_axi_rdata(31 downto 0),
+      probe38(1 downto 0) => net_slot_2_axi_rresp(1 downto 0),
+      probe39(31 downto 0) => net_slot_2_axi_wdata(31 downto 0),
+      probe4(7 downto 0) => SLOT_0_GPIO_tri_o_1(7 downto 0),
+      probe40(1 downto 0) => net_slot_2_axi_aw_ctrl(1 downto 0),
+      probe41(2 downto 0) => net_slot_2_axi_w_ctrl(2 downto 0),
+      probe42(1 downto 0) => net_slot_2_axi_b_ctrl(1 downto 0),
+      probe43(1 downto 0) => net_slot_2_axi_ar_ctrl(1 downto 0),
+      probe44(2 downto 0) => net_slot_2_axi_r_ctrl(2 downto 0),
+      probe45(0) => SLOT_3_VIDEO_TIMING_active_video_1,
+      probe46(0) => SLOT_3_VIDEO_TIMING_hblank_1,
+      probe47(0) => SLOT_3_VIDEO_TIMING_hsync_1,
+      probe48(0) => SLOT_3_VIDEO_TIMING_vblank_1,
+      probe49(0) => SLOT_3_VIDEO_TIMING_vsync_1,
+      probe5(1 downto 0) => net_slot_1_axi_ar_cnt(1 downto 0),
+      probe6(8 downto 0) => net_slot_1_axi_araddr(8 downto 0),
+      probe7(2 downto 0) => net_slot_1_axi_arprot(2 downto 0),
+      probe8(1 downto 0) => net_slot_1_axi_aw_cnt(1 downto 0),
+      probe9(8 downto 0) => net_slot_1_axi_awaddr(8 downto 0)
     );
 slot_1_ar: component bd_f60c_slot_1_ar_0
      port map (

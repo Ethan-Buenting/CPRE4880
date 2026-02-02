@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri Jan 30 15:05:07 2026
+// Date        : Mon Feb  2 13:30:35 2026
 // Host        : CO2041-15 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.v
@@ -14,20 +14,27 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "bd_f60c,Vivado 2020.1" *)
-module design_1_system_ila_0_0(clk, SLOT_0_GPIO_tri_o, SLOT_1_AXI_awaddr, 
-  SLOT_1_AXI_awprot, SLOT_1_AXI_awvalid, SLOT_1_AXI_awready, SLOT_1_AXI_wdata, 
-  SLOT_1_AXI_wstrb, SLOT_1_AXI_wvalid, SLOT_1_AXI_wready, SLOT_1_AXI_bresp, 
-  SLOT_1_AXI_bvalid, SLOT_1_AXI_bready, SLOT_1_AXI_araddr, SLOT_1_AXI_arprot, 
-  SLOT_1_AXI_arvalid, SLOT_1_AXI_arready, SLOT_1_AXI_rdata, SLOT_1_AXI_rresp, 
-  SLOT_1_AXI_rvalid, SLOT_1_AXI_rready, SLOT_2_AXI_awaddr, SLOT_2_AXI_awlen, 
-  SLOT_2_AXI_awsize, SLOT_2_AXI_awcache, SLOT_2_AXI_awprot, SLOT_2_AXI_awvalid, 
-  SLOT_2_AXI_awready, SLOT_2_AXI_wdata, SLOT_2_AXI_wlast, SLOT_2_AXI_wvalid, 
-  SLOT_2_AXI_wready, SLOT_2_AXI_bvalid, SLOT_2_AXI_bready, SLOT_2_AXI_araddr, 
-  SLOT_2_AXI_arlen, SLOT_2_AXI_arsize, SLOT_2_AXI_arcache, SLOT_2_AXI_arprot, 
-  SLOT_2_AXI_arvalid, SLOT_2_AXI_arready, SLOT_2_AXI_rdata, SLOT_2_AXI_rresp, 
-  SLOT_2_AXI_rlast, SLOT_2_AXI_rvalid, SLOT_2_AXI_rready, resetn)
-/* synthesis syn_black_box black_box_pad_pin="clk,SLOT_0_GPIO_tri_o[7:0],SLOT_1_AXI_awaddr[8:0],SLOT_1_AXI_awprot[2:0],SLOT_1_AXI_awvalid,SLOT_1_AXI_awready,SLOT_1_AXI_wdata[31:0],SLOT_1_AXI_wstrb[3:0],SLOT_1_AXI_wvalid,SLOT_1_AXI_wready,SLOT_1_AXI_bresp[1:0],SLOT_1_AXI_bvalid,SLOT_1_AXI_bready,SLOT_1_AXI_araddr[8:0],SLOT_1_AXI_arprot[2:0],SLOT_1_AXI_arvalid,SLOT_1_AXI_arready,SLOT_1_AXI_rdata[31:0],SLOT_1_AXI_rresp[1:0],SLOT_1_AXI_rvalid,SLOT_1_AXI_rready,SLOT_2_AXI_awaddr[31:0],SLOT_2_AXI_awlen[7:0],SLOT_2_AXI_awsize[2:0],SLOT_2_AXI_awcache[3:0],SLOT_2_AXI_awprot[2:0],SLOT_2_AXI_awvalid,SLOT_2_AXI_awready,SLOT_2_AXI_wdata[31:0],SLOT_2_AXI_wlast,SLOT_2_AXI_wvalid,SLOT_2_AXI_wready,SLOT_2_AXI_bvalid,SLOT_2_AXI_bready,SLOT_2_AXI_araddr[31:0],SLOT_2_AXI_arlen[7:0],SLOT_2_AXI_arsize[2:0],SLOT_2_AXI_arcache[3:0],SLOT_2_AXI_arprot[2:0],SLOT_2_AXI_arvalid,SLOT_2_AXI_arready,SLOT_2_AXI_rdata[31:0],SLOT_2_AXI_rresp[1:0],SLOT_2_AXI_rlast,SLOT_2_AXI_rvalid,SLOT_2_AXI_rready,resetn" */;
+module design_1_system_ila_0_0(clk, probe0, probe1, probe2, probe3, 
+  SLOT_0_GPIO_tri_o, SLOT_1_AXI_awaddr, SLOT_1_AXI_awprot, SLOT_1_AXI_awvalid, 
+  SLOT_1_AXI_awready, SLOT_1_AXI_wdata, SLOT_1_AXI_wstrb, SLOT_1_AXI_wvalid, 
+  SLOT_1_AXI_wready, SLOT_1_AXI_bresp, SLOT_1_AXI_bvalid, SLOT_1_AXI_bready, 
+  SLOT_1_AXI_araddr, SLOT_1_AXI_arprot, SLOT_1_AXI_arvalid, SLOT_1_AXI_arready, 
+  SLOT_1_AXI_rdata, SLOT_1_AXI_rresp, SLOT_1_AXI_rvalid, SLOT_1_AXI_rready, 
+  SLOT_2_AXI_awaddr, SLOT_2_AXI_awlen, SLOT_2_AXI_awsize, SLOT_2_AXI_awcache, 
+  SLOT_2_AXI_awprot, SLOT_2_AXI_awvalid, SLOT_2_AXI_awready, SLOT_2_AXI_wdata, 
+  SLOT_2_AXI_wlast, SLOT_2_AXI_wvalid, SLOT_2_AXI_wready, SLOT_2_AXI_bvalid, 
+  SLOT_2_AXI_bready, SLOT_2_AXI_araddr, SLOT_2_AXI_arlen, SLOT_2_AXI_arsize, 
+  SLOT_2_AXI_arcache, SLOT_2_AXI_arprot, SLOT_2_AXI_arvalid, SLOT_2_AXI_arready, 
+  SLOT_2_AXI_rdata, SLOT_2_AXI_rresp, SLOT_2_AXI_rlast, SLOT_2_AXI_rvalid, 
+  SLOT_2_AXI_rready, SLOT_3_VIDEO_TIMING_active_video, SLOT_3_VIDEO_TIMING_hblank, 
+  SLOT_3_VIDEO_TIMING_vblank, SLOT_3_VIDEO_TIMING_hsync, SLOT_3_VIDEO_TIMING_vsync, 
+  resetn)
+/* synthesis syn_black_box black_box_pad_pin="clk,probe0[23:0],probe1[23:0],probe2[0:0],probe3[0:0],SLOT_0_GPIO_tri_o[7:0],SLOT_1_AXI_awaddr[8:0],SLOT_1_AXI_awprot[2:0],SLOT_1_AXI_awvalid,SLOT_1_AXI_awready,SLOT_1_AXI_wdata[31:0],SLOT_1_AXI_wstrb[3:0],SLOT_1_AXI_wvalid,SLOT_1_AXI_wready,SLOT_1_AXI_bresp[1:0],SLOT_1_AXI_bvalid,SLOT_1_AXI_bready,SLOT_1_AXI_araddr[8:0],SLOT_1_AXI_arprot[2:0],SLOT_1_AXI_arvalid,SLOT_1_AXI_arready,SLOT_1_AXI_rdata[31:0],SLOT_1_AXI_rresp[1:0],SLOT_1_AXI_rvalid,SLOT_1_AXI_rready,SLOT_2_AXI_awaddr[31:0],SLOT_2_AXI_awlen[7:0],SLOT_2_AXI_awsize[2:0],SLOT_2_AXI_awcache[3:0],SLOT_2_AXI_awprot[2:0],SLOT_2_AXI_awvalid,SLOT_2_AXI_awready,SLOT_2_AXI_wdata[31:0],SLOT_2_AXI_wlast,SLOT_2_AXI_wvalid,SLOT_2_AXI_wready,SLOT_2_AXI_bvalid,SLOT_2_AXI_bready,SLOT_2_AXI_araddr[31:0],SLOT_2_AXI_arlen[7:0],SLOT_2_AXI_arsize[2:0],SLOT_2_AXI_arcache[3:0],SLOT_2_AXI_arprot[2:0],SLOT_2_AXI_arvalid,SLOT_2_AXI_arready,SLOT_2_AXI_rdata[31:0],SLOT_2_AXI_rresp[1:0],SLOT_2_AXI_rlast,SLOT_2_AXI_rvalid,SLOT_2_AXI_rready,SLOT_3_VIDEO_TIMING_active_video,SLOT_3_VIDEO_TIMING_hblank,SLOT_3_VIDEO_TIMING_vblank,SLOT_3_VIDEO_TIMING_hsync,SLOT_3_VIDEO_TIMING_vsync,resetn" */;
   input clk;
+  input [23:0]probe0;
+  input [23:0]probe1;
+  input [0:0]probe2;
+  input [0:0]probe3;
   input [7:0]SLOT_0_GPIO_tri_o;
   input [8:0]SLOT_1_AXI_awaddr;
   input [2:0]SLOT_1_AXI_awprot;
@@ -73,5 +80,10 @@ module design_1_system_ila_0_0(clk, SLOT_0_GPIO_tri_o, SLOT_1_AXI_awaddr,
   input SLOT_2_AXI_rlast;
   input SLOT_2_AXI_rvalid;
   input SLOT_2_AXI_rready;
+  input SLOT_3_VIDEO_TIMING_active_video;
+  input SLOT_3_VIDEO_TIMING_hblank;
+  input SLOT_3_VIDEO_TIMING_vblank;
+  input SLOT_3_VIDEO_TIMING_hsync;
+  input SLOT_3_VIDEO_TIMING_vsync;
   input resetn;
 endmodule

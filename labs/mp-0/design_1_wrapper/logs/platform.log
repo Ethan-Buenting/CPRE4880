@@ -15464,3 +15464,1814 @@ TRACE::2026-02-02.13:35:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre
 C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2026-02-02.13:35:59::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:50::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:50::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:50::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:51::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:51::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:51::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:51::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWReader::Active system found as  design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWDomain::checking for install qemu data   : 
+TRACE::2026-02-02.14:03:53::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-02-02.14:03:53::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-02-02.14:03:53::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-02-02.14:03:53::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:03:53::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:03:53::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:03:53::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2026-02-02.14:03:53::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:03:53::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:03:53::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:03:53::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-02-02.14:03:53::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:03:53::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWReader::No isolation master present  
+TRACE::2026-02-02.14:03:53::SCWDomain::checking for install qemu data   : 
+TRACE::2026-02-02.14:03:53::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-02-02.14:03:53::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:03:53::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2026-02-02.14:03:53::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:03:53::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:03:53::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:03:53::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:03:53::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-02-02.14:03:53::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:53::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:03:53::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:03:53::SCWReader::No isolation master present  
+TRACE::2026-02-02.14:03:59::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:59::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:59::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:59::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:03:59::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:59::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:03:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:03:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:03:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:03:59::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:59::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:59::SCWPlatform:: Platform location is C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:03:59::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:03:59::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:00::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:00::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:00::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::update - Opened existing hwdb design_1_wrapper_0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:00::SCWMssOS::Doing hw sync for the mss in domain: domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-02-02.14:04:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:00::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:00::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::update - Opened existing hwdb design_1_wrapper_0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:00::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:04:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:04:00::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:04:00::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-02-02.14:04:00::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:04:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:04:00::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:04:00::SCWMssOS::Completed hw sync for the mss in domain: domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:04:00::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:00::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-02-02.14:04:02::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:02::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2026-02-02.14:04:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-02-02.14:04:02::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-02-02.14:04:02::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:04:02::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:04:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:04:02::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:04:02::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2026-02-02.14:04:02::SCWMssOS::Writing the mss file completed C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:04:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:02::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2026-02-02.14:04:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:02::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:02::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2026-02-02.14:04:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:02::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:02::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/buenting/cpre4880/labs/mp-0/lab1/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"domain_ps7_cortexa9_0",
+			"sysDefaultDom":	"domain_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"9942495f931e7219553d4fa2d9960465",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"domain_ps7_cortexa9_0",
+					"domainDispName":	"domain_ps7_cortexa9_0",
+					"domainDesc":	"domain_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"7fb497b05e7fa148af2cf6db6c8b55c6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-02-02.14:04:48::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2026-02-02.14:04:48::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-02-02.14:04:48::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2026-02-02.14:04:48::SCWSystem::Checking the domain zynq_fsbl
+LOG::2026-02-02.14:04:48::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2026-02-02.14:04:48::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2026-02-02.14:04:48::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2026-02-02.14:04:48::SCWSystem::Checking the domain domain_ps7_cortexa9_0
+LOG::2026-02-02.14:04:48::SCWSystem::Not a boot domain 
+LOG::2026-02-02.14:04:48::SCWSystem::Started Processing the domain domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:04:48::SCWDomain::Generating domain artifcats
+TRACE::2026-02-02.14:04:48::SCWMssOS::Generating standalone artifcats
+TRACE::2026-02-02.14:04:48::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2026-02-02.14:04:48::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/qemu/
+TRACE::2026-02-02.14:04:48::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:48::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:48::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::Completed writing the mss file at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp
+TRACE::2026-02-02.14:04:48::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-02-02.14:04:48::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-02-02.14:04:48::SCWDomain::Skipping the build for domain :  domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:04:48::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-02-02.14:04:48::SCWMssOS::Copying to export directory.
+TRACE::2026-02-02.14:04:48::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-02-02.14:04:48::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-02-02.14:04:48::SCWSystem::Completed Processing the domain domain_ps7_cortexa9_0
+LOG::2026-02-02.14:04:48::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2026-02-02.14:04:48::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2026-02-02.14:04:48::SCWPlatform::Started preparing the platform 
+TRACE::2026-02-02.14:04:48::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2026-02-02.14:04:48::SCWSystem::dir created 
+TRACE::2026-02-02.14:04:48::SCWSystem::Writing the bif 
+TRACE::2026-02-02.14:04:48::SCWPlatform::Started writing the spfm file 
+TRACE::2026-02-02.14:04:48::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-02-02.14:04:48::SCWPlatform::Completed generating the platform
+TRACE::2026-02-02.14:04:48::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:04:48::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:04:48::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:04:48::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:04:48::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:04:48::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:48::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:48::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:48::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:48::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/buenting/cpre4880/labs/mp-0/lab1/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"domain_ps7_cortexa9_0",
+			"sysDefaultDom":	"domain_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"9942495f931e7219553d4fa2d9960465",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"domain_ps7_cortexa9_0",
+					"domainDispName":	"domain_ps7_cortexa9_0",
+					"domainDesc":	"domain_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"7fb497b05e7fa148af2cf6db6c8b55c6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-02-02.14:04:48::SCWPlatform::updated the xpfm file.
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:04:48::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:04:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2026-02-02.14:04:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:04:48::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:04:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:04:48::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:00::SCWPlatform::Clearing the existing platform
+TRACE::2026-02-02.14:31:00::SCWSystem::Clearing the existing sysconfig
+TRACE::2026-02-02.14:31:00::SCWBDomain::clearing the fsbl build
+TRACE::2026-02-02.14:31:00::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:00::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:00::SCWSystem::Clearing the domains completed.
+TRACE::2026-02-02.14:31:00::SCWPlatform::Clearing the opened hw db.
+TRACE::2026-02-02.14:31:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform:: Platform location is C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:00::SCWPlatform::Removing the HwDB with name C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:00::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:00::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened new HwDB with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWReader::Active system found as  design_1_wrapper
+TRACE::2026-02-02.14:31:02::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2026-02-02.14:31:02::SCWDomain::checking for install qemu data   : 
+TRACE::2026-02-02.14:31:02::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-02-02.14:31:02::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-02-02.14:31:02::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-02-02.14:31:02::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:31:02::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2026-02-02.14:31:02::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:31:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:31:02::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:31:02::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-02-02.14:31:02::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWReader::No isolation master present  
+TRACE::2026-02-02.14:31:02::SCWDomain::checking for install qemu data   : 
+TRACE::2026-02-02.14:31:02::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-02-02.14:31:02::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:31:02::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2026-02-02.14:31:02::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:31:02::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:31:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:31:02::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:31:02::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-02-02.14:31:02::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:31:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:31:02::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:31:02::SCWReader::No isolation master present  
+TRACE::2026-02-02.14:32:38::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:38::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:38::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:38::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:38::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:32:38::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:32:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:38::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:38::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:38::SCWPlatform:: Platform location is C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:32:38::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:40::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:40::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:40::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::update - Opened existing hwdb design_1_wrapper_5
+TRACE::2026-02-02.14:32:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:40::SCWMssOS::Doing hw sync for the mss in domain: domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-02-02.14:32:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:40::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:40::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::update - Opened existing hwdb design_1_wrapper_5
+TRACE::2026-02-02.14:32:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:40::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:32:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:32:40::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:32:40::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-02-02.14:32:40::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:32:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:32:40::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:32:40::SCWMssOS::Completed hw sync for the mss in domain: domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:32:40::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:40::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:40::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-02-02.14:32:42::SCWPlatform::Opened new HwDB with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:42::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:42::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:42::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-02-02.14:32:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:42::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-02-02.14:32:42::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-02-02.14:32:42::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:32:42::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:32:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:32:42::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:32:42::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2026-02-02.14:32:42::SCWMssOS::Writing the mss file completed C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:32:42::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:42::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:42::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-02-02.14:32:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:42::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:42::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:42::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:42::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-02-02.14:32:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:42::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:42::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:42::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/buenting/cpre4880/labs/mp-0/lab1/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"domain_ps7_cortexa9_0",
+			"sysDefaultDom":	"domain_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"9942495f931e7219553d4fa2d9960465",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"domain_ps7_cortexa9_0",
+					"domainDispName":	"domain_ps7_cortexa9_0",
+					"domainDesc":	"domain_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"7fb497b05e7fa148af2cf6db6c8b55c6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-02-02.14:32:47::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2026-02-02.14:32:47::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-02-02.14:32:47::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2026-02-02.14:32:47::SCWSystem::Checking the domain zynq_fsbl
+LOG::2026-02-02.14:32:47::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2026-02-02.14:32:47::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2026-02-02.14:32:47::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2026-02-02.14:32:47::SCWSystem::Checking the domain domain_ps7_cortexa9_0
+LOG::2026-02-02.14:32:47::SCWSystem::Not a boot domain 
+LOG::2026-02-02.14:32:47::SCWSystem::Started Processing the domain domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:32:47::SCWDomain::Generating domain artifcats
+TRACE::2026-02-02.14:32:47::SCWMssOS::Generating standalone artifcats
+TRACE::2026-02-02.14:32:47::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2026-02-02.14:32:47::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/qemu/
+TRACE::2026-02-02.14:32:47::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:47::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:47::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::Completed writing the mss file at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp
+TRACE::2026-02-02.14:32:47::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-02-02.14:32:47::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-02-02.14:32:47::SCWDomain::Skipping the build for domain :  domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:32:47::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-02-02.14:32:47::SCWMssOS::Copying to export directory.
+TRACE::2026-02-02.14:32:47::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-02-02.14:32:47::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-02-02.14:32:47::SCWSystem::Completed Processing the domain domain_ps7_cortexa9_0
+LOG::2026-02-02.14:32:47::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2026-02-02.14:32:47::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2026-02-02.14:32:47::SCWPlatform::Started preparing the platform 
+TRACE::2026-02-02.14:32:47::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2026-02-02.14:32:47::SCWSystem::dir created 
+TRACE::2026-02-02.14:32:47::SCWSystem::Writing the bif 
+TRACE::2026-02-02.14:32:47::SCWPlatform::Started writing the spfm file 
+TRACE::2026-02-02.14:32:47::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-02-02.14:32:47::SCWPlatform::Completed generating the platform
+TRACE::2026-02-02.14:32:47::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:32:47::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:32:47::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:32:47::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:32:47::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:32:47::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:47::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:47::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:47::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:47::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/buenting/cpre4880/labs/mp-0/lab1/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"domain_ps7_cortexa9_0",
+			"sysDefaultDom":	"domain_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"9942495f931e7219553d4fa2d9960465",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"domain_ps7_cortexa9_0",
+					"domainDispName":	"domain_ps7_cortexa9_0",
+					"domainDesc":	"domain_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"7fb497b05e7fa148af2cf6db6c8b55c6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-02-02.14:32:47::SCWPlatform::updated the xpfm file.
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:32:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:32:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-02-02.14:32:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:32:47::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:32:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:32:47::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:22::SCWPlatform::Clearing the existing platform
+TRACE::2026-02-02.14:58:22::SCWSystem::Clearing the existing sysconfig
+TRACE::2026-02-02.14:58:22::SCWBDomain::clearing the fsbl build
+TRACE::2026-02-02.14:58:22::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:22::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:22::SCWSystem::Clearing the domains completed.
+TRACE::2026-02-02.14:58:22::SCWPlatform::Clearing the opened hw db.
+TRACE::2026-02-02.14:58:22::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform:: Platform location is C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:22::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:22::SCWPlatform::Removing the HwDB with name C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:22::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:22::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:22::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened new HwDB with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWReader::Active system found as  design_1_wrapper
+TRACE::2026-02-02.14:58:23::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2026-02-02.14:58:23::SCWDomain::checking for install qemu data   : 
+TRACE::2026-02-02.14:58:23::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-02-02.14:58:23::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-02-02.14:58:23::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-02-02.14:58:23::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:58:23::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:23::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:23::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2026-02-02.14:58:23::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:58:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:58:23::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:58:23::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-02-02.14:58:23::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:23::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWReader::No isolation master present  
+TRACE::2026-02-02.14:58:23::SCWDomain::checking for install qemu data   : 
+TRACE::2026-02-02.14:58:23::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-02-02.14:58:23::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:23::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2026-02-02.14:58:23::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:58:23::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:58:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:58:23::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:58:23::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-02-02.14:58:23::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:23::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:23::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:23::SCWReader::No isolation master present  
+TRACE::2026-02-02.14:58:26::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:26::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:26::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:26::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:26::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:26::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:26::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:26::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:26::SCWPlatform:: Platform location is C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:58:26::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:27::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:27::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:27::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::update - Opened existing hwdb design_1_wrapper_8
+TRACE::2026-02-02.14:58:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:27::SCWMssOS::Doing hw sync for the mss in domain: domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-02-02.14:58:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:27::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:27::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::update - Opened existing hwdb design_1_wrapper_8
+TRACE::2026-02-02.14:58:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:27::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:58:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:58:27::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:58:27::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-02-02.14:58:27::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:58:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:58:27::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:58:27::SCWMssOS::Completed hw sync for the mss in domain: domain_ps7_cortexa9_0
+TRACE::2026-02-02.14:58:27::SCWMssOS::Removing the swdes entry for  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:27::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:27::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-02-02.14:58:29::SCWPlatform::Opened new HwDB with name design_1_wrapper_9
+TRACE::2026-02-02.14:58:29::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:29::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:29::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2026-02-02.14:58:29::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2026-02-02.14:58:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:29::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-02-02.14:58:29::SCWMssOS::No sw design opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::mss exists loading the mss file  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::Opened the sw design from mss  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::Adding the swdes entry C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-02-02.14:58:29::SCWMssOS::updating the scw layer about changes
+TRACE::2026-02-02.14:58:29::SCWMssOS::Opened the sw design.  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.14:58:29::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.14:58:29::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:58:29::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2026-02-02.14:58:29::SCWMssOS::Writing the mss file completed C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.14:58:29::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:29::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:29::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2026-02-02.14:58:29::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2026-02-02.14:58:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:29::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:29::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.14:58:29::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.14:58:29::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.14:58:29::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2026-02-02.14:58:29::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2026-02-02.14:58:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.14:58:29::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.14:58:29::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.14:58:29::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/buenting/cpre4880/labs/mp-0/lab1/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"domain_ps7_cortexa9_0",
+			"sysDefaultDom":	"domain_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"9942495f931e7219553d4fa2d9960465",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"domain_ps7_cortexa9_0",
+					"domainDispName":	"domain_ps7_cortexa9_0",
+					"domainDesc":	"domain_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"7fb497b05e7fa148af2cf6db6c8b55c6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-02-02.15:00:05::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2026-02-02.15:00:05::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-02-02.15:00:05::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2026-02-02.15:00:05::SCWSystem::Checking the domain zynq_fsbl
+LOG::2026-02-02.15:00:05::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2026-02-02.15:00:05::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2026-02-02.15:00:05::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2026-02-02.15:00:05::SCWSystem::Checking the domain domain_ps7_cortexa9_0
+LOG::2026-02-02.15:00:05::SCWSystem::Not a boot domain 
+LOG::2026-02-02.15:00:05::SCWSystem::Started Processing the domain domain_ps7_cortexa9_0
+TRACE::2026-02-02.15:00:05::SCWDomain::Generating domain artifcats
+TRACE::2026-02-02.15:00:05::SCWMssOS::Generating standalone artifcats
+TRACE::2026-02-02.15:00:05::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2026-02-02.15:00:05::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/qemu/
+TRACE::2026-02-02.15:00:05::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.15:00:05::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.15:00:05::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::Completed writing the mss file at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp
+TRACE::2026-02-02.15:00:05::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-02-02.15:00:05::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-02-02.15:00:05::SCWDomain::Skipping the build for domain :  domain_ps7_cortexa9_0
+TRACE::2026-02-02.15:00:05::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-02-02.15:00:05::SCWMssOS::Copying to export directory.
+TRACE::2026-02-02.15:00:05::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-02-02.15:00:05::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-02-02.15:00:05::SCWSystem::Completed Processing the domain domain_ps7_cortexa9_0
+LOG::2026-02-02.15:00:05::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2026-02-02.15:00:05::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2026-02-02.15:00:05::SCWPlatform::Started preparing the platform 
+TRACE::2026-02-02.15:00:05::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2026-02-02.15:00:05::SCWSystem::dir created 
+TRACE::2026-02-02.15:00:05::SCWSystem::Writing the bif 
+TRACE::2026-02-02.15:00:05::SCWPlatform::Started writing the spfm file 
+TRACE::2026-02-02.15:00:05::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-02-02.15:00:05::SCWPlatform::Completed generating the platform
+TRACE::2026-02-02.15:00:05::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.15:00:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.15:00:05::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.15:00:05::SCWMssOS::Saving the mss changes C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-02-02.15:00:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-02-02.15:00:05::SCWMssOS::Commit changes completed.
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.15:00:05::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.15:00:05::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.15:00:05::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.15:00:05::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/buenting/cpre4880/labs/mp-0/lab1/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"domain_ps7_cortexa9_0",
+			"sysDefaultDom":	"domain_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"9942495f931e7219553d4fa2d9960465",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"domain_ps7_cortexa9_0",
+					"domainDispName":	"domain_ps7_cortexa9_0",
+					"domainDesc":	"domain_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"7fb497b05e7fa148af2cf6db6c8b55c6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-02-02.15:00:05::SCWPlatform::updated the xpfm file.
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to open the hw design at C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA given C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA absoulate path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform::DSA directory C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Platform Path C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-02-02.15:00:05::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2026-02-02.15:00:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2026-02-02.15:00:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-02-02.15:00:05::SCWMssOS::Checking the sw design at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss
+TRACE::2026-02-02.15:00:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-02-02.15:00:05::SCWMssOS::Sw design exists and opened at  C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss

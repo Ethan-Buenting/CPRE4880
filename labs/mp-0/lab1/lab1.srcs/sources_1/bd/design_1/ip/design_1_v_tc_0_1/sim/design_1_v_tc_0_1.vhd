@@ -62,13 +62,7 @@ ENTITY design_1_v_tc_0_1 IS
     clken : IN STD_LOGIC;
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aclken : IN STD_LOGIC;
-    det_clken : IN STD_LOGIC;
     gen_clken : IN STD_LOGIC;
-    hsync_in : IN STD_LOGIC;
-    hblank_in : IN STD_LOGIC;
-    vsync_in : IN STD_LOGIC;
-    vblank_in : IN STD_LOGIC;
-    active_video_in : IN STD_LOGIC;
     hsync_out : OUT STD_LOGIC;
     hblank_out : OUT STD_LOGIC;
     vsync_out : OUT STD_LOGIC;
@@ -268,11 +262,6 @@ ARCHITECTURE design_1_v_tc_0_1_arch OF design_1_v_tc_0_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF vsync_out: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_out VSYNC";
   ATTRIBUTE X_INTERFACE_INFO OF hblank_out: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_out HBLANK";
   ATTRIBUTE X_INTERFACE_INFO OF hsync_out: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_out HSYNC";
-  ATTRIBUTE X_INTERFACE_INFO OF active_video_in: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_in ACTIVE_VIDEO";
-  ATTRIBUTE X_INTERFACE_INFO OF vblank_in: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_in VBLANK";
-  ATTRIBUTE X_INTERFACE_INFO OF vsync_in: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_in VSYNC";
-  ATTRIBUTE X_INTERFACE_INFO OF hblank_in: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_in HBLANK";
-  ATTRIBUTE X_INTERFACE_INFO OF hsync_in: SIGNAL IS "xilinx.com:interface:video_timing:2.0 vtiming_in HSYNC";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aclken: SIGNAL IS "XIL_INTERFACENAME s_axi_aclken_intf, POLARITY ACTIVE_LOW";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclken: SIGNAL IS "xilinx.com:signal:clockenable:1.0 s_axi_aclken_intf CE";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aclk: SIGNAL IS "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 25000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
@@ -352,7 +341,7 @@ BEGIN
       C_NUM_FSYNCS => 1,
       C_INTERLACE_EN => 0,
       C_GEN_AUTO_SWITCH => 0,
-      C_DETECT_EN => 1,
+      C_DETECT_EN => 0,
       C_SYNC_EN => 0,
       C_GENERATE_EN => 1,
       C_DET_HSYNC_EN => 1,
@@ -375,14 +364,14 @@ BEGIN
       clken => clken,
       s_axi_aclk => s_axi_aclk,
       s_axi_aclken => s_axi_aclken,
-      det_clken => det_clken,
+      det_clken => '1',
       gen_clken => gen_clken,
       field_id_in => '0',
-      hsync_in => hsync_in,
-      hblank_in => hblank_in,
-      vsync_in => vsync_in,
-      vblank_in => vblank_in,
-      active_video_in => active_video_in,
+      hsync_in => '0',
+      hblank_in => '0',
+      vsync_in => '0',
+      vblank_in => '0',
+      active_video_in => '0',
       active_chroma_in => '0',
       hsync_out => hsync_out,
       hblank_out => hblank_out,

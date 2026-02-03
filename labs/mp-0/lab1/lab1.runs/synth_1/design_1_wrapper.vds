@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Feb  3 15:16:23 2026
-# Process ID: 19276
+# Start of session at: Tue Feb  3 16:04:54 2026
+# Process ID: 15140
 # Current directory: C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/design_1_wrapper.vds
@@ -20,58 +20,58 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6360
+INFO: [Synth 8-7075] Helper process launched with PID 8712
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1012.699 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1012.949 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:48]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2188' bound to instance 'design_1_i' of component 'design_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2226]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_gpio_0_1_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2994]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_gpio_0_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_gpio_1_1_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3017]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_gpio_1_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_2_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_gpio_2_1_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'design_1_axi_gpio_2_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3040]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_2_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_gpio_2_1_stub.vhdl:31]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1142]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7HNO1D' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:561]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:711]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_auto_pc_1_stub.vhdl:44]
-INFO: [Synth 8-3491] module 'design_1_auto_us_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'design_1_auto_us_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:747]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_us_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_auto_us_0_stub.vhdl:43]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7HNO1D' (1#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:561]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_mem_intercon_0' (2#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1142]
-INFO: [Synth 8-3491] module 'design_1_axi_vdma_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_vdma_0_1_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'design_1_axi_vdma_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3100]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_vdma_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_axi_vdma_0_1_stub.vhdl:53]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3145]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_processing_system7_0_0_stub.vhdl:124]
-INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1391]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2162' bound to instance 'design_1_i' of component 'design_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2200]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_gpio_0_1_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2898]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_gpio_0_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_gpio_1_1_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2921]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_gpio_1_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_2_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_gpio_2_1_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'design_1_axi_gpio_2_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2944]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_2_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_gpio_2_1_stub.vhdl:31]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1132]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7HNO1D' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:551]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:701]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_auto_pc_1_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'design_1_auto_us_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'design_1_auto_us_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:737]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_us_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_auto_us_0_stub.vhdl:43]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7HNO1D' (1#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:551]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_mem_intercon_0' (2#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1132]
+INFO: [Synth 8-3491] module 'design_1_axi_vdma_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_vdma_0_1_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'design_1_axi_vdma_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3004]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_vdma_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_axi_vdma_0_1_stub.vhdl:53]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3049]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_processing_system7_0_0_stub.vhdl:124]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1379]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (3#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (4#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
 INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:259]
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (5#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:259]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YFYJ3U' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:364]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YFYJ3U' (6#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:364]
-INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_17KQ732' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:469]
-INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_17KQ732' (7#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:469]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:853]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1036]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_auto_pc_0_stub.vhdl:70]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (8#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:853]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2068]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_xbar_0_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (9#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1391]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3402]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_system_ila_0_2' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_system_ila_0_2_stub.vhdl:5' bound to instance 'system_ila_0' of component 'design_1_system_ila_0_2' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3415]
-INFO: [Synth 8-638] synthesizing module 'design_1_system_ila_0_2' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_system_ila_0_2_stub.vhdl:42]
-INFO: [Synth 8-3491] module 'design_1_v_axi4s_vid_out_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_v_axi4s_vid_out_0_1_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'design_1_v_axi4s_vid_out_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3449]
-INFO: [Synth 8-638] synthesizing module 'design_1_v_axi4s_vid_out_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_v_axi4s_vid_out_0_1_stub.vhdl:40]
-INFO: [Synth 8-3491] module 'design_1_v_tc_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_v_tc_0_1_stub.vhdl:5' bound to instance 'v_tc_0' of component 'design_1_v_tc_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3481]
-INFO: [Synth 8-638] synthesizing module 'design_1_v_tc_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-19276-CO2041-15/realtime/design_1_v_tc_0_1_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3516]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YFYJ3U' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:360]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YFYJ3U' (6#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_17KQ732' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:459]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_17KQ732' (7#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:459]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:843]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1026]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (8#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:843]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2046]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (9#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:1379]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3304]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_system_ila_0_3' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_system_ila_0_3_stub.vhdl:5' bound to instance 'system_ila_0' of component 'design_1_system_ila_0_3' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3317]
+INFO: [Synth 8-638] synthesizing module 'design_1_system_ila_0_3' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_system_ila_0_3_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_v_axi4s_vid_out_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_v_axi4s_vid_out_0_1_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'design_1_v_axi4s_vid_out_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3334]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_axi4s_vid_out_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_v_axi4s_vid_out_0_1_stub.vhdl:40]
+INFO: [Synth 8-3491] module 'design_1_v_tc_0_1' declared at 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_v_tc_0_1_stub.vhdl:5' bound to instance 'v_tc_0' of component 'design_1_v_tc_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3366]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_tc_0_1' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/.Xil/Vivado-15140-CO2041-15/realtime/design_1_v_tc_0_1_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3401]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 4 - type: integer 
@@ -110,21 +110,21 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/bu
 	Parameter NUM_PORTS bound to: 6 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (10#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (11#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3526]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3411]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 0 - type: integer 
 	Parameter CONST_WIDTH bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (12#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (13#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3530]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3415]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 1 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (13#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (14#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3534]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3419]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 24 - type: integer 
@@ -132,7 +132,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/buen
 	Parameter DIN_TO bound to: 0 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (15#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (16#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3539]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3424]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 24 - type: integer 
@@ -140,7 +140,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0
 	Parameter DIN_TO bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (16#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (17#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_2_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3544]
+INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_2_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3429]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 24 - type: integer 
@@ -148,7 +148,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1
 	Parameter DIN_TO bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (17#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_0' (18#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_3_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57' bound to instance 'xlslice_3' of component 'design_1_xlslice_3_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3549]
+INFO: [Synth 8-3491] module 'design_1_xlslice_3_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57' bound to instance 'xlslice_3' of component 'design_1_xlslice_3_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3434]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_3_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 16 - type: integer 
@@ -156,7 +156,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2
 	Parameter DIN_TO bound to: 0 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (18#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_3_0' (19#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_4_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57' bound to instance 'xlslice_4' of component 'design_1_xlslice_4_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3554]
+INFO: [Synth 8-3491] module 'design_1_xlslice_4_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57' bound to instance 'xlslice_4' of component 'design_1_xlslice_4_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3439]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_4_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 16 - type: integer 
@@ -164,7 +164,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3
 	Parameter DIN_TO bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' (19#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_4_0' (20#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_5_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57' bound to instance 'xlslice_5' of component 'design_1_xlslice_5_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3559]
+INFO: [Synth 8-3491] module 'design_1_xlslice_5_0' declared at 'c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57' bound to instance 'xlslice_5' of component 'design_1_xlslice_5_0' [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3444]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_5_0' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 16 - type: integer 
@@ -172,26 +172,24 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4
 	Parameter DIN_TO bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' (20#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_5_0' (21#1) [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ps7_0_axi_periph'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3261]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_mem_intercon'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3063]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_2'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3544]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_1'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3539]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_0'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3534]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (22#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2226]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_2'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3429]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_1'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3424]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_0'. This will prevent further optimization [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:3419]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (22#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/synth/design_1.vhd:2200]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (23#1) [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:48]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1012.699 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1012.949 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1012.699 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1012.949 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1012.699 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1012.949 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1012.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1012.949 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -215,8 +213,8 @@ Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/
 Finished Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
 Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_in_context.xdc] for cell 'design_1_i/v_axi4s_vid_out_0'
 Finished Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_in_context.xdc] for cell 'design_1_i/v_axi4s_vid_out_0'
-Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_2/design_1_system_ila_0_2/design_1_system_ila_0_2_in_context.xdc] for cell 'design_1_i/system_ila_0'
-Finished Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_2/design_1_system_ila_0_2/design_1_system_ila_0_2_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_3/design_1_system_ila_0_3/design_1_system_ila_0_3_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_3/design_1_system_ila_0_3/design_1_system_ila_0_3_in_context.xdc] for cell 'design_1_i/system_ila_0'
 Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
@@ -232,20 +230,20 @@ Parsing XDC File [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/do
 Finished Parsing XDC File [C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1040.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1039.469 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1040.090 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1039.469 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1040.090 ; gain = 27.391
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1039.469 ; gain = 26.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1040.090 ; gain = 27.391
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1039.469 ; gain = 26.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -536,10 +534,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_coupl
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.090 ; gain = 27.391
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.469 ; gain = 26.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.090 ; gain = 27.391
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.469 ; gain = 26.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -561,25 +559,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.090 ; gain = 27.391
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.469 ; gain = 26.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1041.234 ; gain = 28.535
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1039.469 ; gain = 26.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1041.531 ; gain = 28.832
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1039.469 ; gain = 26.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1061.172 ; gain = 48.473
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1040.613 ; gain = 27.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -597,37 +595,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -647,7 +645,7 @@ Report BlackBoxes:
 |8     |design_1_axi_vdma_0_1           |         1|
 |9     |design_1_processing_system7_0_0 |         1|
 |10    |design_1_rst_ps7_0_100M_1       |         1|
-|11    |design_1_system_ila_0_2         |         1|
+|11    |design_1_system_ila_0_3         |         1|
 |12    |design_1_v_axi4s_vid_out_0_1    |         1|
 |13    |design_1_v_tc_0_1               |         1|
 +------+--------------------------------+----------+
@@ -665,7 +663,7 @@ Report Cell Usage:
 |7     |design_1_axi_vdma_0_1_bbox           |     1|
 |8     |design_1_processing_system7_0_0_bbox |     1|
 |9     |design_1_rst_ps7_0_100M_1_bbox       |     1|
-|10    |design_1_system_ila_0_2_bbox         |     1|
+|10    |design_1_system_ila_0_3_bbox         |     1|
 |11    |design_1_v_axi4s_vid_out_0_1_bbox    |     1|
 |12    |design_1_v_tc_0_1_bbox               |     1|
 |13    |design_1_xbar_0_bbox                 |     1|
@@ -673,23 +671,25 @@ Report Cell Usage:
 |15    |OBUF                                 |    22|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1067.945 ; gain = 27.855
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1067.945 ; gain = 55.246
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1046.348 ; gain = 6.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.348 ; gain = 33.398
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1078.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1046.348 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1086.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1058.180 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-115 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+113 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1086.480 ; gain = 73.781
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1058.180 ; gain = 45.230
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'C:/Users/buenting/cpre4880/labs/mp-0/lab1/lab1.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb  3 15:16:44 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  3 16:05:15 2026...

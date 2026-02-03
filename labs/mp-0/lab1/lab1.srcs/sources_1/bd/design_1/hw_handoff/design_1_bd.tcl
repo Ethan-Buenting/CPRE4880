@@ -624,27 +624,18 @@ proc create_root_design { parentCell } {
   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
   set_property -dict [ list \
    CONFIG.C_MON_TYPE {MIX} \
-   CONFIG.C_NUM_MONITOR_SLOTS {2} \
-   CONFIG.C_NUM_OF_PROBES {5} \
+   CONFIG.C_NUM_MONITOR_SLOTS {1} \
+   CONFIG.C_NUM_OF_PROBES {8} \
    CONFIG.C_PROBE0_TYPE {0} \
    CONFIG.C_PROBE1_TYPE {0} \
    CONFIG.C_PROBE2_TYPE {0} \
    CONFIG.C_PROBE3_TYPE {0} \
    CONFIG.C_PROBE4_TYPE {0} \
-   CONFIG.C_SLOT_0_APC_EN {0} \
-   CONFIG.C_SLOT_0_AXI_AR_SEL_DATA {1} \
-   CONFIG.C_SLOT_0_AXI_AR_SEL_TRIG {1} \
-   CONFIG.C_SLOT_0_AXI_AW_SEL_DATA {1} \
-   CONFIG.C_SLOT_0_AXI_AW_SEL_TRIG {1} \
-   CONFIG.C_SLOT_0_AXI_B_SEL_DATA {1} \
-   CONFIG.C_SLOT_0_AXI_B_SEL_TRIG {1} \
-   CONFIG.C_SLOT_0_AXI_R_SEL_DATA {1} \
-   CONFIG.C_SLOT_0_AXI_R_SEL_TRIG {1} \
-   CONFIG.C_SLOT_0_AXI_W_SEL_DATA {1} \
-   CONFIG.C_SLOT_0_AXI_W_SEL_TRIG {1} \
-   CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:aximm_rtl:1.0} \
-   CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:video_timing_rtl:2.0} \
-   CONFIG.C_SLOT_1_TYPE {0} \
+   CONFIG.C_PROBE5_TYPE {0} \
+   CONFIG.C_PROBE6_TYPE {0} \
+   CONFIG.C_PROBE7_TYPE {0} \
+   CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:video_timing_rtl:2.0} \
+   CONFIG.C_SLOT_0_TYPE {0} \
  ] $system_ila_0
 
   # Create instance: v_axi4s_vid_out_0, and set properties
@@ -769,32 +760,35 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins axi_gpio_1/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_gpio_2/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins ps7_0_axi_periph/M03_AXI] [get_bd_intf_pins v_tc_0/ctrl]
-connect_bd_intf_net -intf_net [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_intf_pins ps7_0_axi_periph/M03_AXI] [get_bd_intf_pins system_ila_0/SLOT_0_AXI]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets ps7_0_axi_periph_M03_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M04_AXI [get_bd_intf_pins axi_vdma_0/S_AXI_LITE] [get_bd_intf_pins ps7_0_axi_periph/M04_AXI]
   connect_bd_intf_net -intf_net v_tc_0_vtiming_out [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins v_tc_0/vtiming_out]
-connect_bd_intf_net -intf_net [get_bd_intf_nets v_tc_0_vtiming_out] [get_bd_intf_pins system_ila_0/SLOT_1_VIDEO_TIMING] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in]
+connect_bd_intf_net -intf_net [get_bd_intf_nets v_tc_0_vtiming_out] [get_bd_intf_pins system_ila_0/SLOT_0_VIDEO_TIMING] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in]
 
   # Create port connections
   connect_bd_net -net axi_vdma_0_m_axis_mm2s_tdata [get_bd_pins axi_vdma_0/m_axis_mm2s_tdata] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din] [get_bd_pins xlslice_5/Din]
   connect_bd_net -net axi_vdma_0_m_axis_mm2s_tlast [get_bd_pins axi_vdma_0/m_axis_mm2s_tlast] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tlast]
   connect_bd_net -net axi_vdma_0_m_axis_mm2s_tuser [get_bd_pins axi_vdma_0/m_axis_mm2s_tuser] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tuser]
-  connect_bd_net -net axi_vdma_0_m_axis_mm2s_tvalid [get_bd_pins axi_vdma_0/m_axis_mm2s_tvalid] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tvalid]
+  connect_bd_net -net axi_vdma_0_m_axis_mm2s_tvalid [get_bd_pins axi_vdma_0/m_axis_mm2s_tvalid] [get_bd_pins system_ila_0/probe0] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tvalid]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets axi_vdma_0_m_axis_mm2s_tvalid]
+  connect_bd_net -net locked [get_bd_pins system_ila_0/probe1] [get_bd_pins v_axi4s_vid_out_0/locked]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets locked]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_2/s_axi_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins system_ila_0/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_tc_0/clk] [get_bd_pins v_tc_0/s_axi_aclk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_gpio_2/s_axi_aresetn] [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn] [get_bd_pins system_ila_0/probe0] [get_bd_pins system_ila_0/resetn] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_tc_0/resetn] [get_bd_pins v_tc_0/s_axi_aresetn]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets rst_ps7_0_100M_peripheral_aresetn]
-  connect_bd_net -net v_axi4s_vid_out_0_s_axis_video_tready [get_bd_pins axi_vdma_0/m_axis_mm2s_tready] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tready]
-  connect_bd_net -net v_axi4s_vid_out_0_vid_data [get_bd_pins system_ila_0/probe1] [get_bd_pins v_axi4s_vid_out_0/vid_data] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_gpio_2/s_axi_aresetn] [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_tc_0/resetn] [get_bd_pins v_tc_0/s_axi_aresetn]
+  connect_bd_net -net v_axi4s_vid_out_0_s_axis_video_tready [get_bd_pins axi_vdma_0/m_axis_mm2s_tready] [get_bd_pins system_ila_0/probe2] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tready]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets v_axi4s_vid_out_0_s_axis_video_tready]
+  connect_bd_net -net v_axi4s_vid_out_0_vid_data [get_bd_pins system_ila_0/probe3] [get_bd_pins v_axi4s_vid_out_0/vid_data] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets v_axi4s_vid_out_0_vid_data]
-  connect_bd_net -net v_axi4s_vid_out_0_vid_hsync [get_bd_ports vga_hsync] [get_bd_pins system_ila_0/probe2] [get_bd_pins v_axi4s_vid_out_0/vid_hsync]
+  connect_bd_net -net v_axi4s_vid_out_0_vid_hsync [get_bd_ports vga_hsync] [get_bd_pins system_ila_0/probe4] [get_bd_pins v_axi4s_vid_out_0/vid_hsync]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets v_axi4s_vid_out_0_vid_hsync]
-  connect_bd_net -net v_axi4s_vid_out_0_vid_vsync [get_bd_ports vga_vsync] [get_bd_pins system_ila_0/probe3] [get_bd_pins v_axi4s_vid_out_0/vid_vsync]
+  connect_bd_net -net v_axi4s_vid_out_0_vid_vsync [get_bd_ports vga_vsync] [get_bd_pins system_ila_0/probe5] [get_bd_pins v_axi4s_vid_out_0/vid_vsync]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets v_axi4s_vid_out_0_vid_vsync]
-  connect_bd_net -net xlconcat_0_dout [get_bd_pins system_ila_0/probe4] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tdata] [get_bd_pins xlconcat_0/dout]
+  connect_bd_net -net v_axi4s_vid_out_0_vtg_ce [get_bd_pins system_ila_0/probe7] [get_bd_pins v_axi4s_vid_out_0/vtg_ce] [get_bd_pins v_tc_0/gen_clken]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets v_axi4s_vid_out_0_vtg_ce]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins system_ila_0/probe6] [get_bd_pins v_axi4s_vid_out_0/s_axis_video_tdata] [get_bd_pins xlconcat_0/dout]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets xlconcat_0_dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconcat_0/In3] [get_bd_pins xlconcat_0/In5] [get_bd_pins xlconstant_0/dout]
-  connect_bd_net -net xlconstant_1_dout [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/gen_clken] [get_bd_pins v_tc_0/s_axi_aclken] [get_bd_pins xlconstant_1/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/s_axi_aclken] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_ports vga_r] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_ports vga_g] [get_bd_pins xlslice_1/Dout]
   connect_bd_net -net xlslice_2_Dout [get_bd_ports vga_b] [get_bd_pins xlslice_2/Dout]

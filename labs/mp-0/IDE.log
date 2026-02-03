@@ -1803,3 +1803,464 @@ con
 
 15:00:41 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\debugger_lab1_vitis-default.tcl'
 15:06:08 INFO  : Disconnected from the channel tcfchan#9.
+14:17:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\buenting\cpre4880\labs\mp-0\temp_xsdb_launch_script.tcl
+14:17:03 INFO  : XSCT server has started successfully.
+14:17:03 INFO  : Successfully done setting XSCT server connection channel  
+14:17:03 INFO  : plnx-install-location is set to ''
+14:17:03 INFO  : Successfully done setting workspace for the tool. 
+14:17:05 INFO  : Platform repository initialization has completed.
+14:17:05 INFO  : Registering command handlers for Vitis TCF services
+14:17:08 INFO  : Successfully done query RDI_DATADIR 
+14:17:19 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+14:17:25 INFO  : Result from executing command 'getProjects': design_1_wrapper
+14:17:25 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+14:17:25 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+14:17:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:17:56 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:18:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:19 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+14:18:19 INFO  : 'jtag frequency' command is executed.
+14:18:19 INFO  : Context for 'APU' is selected.
+14:18:19 INFO  : System reset is completed.
+14:18:22 INFO  : 'after 3000' command is executed.
+14:18:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:18:24 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:18:24 INFO  : Context for 'APU' is selected.
+14:18:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:18:24 INFO  : 'configparams force-mem-access 1' command is executed.
+14:18:24 INFO  : Context for 'APU' is selected.
+14:18:24 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+14:18:24 INFO  : 'ps7_init' command is executed.
+14:18:24 INFO  : 'ps7_post_config' command is executed.
+14:18:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:24 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:24 INFO  : 'configparams force-mem-access 0' command is executed.
+14:18:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:18:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:25 INFO  : 'con' command is executed.
+14:18:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:18:25 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+14:20:30 INFO  : Disconnected from the channel tcfchan#3.
+14:20:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:30 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+14:20:30 INFO  : 'jtag frequency' command is executed.
+14:20:30 INFO  : Context for 'APU' is selected.
+14:20:30 INFO  : System reset is completed.
+14:20:33 INFO  : 'after 3000' command is executed.
+14:20:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:20:35 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:20:35 INFO  : Context for 'APU' is selected.
+14:20:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:20:35 INFO  : 'configparams force-mem-access 1' command is executed.
+14:20:35 INFO  : Context for 'APU' is selected.
+14:20:35 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+14:20:35 INFO  : 'ps7_init' command is executed.
+14:20:35 INFO  : 'ps7_post_config' command is executed.
+14:20:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:36 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:20:36 INFO  : 'configparams force-mem-access 0' command is executed.
+14:20:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:20:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:36 INFO  : 'con' command is executed.
+14:20:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:20:36 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+14:22:27 INFO  : Disconnected from the channel tcfchan#4.
+14:22:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:22:27 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+14:22:27 INFO  : 'jtag frequency' command is executed.
+14:22:27 INFO  : Context for 'APU' is selected.
+14:22:28 INFO  : System reset is completed.
+14:22:31 INFO  : 'after 3000' command is executed.
+14:22:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:22:33 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:22:33 INFO  : Context for 'APU' is selected.
+14:22:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:22:33 INFO  : 'configparams force-mem-access 1' command is executed.
+14:22:33 INFO  : Context for 'APU' is selected.
+14:22:33 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+14:22:33 INFO  : 'ps7_init' command is executed.
+14:22:33 INFO  : 'ps7_post_config' command is executed.
+14:22:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:33 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:22:33 INFO  : 'configparams force-mem-access 0' command is executed.
+14:22:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:22:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:33 INFO  : 'con' command is executed.
+14:22:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:22:33 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+14:23:53 INFO  : Disconnected from the channel tcfchan#5.
+14:23:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:53 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+14:23:53 INFO  : 'jtag frequency' command is executed.
+14:23:53 INFO  : Context for 'APU' is selected.
+14:23:53 INFO  : System reset is completed.
+14:23:56 INFO  : 'after 3000' command is executed.
+14:23:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:23:58 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:23:58 INFO  : Context for 'APU' is selected.
+14:23:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:23:58 INFO  : 'configparams force-mem-access 1' command is executed.
+14:23:58 INFO  : Context for 'APU' is selected.
+14:23:58 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+14:23:59 INFO  : 'ps7_init' command is executed.
+14:23:59 INFO  : 'ps7_post_config' command is executed.
+14:23:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:23:59 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:23:59 INFO  : 'configparams force-mem-access 0' command is executed.
+14:23:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:23:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:23:59 INFO  : 'con' command is executed.
+14:23:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:23:59 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+14:35:54 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+14:36:00 INFO  : Result from executing command 'getProjects': design_1_wrapper
+14:36:00 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+14:36:00 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+14:36:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:36:12 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:36:19 INFO  : Disconnected from the channel tcfchan#6.
+14:36:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:19 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+14:36:19 INFO  : 'jtag frequency' command is executed.
+14:36:19 INFO  : Context for 'APU' is selected.
+14:36:20 INFO  : System reset is completed.
+14:36:23 INFO  : 'after 3000' command is executed.
+14:36:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:36:25 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:36:25 INFO  : Context for 'APU' is selected.
+14:36:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:36:25 INFO  : 'configparams force-mem-access 1' command is executed.
+14:36:25 INFO  : Context for 'APU' is selected.
+14:36:25 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+14:36:25 INFO  : 'ps7_init' command is executed.
+14:36:25 INFO  : 'ps7_post_config' command is executed.
+14:36:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:25 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:36:25 INFO  : 'configparams force-mem-access 0' command is executed.
+14:36:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:36:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:25 INFO  : 'con' command is executed.
+14:36:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:36:25 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+14:39:35 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+14:39:41 INFO  : Result from executing command 'getProjects': design_1_wrapper
+14:39:41 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+14:39:41 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+14:39:49 INFO  : Disconnected from the channel tcfchan#9.
+14:39:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:39:49 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+14:39:49 INFO  : 'jtag frequency' command is executed.
+14:39:49 INFO  : Context for 'APU' is selected.
+14:39:49 INFO  : System reset is completed.
+14:39:52 INFO  : 'after 3000' command is executed.
+14:39:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:39:55 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:39:55 INFO  : Context for 'APU' is selected.
+14:39:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:39:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:39:55 INFO  : Context for 'APU' is selected.
+14:39:55 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+14:39:55 INFO  : 'ps7_init' command is executed.
+14:39:55 INFO  : 'ps7_post_config' command is executed.
+14:39:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:39:55 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:39:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:39:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:39:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:39:55 INFO  : 'con' command is executed.
+14:39:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:39:55 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+14:51:19 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+14:51:25 INFO  : Result from executing command 'getProjects': design_1_wrapper
+14:51:25 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+14:51:25 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+14:51:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:51:56 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:52:18 INFO  : Disconnected from the channel tcfchan#12.
+14:52:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:52:18 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+14:52:18 INFO  : 'jtag frequency' command is executed.
+14:52:18 INFO  : Context for 'APU' is selected.
+14:52:18 INFO  : System reset is completed.
+14:52:21 INFO  : 'after 3000' command is executed.
+14:52:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+14:52:24 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:52:24 INFO  : Context for 'APU' is selected.
+14:52:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:52:24 INFO  : 'configparams force-mem-access 1' command is executed.
+14:52:24 INFO  : Context for 'APU' is selected.
+14:52:24 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+14:52:24 INFO  : 'ps7_init' command is executed.
+14:52:24 INFO  : 'ps7_post_config' command is executed.
+14:52:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:52:24 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:52:24 INFO  : 'configparams force-mem-access 0' command is executed.
+14:52:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:52:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:52:24 INFO  : 'con' command is executed.
+14:52:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:52:24 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+15:00:00 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+15:00:04 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:00:04 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:00:05 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+15:00:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+15:00:19 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+15:00:22 INFO  : Disconnected from the channel tcfchan#15.
+15:00:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:22 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+15:00:22 INFO  : 'jtag frequency' command is executed.
+15:00:23 INFO  : Context for 'APU' is selected.
+15:00:23 INFO  : System reset is completed.
+15:00:26 INFO  : 'after 3000' command is executed.
+15:00:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+15:00:28 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+15:00:28 INFO  : Context for 'APU' is selected.
+15:00:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:00:28 INFO  : 'configparams force-mem-access 1' command is executed.
+15:00:28 INFO  : Context for 'APU' is selected.
+15:00:28 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+15:00:28 INFO  : 'ps7_init' command is executed.
+15:00:28 INFO  : 'ps7_post_config' command is executed.
+15:00:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:00:28 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:00:28 INFO  : 'configparams force-mem-access 0' command is executed.
+15:00:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:00:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:00:28 INFO  : 'con' command is executed.
+15:00:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:00:28 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+15:08:45 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+15:09:07 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:09:07 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:09:07 INFO  : Checking for BSP changes to sync application flags for project 'lab1_vitis'...
+15:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+15:09:28 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+15:09:35 INFO  : Disconnected from the channel tcfchan#18.
+15:09:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:35 INFO  : Jtag cable 'Digilent Zed 210248B9DA56' is selected.
+15:09:35 INFO  : 'jtag frequency' command is executed.
+15:09:35 INFO  : Context for 'APU' is selected.
+15:09:35 INFO  : System reset is completed.
+15:09:38 INFO  : 'after 3000' command is executed.
+15:09:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}' command is executed.
+15:09:40 INFO  : FPGA configured successfully with bitstream "C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit"
+15:09:40 INFO  : Context for 'APU' is selected.
+15:09:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:09:40 INFO  : 'configparams force-mem-access 1' command is executed.
+15:09:40 INFO  : Context for 'APU' is selected.
+15:09:40 INFO  : Sourcing of 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl' is done.
+15:09:41 INFO  : 'ps7_init' command is executed.
+15:09:41 INFO  : 'ps7_post_config' command is executed.
+15:09:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:09:41 INFO  : The application 'C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:09:41 INFO  : 'configparams force-mem-access 0' command is executed.
+15:09:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B9DA56" && level==0 && jtag_device_ctx=="jsn-Zed-210248B9DA56-23727093-0"}
+fpga -file C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/buenting/cpre4880/labs/mp-0/lab1_vitis/Debug/lab1_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:09:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:09:41 INFO  : 'con' command is executed.
+15:09:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:09:41 INFO  : Launch script is exported to file 'C:\Users\buenting\cpre4880\labs\mp-0\.sdk\launch_scripts\single_application_debug\systemdebugger_lab1_vitis_system_standalone.tcl'
+15:13:17 INFO  : Disconnected from the channel tcfchan#21.

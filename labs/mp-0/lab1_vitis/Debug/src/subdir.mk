@@ -7,16 +7,19 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
+../src/cyclone_checker.c \
 ../src/helloworld.c \
 ../src/platform.c \
 ../src/vga_test.c 
 
 OBJS += \
+./src/cyclone_checker.o \
 ./src/helloworld.o \
 ./src/platform.o \
 ./src/vga_test.o 
 
 C_DEPS += \
+./src/cyclone_checker.d \
 ./src/helloworld.d \
 ./src/platform.d \
 ./src/vga_test.d 

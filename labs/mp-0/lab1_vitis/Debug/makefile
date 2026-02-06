@@ -8,6 +8,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include src/xilsd/subdir.mk
+-include src/NESCore/subdir.mk
 -include src/subdir.mk
 -include .metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
 -include subdir.mk

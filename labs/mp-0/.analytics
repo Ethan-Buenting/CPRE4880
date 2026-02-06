@@ -180,3 +180,36 @@ timestamp=[2026-02-04 18:01:45], mode=BUILD, duration=0:00:00.704, duration_ms=7
 timestamp=[2026-02-04 18:03:38], mode=BUILD, duration=0:00:00.692, duration_ms=692, data={name=lab1_vitis, configuration=Debug, clean_build=false}
 timestamp=[2026-02-04 18:04:13], mode=BUILD, duration=0:00:00.693, duration_ms=693, data={name=lab1_vitis, configuration=Debug, clean_build=false}
 timestamp=[2026-02-04 18:04:44], mode=BUILD, duration=0:00:00.699, duration_ms=699, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:06:32], mode=WORKBENCH_START, duration=0:00:06.825, duration_ms=6825, data={}
+timestamp=[2026-02-06 09:06:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.542, duration_ms=542, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,lab1_vitis,lab1_vitis_system}
+timestamp=[2026-02-06 09:06:32], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.046, duration_ms=46, data={}
+timestamp=[2026-02-06 09:08:55], mode=PLATFORM_GENERATION, duration=0:00:17.401, duration_ms=17401, data={name=design_1_wrapper}
+timestamp=[2026-02-06 09:08:58], mode=BUILD, duration=0:00:01.438, duration_ms=1438, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:09:02], mode=BUILD, duration=0:00:03.890, duration_ms=3890, data={name=lab1_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:16:51], mode=BUILD, duration=0:00:00.738, duration_ms=738, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:17:14], mode=BUILD, duration=0:00:00.752, duration_ms=752, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:18:31], mode=BUILD, duration=0:00:00.725, duration_ms=725, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:20:53], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:21:37], mode=BUILD, duration=0:00:00.726, duration_ms=726, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:24:26], mode=BUILD, duration=0:00:00.737, duration_ms=737, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:26:55], mode=BUILD, duration=0:00:00.736, duration_ms=736, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:28:41], mode=BUILD, duration=0:00:00.667, duration_ms=667, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:30:00], mode=BUILD, duration=0:00:00.733, duration_ms=733, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:33:42], mode=BUILD, duration=0:00:00.663, duration_ms=663, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:34:22], mode=BUILD, duration=0:00:00.664, duration_ms=664, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 09:35:30], mode=BUILD, duration=0:00:00.674, duration_ms=674, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 10:46:11], mode=BUILD, duration=0:00:26.698, duration_ms=26698, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 10:50:56], mode=BUILD, duration=0:00:23.392, duration_ms=23392, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 10:52:42], mode=BUILD, duration=0:00:22.800, duration_ms=22800, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 10:53:53], mode=BUILD, duration=0:00:22.632, duration_ms=22632, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 10:54:28], mode=BUILD, duration=0:00:22.636, duration_ms=22636, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 10:57:44], mode=BUILD, duration=0:00:22.548, duration_ms=22548, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 11:13:31], mode=BUILD, duration=0:00:00.174, duration_ms=174, data={name=lab1_vitis, configuration=Debug, clean_build=true}
+timestamp=[2026-02-06 11:13:35], mode=BUILD, duration=0:00:04.404, duration_ms=4404, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 11:16:41], mode=BUILD, duration=0:00:00.159, duration_ms=159, data={name=lab1_vitis, configuration=Debug, clean_build=true}
+timestamp=[2026-02-06 11:16:45], mode=BUILD, duration=0:00:04.336, duration_ms=4336, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 11:26:10], mode=BUILD, duration=0:00:01.066, duration_ms=1066, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 11:29:01], mode=BUILD, duration=0:00:00.861, duration_ms=861, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 11:38:58], mode=BUILD, duration=0:00:00.822, duration_ms=822, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 11:40:26], mode=BUILD, duration=0:00:00.824, duration_ms=824, data={name=lab1_vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-02-06 11:42:54], mode=BUILD, duration=0:00:00.820, duration_ms=820, data={name=lab1_vitis, configuration=Debug, clean_build=false}

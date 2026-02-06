@@ -1,42 +1,25 @@
-2026-02-04T18:04:43.852264500255-18:04:43 **** Incremental Build of configuration Debug for project lab1_vitis ****
+2026-02-06T11:42:53.872862600255-11:42:53 **** Incremental Build of configuration Debug for project lab1_vitis ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000-' '
 000-make --no-print-directory main-build
-000-'Building file: ../src/cyclone_checker.c'
+000-'Building file: ../src/NESCore_Callback.c'
 000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cyclone_checker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/cyclone_checker.d" -MT"src/cyclone_checker.o" -o "src/cyclone_checker.o" "../src/cyclone_checker.c"
-000-In file included from C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xaxivdma.h:293,
-000-                 from ../src/cyclone_checker.c:7:
-000-../src/cyclone_checker.c: In function 'main':
-000/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xaxivdma_hw.h344-1-1passing argument 2 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xaxivdma_hw.h:344:49: warning: passing argument 2 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
-000-  344 |     XAxiVdma_Out32((BaseAddress) + (RegOffset), (Data))
-000-      |                                                 ^~~~~~
-000-      |                                                 |
-000-      |                                                 u16 (*)[640] {aka short unsigned int (*)[640]}
-000/lab1_vitis/src/cyclone_checker.c68-1-1in expansion of macro 'XAxiVdma_WriteReg'0-../src/cyclone_checker.c:68:5: note: in expansion of macro 'XAxiVdma_WriteReg'
-000-   68 |     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET + XAXIVDMA_START_ADDR_OFFSET, cyclone_checker);  // Read Channel: VDMA MM2S Frame buffer Start Addr 1
-000-      |     ^~~~~~~~~~~~~~~~~
-000-In file included from C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xvtc_hw.h:142,
-000-                 from C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xvtc.h:290,
-000-                 from ../src/cyclone_checker.c:6:
-000/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xil_io.h200-1-1expected 'u32' {aka 'long unsigned int'} but argument is of type 'u16 (*)[640]' {aka 'short unsigned int (*)[640]'}0-C:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xil_io.h:200:48: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'u16 (*)[640]' {aka 'short unsigned int (*)[640]'}
-000-  200 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
-000-      |                                            ~~~~^~~~~
-000-'Finished building: ../src/cyclone_checker.c'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -IC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src\xilsd" -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src" -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src\NESCore" -c -fmessage-length=0 -MT"src/NESCore_Callback.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/NESCore_Callback.d" -MT"src/NESCore_Callback.o" -o "src/NESCore_Callback.o" "../src/NESCore_Callback.c"
+000-'Finished building: ../src/NESCore_Callback.c'
 000-' '
 000-'Building target: lab1_vitis.elf'
 000-'Invoking: ARM v7 gcc linker'
-000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "lab1_vitis.elf"  ./src/cyclone_checker.o ./src/helloworld.o ./src/platform.o ./src/vga_test.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "lab1_vitis.elf"  ./src/xilsd/ff.o ./src/xilsd/mmc.o ./src/xilsd/xilsd.o  ./src/NESCore/M6502.o ./src/NESCore/NESCore.o ./src/NESCore/NESCore_Mapper.o ./src/NESCore/NESCore_pAPU.o  ./src/NESCore_Callback.o ./src/bmp_misc.o ./src/cyclone_checker.o ./src/helloworld.o ./src/nes_bootloader.o ./src/platform.o ./src/utils.o ./src/vga_test.o ./src/wav_misc.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 000-'Finished building target: lab1_vitis.elf'
 000-' '
 000-'Invoking: ARM v7 Print Size'
 000-arm-none-eabi-size lab1_vitis.elf  |tee "lab1_vitis.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000-  34752	   1152	1251384	1287288	 13a478	lab1_vitis.elf
+000- 480275	   4676	1989552	2474503	 25c207	lab1_vitis.elf
 000-'Finished building: lab1_vitis.elf.size'
 000-' '
 00255-
-18:04:44 Build Finished (took 692ms)
+11:42:54 Build Finished (took 809ms)
 

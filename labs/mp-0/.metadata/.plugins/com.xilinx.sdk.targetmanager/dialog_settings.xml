@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<item value="Auto Detect" key="lab1_vitis-device"/>
 	<item value="false" key="lab1_vitis-skip_rev_check"/>
-	<item value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zed 210248B9D9EE&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zed-210248B9D9EE-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zed-210248B9D9EE-23727093-0&quot;}}]}" key="devices_info_Local"/>
+	<item value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zed 210248B9DA75&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zed-210248B9DA75-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zed-210248B9DA75-23727093-0&quot;}}]}" key="devices_info_Local"/>
 	<item value="" key="lab1_vitis-bmmFile"/>
 	<item value="false" key="lab1_vitis-partial_bit"/>
 	<item value="Local" key="lab1_vitis-target"/>

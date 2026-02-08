@@ -19,7 +19,13 @@
 #include "nes_bootloader.h"
 #include "NESCore_Callback.h"
 #include "NESCore.h"
+#include "xgpiops.h"
 #include <stdlib.h>
+
+#define BUTTONS_ADDRESS 	0x41210000
+#define SWITCHES_ADDRESS 	0x41220000
+
+extern XGpioPs Gpio;
 
 // The main output frame callback. Copy the results into the front-buffer.
 // Note that the NES (and the emulator) outputs essentially a 256x240 image.
@@ -62,8 +68,31 @@ void NESCore_Callback_OutputFrame(word *WorkFrame) {
 // values, presumably using the buttons and switches on your ZedBoard.
 void NESCore_Callback_InputPadState(dword *pdwPad1, dword *pdwPad2) {
 
-	// Currently hard-coded so that player 1 is pressing A and B, and player 2 is pressing nothing.
-	*pdwPad1 = NCTL_A | NCTL_B;
+	//Initialize controls
+	u32 buttons = Xil_In32(BUTTONS_ADDRESS); //Dpad
+	u32 switches = Xil_In32(SWITCHES_ADDRESS); //Switches
+	int btn8_state = XGpioPs_ReadPin(&Gpio, 50); //BTN 8
+	int btn9_state = XGpioPs_ReadPin(&Gpio, 51); //BTN 9
+
+	dword current_state = 0x00000000;
+	if (buttons == 0x00000010) {
+		current_state |= NCTL_UP;
+	} else if (buttons == 0x00000002) {
+		current_state |= NCTL_DOWN;
+	} else if (buttons == 0x00000004) {
+		current_state |= NCTL_LEFT;
+	} else if (buttons == 0x00000008) {
+		current_state |= NCTL_RIGHT;
+	} else if (switches == 0x0000001) {
+		current_state |= NCTL_START;
+	} else if (switches == 0x0000002) {
+		current_state |= NCTL_SELECT;
+	} else if (btn9_state == 1) {
+		current_state |= NCTL_A;
+	} else if (btn8_state == 1) {
+		current_state |= NCTL_B;
+	}
+	*pdwPad1 = current_state;
 	*pdwPad2 = 0;
 
 	return;

@@ -78,7 +78,9 @@
 //
 //    	u32 buttons = Xil_In32(BUTTONS_ADDRESS);
 //
-//    	if (buttons != 0x0000000) {
+//    	if (buttons != 0x000000) {
+//    		printf("%X\n\r", buttons);
+//    	} else if (led_activation == 0x00000001) {
 //    		run = FALSE;
 //    	}
 //    }

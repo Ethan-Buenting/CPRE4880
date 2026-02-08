@@ -18,7 +18,10 @@
 
 #include "nes_bootloader.h"
 #include "NESCore.h"
+#include "xgpiops.h"
 #include <unistd.h>  // for usleep
+
+XGpioPs Gpio;
 
 // Main function. Performs Xilinx-specific initialization, and then goes into the main polling loop
 int main() {
@@ -26,10 +29,19 @@ int main() {
 	// Initialize all memory space
 	xil_init();
 
+	//Initialize BTN8 and BTN 9
+	XGpioPs_Config *ConfigPtr;
+	ConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+
+	XGpioPs_SetDirectionPin(&Gpio, 50, 0); //BTN8
+	XGpioPs_SetDirectionPin(&Gpio, 51, 0); //BTN9
+
 	// Initialize the NESCore
 	NESCore_Init();
 
 	print("Made it past NESCore_Init()\n\r");
+	xil_printf("WAV_BASEADDR = %X \r\n", WAV_BASEADDR);
 	// Enable the cache
     Xil_DCacheEnable();
 

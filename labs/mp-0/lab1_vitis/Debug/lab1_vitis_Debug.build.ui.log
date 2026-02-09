@@ -1,54 +1,10 @@
-2026-02-08T14:24:12.746556600255-14:24:12 **** Incremental Build of configuration Debug for project lab1_vitis ****
+2026-02-09T11:32:39.422637700255-11:32:39 **** Incremental Build of configuration Debug for project lab1_vitis ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000-' '
 000-make --no-print-directory main-build
-000-'Building file: ../src/NESCore_Callback.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -IC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src\xilsd" -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src" -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src\NESCore" -c -fmessage-length=0 -MT"src/NESCore_Callback.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/NESCore_Callback.d" -MT"src/NESCore_Callback.o" -o "src/NESCore_Callback.o" "../src/NESCore_Callback.c"
-000-'Finished building: ../src/NESCore_Callback.c'
-000-' '
-000-'Building file: ../src/nes_bootloader.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -IC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src\xilsd" -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src" -I"C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src\NESCore" -c -fmessage-length=0 -MT"src/nes_bootloader.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/nes_bootloader.d" -MT"src/nes_bootloader.o" -o "src/nes_bootloader.o" "../src/nes_bootloader.c"
-000-../src/nes_bootloader.c: In function 'nes_load':
-000/lab1_vitis/src/nes_bootloader.c65-1-1pointer targets in passing argument 2 of 'nes_strncpy' differ in signedness [-Wpointer-sign]1-../src/nes_bootloader.c:65:25: warning: pointer targets in passing argument 2 of 'nes_strncpy' differ in signedness [-Wpointer-sign]
-000-   65 |  nes_strncpy(nes_fname, "zelda.nes", 10);
-000-      |                         ^~~~~~~~~~~
-000-      |                         |
-000-      |                         char *
-000-In file included from ../src/nes_bootloader.h:29,
-000-                 from ../src/nes_bootloader.c:19:
-000/lab1_vitis/src/utils.h24-1-1expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'0-../src/utils.h:24:10: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-000-   24 | uint8_t *nes_strncpy(uint8_t *dest, uint8_t *src, uint8_t n);
-000-      |          ^~~~~~~~~~~
-000/lab1_vitis/src/nes_bootloader.c75-1-1pointer targets in passing argument 1 of 'NESCore_LoadROM' differ in signedness [-Wpointer-sign]1-../src/nes_bootloader.c:75:27: warning: pointer targets in passing argument 1 of 'NESCore_LoadROM' differ in signedness [-Wpointer-sign]
-000-   75 |  result = NESCore_LoadROM(nes_fname);
-000-      |                           ^~~~~~~~~
-000-      |                           |
-000-      |                           uint8_t * {aka unsigned char *}
-000-In file included from ../src/nes_bootloader.c:20:
-000/lab1_vitis/src/NESCore/NESCore.h298-1-1expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}0-C:\Users\buenting\cpre4880\labs\mp-0\lab1_vitis\src\NESCore/NESCore.h:298:33: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-000-  298 | int NESCore_LoadROM(const char *fileName);
-000-      |                     ~~~~~~~~~~~~^~~~~~~~
-000-../src/nes_bootloader.c: In function 'xil_init':
-000/lab1_vitis/src/nes_bootloader.c120-1-1unused variable 'Status' [-Wunused-variable]1-../src/nes_bootloader.c:120:10: warning: unused variable 'Status' [-Wunused-variable]
-000-  120 |  XStatus Status = XST_SUCCESS;
-000-      |          ^~~~~~
-000-'Finished building: ../src/nes_bootloader.c'
-000-' '
-000-'Building target: lab1_vitis.elf'
-000-'Invoking: ARM v7 gcc linker'
-000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/buenting/cpre4880/labs/mp-0/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "lab1_vitis.elf"  ./src/xilsd/ff.o ./src/xilsd/mmc.o ./src/xilsd/xilsd.o  ./src/NESCore/M6502.o ./src/NESCore/NESCore.o ./src/NESCore/NESCore_Mapper.o ./src/NESCore/NESCore_pAPU.o  ./src/NESCore_Callback.o ./src/bmp_misc.o ./src/cyclone_checker.o ./src/helloworld.o ./src/nes_bootloader.o ./src/platform.o ./src/utils.o ./src/vga_test.o ./src/wav_misc.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-000-'Finished building target: lab1_vitis.elf'
-000-' '
-000-'Invoking: ARM v7 Print Size'
-000-arm-none-eabi-size lab1_vitis.elf  |tee "lab1_vitis.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000- 487671	   4684	6298592	6790947	 679f23	lab1_vitis.elf
-000-'Finished building: lab1_vitis.elf.size'
-000-' '
+000-make[1]: Nothing to be done for 'main-build'.
 00255-
-14:24:13 Build Finished (took 1s.12ms)
+11:32:39 Build Finished (took 278ms)
 

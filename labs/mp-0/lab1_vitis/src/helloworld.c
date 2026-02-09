@@ -80,6 +80,7 @@
 //
 //    	if (buttons != 0x000000) {
 //    		printf("%X\n\r", buttons);
+//    		usleep(100000);
 //    	} else if (led_activation == 0x00000001) {
 //    		run = FALSE;
 //    	}

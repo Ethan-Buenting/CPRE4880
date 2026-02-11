@@ -622,6 +622,7 @@ begin
                     capture_NS <= Idle;
                     slv_reg10 <= std_logic_vector(to_unsigned(length_counter, 32));
                     length_counter <= 0;
+                    slv_reg1 <= std_logic_vector(unsigned(slv_reg1) + 1);
                 end if;
             when others =>
             -- Do nothing

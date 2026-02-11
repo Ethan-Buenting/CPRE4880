@@ -16,7 +16,8 @@ entity axi_ppm_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-
+        PPM_Input       : in std_logic;
+        PPM_Output      : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -75,7 +76,10 @@ architecture arch_imp of axi_ppm_v1_0 is
 		S_AXI_RDATA	: out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		S_AXI_RRESP	: out std_logic_vector(1 downto 0);
 		S_AXI_RVALID	: out std_logic;
-		S_AXI_RREADY	: in std_logic
+		S_AXI_RREADY	: in std_logic;
+		-- User Defined Ports
+		PPM_Input       : in std_logic;
+		PPM_Output      : out std_logic
 		);
 	end component axi_ppm_v1_0_S00_AXI;
 
@@ -108,7 +112,10 @@ axi_ppm_v1_0_S00_AXI_inst : axi_ppm_v1_0_S00_AXI
 		S_AXI_RDATA	=> s00_axi_rdata,
 		S_AXI_RRESP	=> s00_axi_rresp,
 		S_AXI_RVALID	=> s00_axi_rvalid,
-		S_AXI_RREADY	=> s00_axi_rready
+		S_AXI_RREADY	=> s00_axi_rready,
+		-- User defined ports
+		PPM_Input => PPM_Input,
+		PPM_Output => PPM_Output
 	);
 
 	-- Add user logic here

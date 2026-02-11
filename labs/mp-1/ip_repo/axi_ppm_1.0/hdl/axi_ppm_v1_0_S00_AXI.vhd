@@ -16,7 +16,8 @@ entity axi_ppm_v1_0_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-
+        PPM_Input       : in std_logic;
+        PPM_Output      : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -129,6 +130,13 @@ architecture arch_imp of axi_ppm_v1_0_S00_AXI is
 	signal reg_data_out	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
+	
+	-- User signals
+	signal sw_PPM_Output : std_logic;
+	type capture_state_type is (Idle, ST5, ST6, ST7, ST8, ST9, ST10);
+	signal capture_PS, capture_NS : capture_state_type;
+	signal stability_counter, length_counter : integer;
+	signal stable_input, last_stable_input : std_logic;
 
 begin
 	-- I/O Connections assignments
@@ -286,54 +294,54 @@ begin
 	                slv_reg4(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
 	              end if;
 	            end loop;
-	          when b"0101" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes                   
-	                -- slave registor 5
-	                slv_reg5(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"0110" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes                   
-	                -- slave registor 6
-	                slv_reg6(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"0111" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes                   
-	                -- slave registor 7
-	                slv_reg7(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"1000" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes                   
-	                -- slave registor 8
-	                slv_reg8(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"1001" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes                   
-	                -- slave registor 9
-	                slv_reg9(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"1010" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes                   
-	                -- slave registor 10
-	                slv_reg10(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
+--	          when b"0101" =>
+--	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+--	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+--	                -- Respective byte enables are asserted as per write strobes                   
+--	                -- slave registor 5
+--	                slv_reg5(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+--	              end if;
+--	            end loop;
+--	          when b"0110" =>
+--	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+--	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+--	                -- Respective byte enables are asserted as per write strobes                   
+--	                -- slave registor 6
+--	                slv_reg6(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+--	              end if;
+--	            end loop;
+--	          when b"0111" =>
+--	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+--	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+--	                -- Respective byte enables are asserted as per write strobes                   
+--	                -- slave registor 7
+--	                slv_reg7(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+--	              end if;
+--	            end loop;
+--	          when b"1000" =>
+--	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+--	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+--	                -- Respective byte enables are asserted as per write strobes                   
+--	                -- slave registor 8
+--	                slv_reg8(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+--	              end if;
+--	            end loop;
+--	          when b"1001" =>
+--	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+--	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+--	                -- Respective byte enables are asserted as per write strobes                   
+--	                -- slave registor 9
+--	                slv_reg9(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+--	              end if;
+--	            end loop;
+--	          when b"1010" =>
+--	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+--	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+--	                -- Respective byte enables are asserted as per write strobes                   
+--	                -- slave registor 10
+--	                slv_reg10(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+--	              end if;
+--	            end loop;
 	          when b"1011" =>
 	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
 	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
@@ -541,6 +549,84 @@ begin
 
 
 	-- Add user logic here
+	
+	-- Step 2
+	PPM_Output <= PPM_Input when (slv_reg0(0) = '0') else sw_PPM_Output;
+	
+	-- Step 3
+	Capture_PPM_Sync: process(S_AXI_ACLK, capture_NS)
+	begin
+	   if (rising_edge (S_AXI_ACLK)) then
+	       if (S_AXI_ARESETN = '0') then
+	           capture_PS <= Idle;
+           else
+               capture_PS <= capture_NS;
+               last_stable_input <= stable_input;
+               if (stable_input = '1') then
+                   length_counter <= length_counter + 1;
+               end if;
+               if (stable_input /= PPM_Input) then
+                   if (stability_counter >= 100) then
+                       stable_input <= PPM_Input;
+                       stability_counter <= 0;
+                   else
+                       stability_counter <= stability_counter + 1;
+                   end if;
+               else stability_counter <= 0;
+               end if;
+           end if;
+       end if;
+    end process Capture_PPM_Sync;
+    
+    Capture_PPM_Comb: process(capture_PS, stable_input, last_stable_input, length_counter)
+    begin
+        case capture_PS is
+            when Idle =>
+                if (last_stable_input = '1' and stable_input = '0') then 
+                    capture_NS <= ST5;
+                    length_counter <= 0;
+                else capture_NS <= Idle; 
+                end if;
+            when ST5 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= ST6;
+                    slv_reg5 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    length_counter <= 0;
+                end if;
+            when ST6 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= ST7;
+                    slv_reg6 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    length_counter <= 0;
+                end if;
+            when ST7 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= ST8;
+                    slv_reg7 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    length_counter <= 0;
+                end if;
+            when ST8 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= ST9;
+                    slv_reg8 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    length_counter <= 0;
+                end if;
+            when ST9 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= ST10;
+                    slv_reg9 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    length_counter <= 0;
+                end if;
+            when ST10 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= Idle;
+                    slv_reg10 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    length_counter <= 0;
+                end if;
+            when others =>
+            -- Do nothing
+        end case;
+    end process Capture_PPM_Comb;
 
 	-- User logic ends
 

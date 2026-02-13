@@ -133,10 +133,14 @@ architecture arch_imp of axi_ppm_v1_0_S00_AXI is
 	
 	-- User signals
 	signal sw_PPM_Output : std_logic;
-	type capture_state_type is (Idle, ST5, ST6, ST7, ST8, ST9, ST10);
-	signal capture_PS, capture_NS : capture_state_type;
+	type state_type is (Idle, CH1, CH2, CH3, CH4, CH5, CH6);
+	signal capture_PS, capture_NS : state_type;
+	signal generate_PS, generate_NS: state_type;
 	signal stability_counter, length_counter : integer;
 	signal stable_input, last_stable_input : std_logic;
+	signal generate_frame_length : integer := 2000000;
+	signal generate_gap_length : integer := 400;
+	signal generate_frame_count, generate_state_count : integer := 0;
 
 begin
 	-- I/O Connections assignments
@@ -286,14 +290,14 @@ begin
 	                slv_reg3(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
 	              end if;
 	            end loop;
-	          when b"0100" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes                   
-	                -- slave registor 4
-	                slv_reg4(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
+--	          when b"0100" =>
+--	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+--	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+--	                -- Respective byte enables are asserted as per write strobes                   
+--	                -- slave registor 4
+--	                slv_reg4(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+--	              end if;
+--	            end loop;
 --	          when b"0101" =>
 --	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
 --	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
@@ -334,14 +338,14 @@ begin
 --	                slv_reg9(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
 --	              end if;
 --	            end loop;
---	          when b"1010" =>
---	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
---	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
---	                -- Respective byte enables are asserted as per write strobes                   
---	                -- slave registor 10
---	                slv_reg10(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
---	              end if;
---	            end loop;
+	          when b"1010" =>
+	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
+	                -- Respective byte enables are asserted as per write strobes                   
+	                -- slave registor 10
+	                slv_reg10(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+	              end if;
+	            end loop;
 	          when b"1011" =>
 	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
 	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
@@ -550,7 +554,7 @@ begin
 
 	-- Add user logic here
 	
-	-- Step 2
+	-- Step 2 + 6
 	PPM_Output <= PPM_Input when (slv_reg0(0) = '0') else sw_PPM_Output;
 	
 	-- Step 3
@@ -569,6 +573,9 @@ begin
                    if (stability_counter >= 100) then
                        stable_input <= PPM_Input;
                        stability_counter <= 0;
+                       if (capture_PS = Idle) then
+                           length_counter <= 0;
+                       end if;
                    else
                        stability_counter <= stability_counter + 1;
                    end if;
@@ -582,53 +589,136 @@ begin
     begin
         case capture_PS is
             when Idle =>
-                if (last_stable_input = '1' and stable_input = '0') then 
-                    capture_NS <= ST5;
+                if (last_stable_input = '1' and stable_input = '0' and length_counter = 200000) then 
+                    capture_NS <= CH1;
                     length_counter <= 0;
                 else capture_NS <= Idle; 
                 end if;
-            when ST5 =>
+            when CH1 =>
                 if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= ST6;
+                    capture_NS <= CH2;
+                    slv_reg4 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    length_counter <= 0;
+                end if;
+            when CH2 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= CH3;
                     slv_reg5 <= std_logic_vector(to_unsigned(length_counter, 32));
                     length_counter <= 0;
                 end if;
-            when ST6 =>
+            when CH3 =>
                 if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= ST7;
+                    capture_NS <= CH4;
                     slv_reg6 <= std_logic_vector(to_unsigned(length_counter, 32));
                     length_counter <= 0;
                 end if;
-            when ST7 =>
+            when CH4 =>
                 if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= ST8;
+                    capture_NS <= CH5;
                     slv_reg7 <= std_logic_vector(to_unsigned(length_counter, 32));
                     length_counter <= 0;
                 end if;
-            when ST8 =>
+            when CH5 =>
                 if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= ST9;
+                    capture_NS <= CH6;
                     slv_reg8 <= std_logic_vector(to_unsigned(length_counter, 32));
                     length_counter <= 0;
                 end if;
-            when ST9 =>
-                if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= ST10;
-                    slv_reg9 <= std_logic_vector(to_unsigned(length_counter, 32));
-                    length_counter <= 0;
-                end if;
-            when ST10 =>
+            when CH6 =>
                 if (stable_input = '0' and last_stable_input = '1') then
                     capture_NS <= Idle;
-                    slv_reg10 <= std_logic_vector(to_unsigned(length_counter, 32));
+                    slv_reg9 <= std_logic_vector(to_unsigned(length_counter, 32));
                     length_counter <= 0;
-                    slv_reg1 <= std_logic_vector(unsigned(slv_reg1) + 1);
+                    slv_reg1 <= std_logic_vector(unsigned(slv_reg1) + 1); -- Step 4
                 end if;
             when others =>
             -- Do nothing
         end case;
     end process Capture_PPM_Comb;
-
+    
+    -- Step 5
+    Generate_PPM_Sync : process(S_AXI_ACLK, generate_NS)
+    begin
+        if(S_AXI_ARESETN = '0') then
+            generate_PS <= CH1;
+        elsif(rising_edge(S_AXI_ACLK)) then
+            generate_PS <= generate_NS;
+        end if;
+    end process Generate_PPM_Sync;
+    
+    Generate_PPM_Comb : process(generate_PS, generate_state_count, generate_frame_count)
+    begin
+        case generate_PS is
+            when CH1 =>
+                if(generate_state_count < generate_gap_length) then
+                    sw_PPM_Output <= '0';
+                elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg10)))) then
+                    sw_PPM_Output <= '1';
+                else
+                    generate_NS <= CH1;
+                    generate_state_count <= 0;
+                end if;
+            when CH2 =>
+                if(generate_state_count < generate_gap_length) then
+                    sw_PPM_Output <= '0';
+                elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg11)))) then
+                    sw_PPM_Output <= '1';
+                else
+                    generate_NS <= CH3;
+                    generate_state_count <= 0;
+                end if;
+            when CH3 =>
+                if(generate_state_count < generate_gap_length) then
+                    sw_PPM_Output <= '0';
+                elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg12)))) then
+                    sw_PPM_Output <= '1';
+                else
+                    generate_NS <= CH3;
+                    generate_state_count <= 0;
+                end if;
+            when CH4 =>
+                if(generate_state_count < generate_gap_length) then
+                    sw_PPM_Output <= '0';
+                elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg13)))) then
+                    sw_PPM_Output <= '1';
+                else
+                    generate_NS <= CH3;
+                    generate_state_count <= 0;
+                end if;
+            when CH5 =>
+                if(generate_state_count < generate_gap_length) then
+                    sw_PPM_Output <= '0';
+                elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg14)))) then
+                    sw_PPM_Output <= '1';
+                else
+                    generate_NS <= CH3;
+                    generate_state_count <= 0;
+                end if;
+            when CH6 =>
+                if(generate_state_count < generate_gap_length) then
+                    sw_PPM_Output <= '0';
+                elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg15)))) then
+                    sw_PPM_Output <= '1';
+                else
+                    generate_NS <= CH3;
+                    generate_state_count <= 0;
+                end if;
+            when Idle =>
+                if(generate_state_count < generate_gap_length) then
+                    sw_PPM_Output <= '0';
+                elsif(generate_frame_count < 2000000) then
+                    sw_PPM_Output <= '1';
+                else
+                    generate_NS <= Idle;
+                    generate_state_count <= 0;
+                    generate_frame_count <= 0;
+                end if;
+            end case;
+        end process Generate_PPM_Comb;
+             
+                
+                
+                
 	-- User logic ends
 
 end arch_imp;

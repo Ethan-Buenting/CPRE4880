@@ -141,6 +141,7 @@ architecture arch_imp of axi_ppm_v1_0_S00_AXI is
 	signal generate_frame_length : integer := 2000000;
 	signal generate_gap_length : integer := 400;
 	signal generate_frame_count, generate_state_count : integer := 0;
+	signal sync : std_logic := '0';
 
 begin
 	-- I/O Connections assignments
@@ -565,11 +566,65 @@ begin
 	           capture_PS <= Idle;
            else
                capture_PS <= capture_NS;
-               last_stable_input <= stable_input;
-               if (stable_input = '1') then
-                   length_counter <= length_counter + 1;
-               end if;
-               if (stable_input /= PPM_Input) then
+           end if;
+       end if;
+    end process Capture_PPM_Sync;
+    
+    Capture_PPM_Comb: process(capture_PS, stable_input, last_stable_input, length_counter, sync)
+    begin
+        case capture_PS is
+            when Idle =>
+                if (sync = '1') then 
+                    capture_NS <= CH1;
+                else capture_NS <= Idle; 
+                end if;
+            when CH1 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= CH2;
+                end if;
+            when CH2 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= CH3;
+                end if;
+            when CH3 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= CH4;
+                end if;
+            when CH4 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= CH5;
+                end if;
+            when CH5 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= CH6;
+                end if;
+            when CH6 =>
+                if (stable_input = '0' and last_stable_input = '1') then
+                    capture_NS <= Idle;
+                end if;
+            when others =>
+            -- Do nothing
+        end case;
+    end process Capture_PPM_Comb;
+    
+    Capture_PPM_Clk : process(S_AXI_ACLK)
+    begin
+        if(rising_edge(S_AXI_ACLK)) then
+            if (S_AXI_ARESETN = '0') then
+                slv_reg4 <= (others => '0');
+                slv_reg5 <= (others => '0');
+                slv_reg6 <= (others => '0');
+                slv_reg7 <= (others => '0');
+                slv_reg8 <= (others => '0');
+                slv_reg9 <= (others => '0');
+                length_counter <= 0;
+                stability_counter <= 0;
+                sync <= '0';
+            else
+                last_stable_input <= stable_input;
+                
+                -- Stability Counter Logic
+                if (stable_input /= PPM_Input) then
                    if (stability_counter >= 100) then
                        stable_input <= PPM_Input;
                        stability_counter <= 0;
@@ -581,68 +636,49 @@ begin
                    end if;
                else stability_counter <= 0;
                end if;
-           end if;
-       end if;
-    end process Capture_PPM_Sync;
-    
-    Capture_PPM_Comb: process(capture_PS, stable_input, last_stable_input, length_counter)
-    begin
-        case capture_PS is
-            when Idle =>
-                if (last_stable_input = '1' and stable_input = '0' and length_counter = 200000) then 
-                    capture_NS <= CH1;
-                    length_counter <= 0;
-                else capture_NS <= Idle; 
-                end if;
-            when CH1 =>
-                if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= CH2;
-                    slv_reg4 <= std_logic_vector(to_unsigned(length_counter, 32));
-                    length_counter <= 0;
-                end if;
-            when CH2 =>
-                if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= CH3;
-                    slv_reg5 <= std_logic_vector(to_unsigned(length_counter, 32));
-                    length_counter <= 0;
-                end if;
-            when CH3 =>
-                if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= CH4;
-                    slv_reg6 <= std_logic_vector(to_unsigned(length_counter, 32));
-                    length_counter <= 0;
-                end if;
-            when CH4 =>
-                if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= CH5;
-                    slv_reg7 <= std_logic_vector(to_unsigned(length_counter, 32));
-                    length_counter <= 0;
-                end if;
-            when CH5 =>
-                if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= CH6;
-                    slv_reg8 <= std_logic_vector(to_unsigned(length_counter, 32));
-                    length_counter <= 0;
-                end if;
-            when CH6 =>
-                if (stable_input = '0' and last_stable_input = '1') then
-                    capture_NS <= Idle;
-                    slv_reg9 <= std_logic_vector(to_unsigned(length_counter, 32));
-                    length_counter <= 0;
-                    slv_reg1 <= std_logic_vector(unsigned(slv_reg1) + 1); -- Step 4
-                end if;
-            when others =>
-            -- Do nothing
-        end case;
-    end process Capture_PPM_Comb;
+               
+               -- Length Counter Logic
+               if(last_stable_input = '1' and stable_input = '0') then
+                   case capture_PS is
+                       when CH1 => 
+                            slv_reg4 <= std_logic_vector(to_unsigned(length_counter, 32));
+                            sync <= '0';
+                       when CH2 => slv_reg5 <= std_logic_vector(to_unsigned(length_counter, 32));
+                       when CH3 => slv_reg6 <= std_logic_vector(to_unsigned(length_counter, 32));
+                       when CH4 => slv_reg7 <= std_logic_vector(to_unsigned(length_counter, 32));
+                       when CH5 => slv_reg8 <= std_logic_vector(to_unsigned(length_counter, 32));
+                       when CH6 =>
+                           slv_reg9 <= std_logic_vector(to_unsigned(length_counter, 32));
+                           slv_reg1 <= std_logic_vector(unsigned(slv_reg1) + 1);
+                       when Idle =>
+                           if (length_counter > 200000) then
+                               sync <= '1';
+                           else 
+                                sync <= '0';
+                           end if;
+                       when others => null;
+                   end case;
+                   length_counter <= 0;
+               elsif (stable_input = '1') then
+                   length_counter <= length_counter + 1;
+               end if;
+            end if;
+        end if;
+    end process Capture_PPM_Clk;
+        
+      
+               
+               
     
     -- Step 5
     Generate_PPM_Sync : process(S_AXI_ACLK, generate_NS)
     begin
-        if(S_AXI_ARESETN = '0') then
-            generate_PS <= CH1;
-        elsif(rising_edge(S_AXI_ACLK)) then
-            generate_PS <= generate_NS;
+        if(rising_edge(S_AXI_ACLK)) then
+            if(S_AXI_ARESETN = '0') then
+                generate_PS <= CH1;
+            else 
+               generate_PS <= generate_NS;
+            end if;
         end if;
     end process Generate_PPM_Sync;
     
@@ -655,8 +691,7 @@ begin
                 elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg10)))) then
                     sw_PPM_Output <= '1';
                 else
-                    generate_NS <= CH1;
-                    generate_state_count <= 0;
+                    generate_NS <= CH2;
                 end if;
             when CH2 =>
                 if(generate_state_count < generate_gap_length) then
@@ -665,7 +700,6 @@ begin
                     sw_PPM_Output <= '1';
                 else
                     generate_NS <= CH3;
-                    generate_state_count <= 0;
                 end if;
             when CH3 =>
                 if(generate_state_count < generate_gap_length) then
@@ -673,8 +707,7 @@ begin
                 elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg12)))) then
                     sw_PPM_Output <= '1';
                 else
-                    generate_NS <= CH3;
-                    generate_state_count <= 0;
+                    generate_NS <= CH4;
                 end if;
             when CH4 =>
                 if(generate_state_count < generate_gap_length) then
@@ -682,8 +715,7 @@ begin
                 elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg13)))) then
                     sw_PPM_Output <= '1';
                 else
-                    generate_NS <= CH3;
-                    generate_state_count <= 0;
+                    generate_NS <= CH5;
                 end if;
             when CH5 =>
                 if(generate_state_count < generate_gap_length) then
@@ -691,8 +723,7 @@ begin
                 elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg14)))) then
                     sw_PPM_Output <= '1';
                 else
-                    generate_NS <= CH3;
-                    generate_state_count <= 0;
+                    generate_NS <= CH6;
                 end if;
             when CH6 =>
                 if(generate_state_count < generate_gap_length) then
@@ -700,8 +731,7 @@ begin
                 elsif(generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg15)))) then
                     sw_PPM_Output <= '1';
                 else
-                    generate_NS <= CH3;
-                    generate_state_count <= 0;
+                    generate_NS <= Idle;
                 end if;
             when Idle =>
                 if(generate_state_count < generate_gap_length) then
@@ -709,16 +739,58 @@ begin
                 elsif(generate_frame_count < 2000000) then
                     sw_PPM_Output <= '1';
                 else
-                    generate_NS <= Idle;
-                    generate_state_count <= 0;
-                    generate_frame_count <= 0;
+                    generate_NS <= CH1;
                 end if;
             end case;
         end process Generate_PPM_Comb;
-             
-                
-                
-                
+        
+        Generate_PPM_Clk : process(S_AXI_ACLK)
+        begin
+            if(rising_edge(S_AXI_ACLK)) then
+                if(S_AXI_ARESETN = '0') then
+                    generate_state_count <= 0;
+                    generate_frame_count <= 0;
+                else
+                    generate_state_count <= generate_state_count + 1;
+                    generate_frame_count <= generate_frame_count + 1;
+                    
+                    case generate_PS is
+                        when CH1 =>
+                            if not (generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg10)))) then
+                                generate_state_count <= 0;
+                            end if;
+                        when CH2 =>
+                            if not (generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg11)))) then
+                                generate_state_count <= 0;
+                            end if;
+                        when CH3 =>
+                            if not (generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg12)))) then
+                                generate_state_count <= 0;
+                            end if;
+                        when CH4 =>
+                            if not (generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg13)))) then
+                                generate_state_count <= 0;
+                            end if;
+                        when CH5 =>
+                            if not (generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg14)))) then
+                                generate_state_count <= 0;
+                            end if;
+                        when CH6 =>
+                            if not (generate_state_count < (generate_gap_length + to_integer(unsigned(slv_reg15)))) then
+                                generate_state_count <= 0;
+                            end if;
+                        when Idle =>
+                            if not (generate_frame_count < 2000000) then
+                                generate_state_count <= 0;
+                                generate_frame_count <= 0;
+                            end if;
+                        when others =>
+                            -- Do nothing
+                        end case;
+                end if;
+            end if;
+        end process Generate_PPM_Clk;
+       
 	-- User logic ends
 
 end arch_imp;

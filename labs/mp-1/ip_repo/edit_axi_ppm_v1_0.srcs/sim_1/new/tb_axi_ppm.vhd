@@ -124,5 +124,7 @@ begin
         ppm_in <= '1'; wait for 0.75 ms;
         
         wait;
-    end process;      
+    end process;
+        
+      
 end Behavioral;

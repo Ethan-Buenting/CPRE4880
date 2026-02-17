@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="15400000001fs"></ZoomEndTime>
-      <Cursor1Time time="4400100000fs"></Cursor1Time>
+      <ZoomEndTime time="8060000001fs"></ZoomEndTime>
+      <Cursor1Time time="2360000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="176"></NameColumnWidth>
-      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="29" />
    <wvobject fp_name="/tb_axi_ppm/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -31,9 +31,17 @@
       <obj_property name="ElementShortName">ppm_in</obj_property>
       <obj_property name="ObjectShortName">ppm_in</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/ppm_out" type="logic">
+      <obj_property name="ElementShortName">ppm_out</obj_property>
+      <obj_property name="ObjectShortName">ppm_out</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_axi_ppm/clk_period" type="other">
       <obj_property name="ElementShortName">clk_period</obj_property>
       <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg0" type="array">
+      <obj_property name="ElementShortName">slv_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg0[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg4" type="array">
       <obj_property name="ElementShortName">slv_reg4[31:0]</obj_property>
@@ -58,5 +66,73 @@
    <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg9" type="array">
       <obj_property name="ElementShortName">slv_reg9[31:0]</obj_property>
       <obj_property name="ObjectShortName">slv_reg9[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/capture_PS" type="other">
+      <obj_property name="ElementShortName">capture_PS</obj_property>
+      <obj_property name="ObjectShortName">capture_PS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/capture_NS" type="other">
+      <obj_property name="ElementShortName">capture_NS</obj_property>
+      <obj_property name="ObjectShortName">capture_NS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/s00_axi_awaddr" type="array">
+      <obj_property name="ElementShortName">s00_axi_awaddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awaddr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg_wren" type="logic">
+      <obj_property name="ElementShortName">slv_reg_wren</obj_property>
+      <obj_property name="ObjectShortName">slv_reg_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/axi_wready" type="logic">
+      <obj_property name="ElementShortName">axi_wready</obj_property>
+      <obj_property name="ObjectShortName">axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/S_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/axi_awready" type="logic">
+      <obj_property name="ElementShortName">axi_awready</obj_property>
+      <obj_property name="ObjectShortName">axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/S_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/s00_axi_wdata" type="array">
+      <obj_property name="ElementShortName">s00_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg10" type="array">
+      <obj_property name="ElementShortName">slv_reg10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg10[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg11" type="array">
+      <obj_property name="ElementShortName">slv_reg11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg11[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg12" type="array">
+      <obj_property name="ElementShortName">slv_reg12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg12[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg13" type="array">
+      <obj_property name="ElementShortName">slv_reg13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg13[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg14" type="array">
+      <obj_property name="ElementShortName">slv_reg14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg14[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/slv_reg15" type="array">
+      <obj_property name="ElementShortName">slv_reg15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg15[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/generate_PS" type="other">
+      <obj_property name="ElementShortName">generate_PS</obj_property>
+      <obj_property name="ObjectShortName">generate_PS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axi_ppm/dut/axi_ppm_v1_0_S00_AXI_inst/generate_NS" type="other">
+      <obj_property name="ElementShortName">generate_NS</obj_property>
+      <obj_property name="ObjectShortName">generate_NS</obj_property>
    </wvobject>
 </wave_config>

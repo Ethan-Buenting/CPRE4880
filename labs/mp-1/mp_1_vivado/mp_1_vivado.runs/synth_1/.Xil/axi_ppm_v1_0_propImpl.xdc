@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/buenting/cpre4880/labs/mp-1/mp_1_vivado/mp_1_vivado.srcs/constrs_1/new/mp-1.xdc rfile:../../../mp_1_vivado.srcs/constrs_1/new/mp-1.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA4 [get_ports PPM_Input]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA9 [get_ports PPM_Output]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]]

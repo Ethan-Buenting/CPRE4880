@@ -139,7 +139,7 @@ architecture arch_imp of axi_ppm_v1_0_S00_AXI is
 	signal stability_counter, length_counter : integer;
 	signal stable_input, last_stable_input : std_logic;
 	signal generate_frame_length : integer := 2000000;
-	signal generate_gap_length : integer := 400;
+	signal generate_gap_length : integer := 40000;
 	signal generate_frame_count, generate_state_count : integer := 0;
 	signal sync : std_logic := '0';
 
@@ -239,22 +239,22 @@ begin
 	begin
 	  if rising_edge(S_AXI_ACLK) then 
 	    if S_AXI_ARESETN = '0' then
---	      slv_reg0 <= (others => '0');
---	      slv_reg1 <= (others => '0');
---	      slv_reg2 <= (others => '0');
---	      slv_reg3 <= (others => '0');
+	      slv_reg0 <= (others => '0');
+	      slv_reg1 <= (others => '0');
+	      slv_reg2 <= (others => '0');
+	      slv_reg3 <= (others => '0');
 --	      slv_reg4 <= (others => '0');
 --	      slv_reg5 <= (others => '0');
 --	      slv_reg6 <= (others => '0');
 --	      slv_reg7 <= (others => '0');
 --	      slv_reg8 <= (others => '0');
 --	      slv_reg9 <= (others => '0');
---	      slv_reg10 <= (others => '0');
---	      slv_reg11 <= (others => '0');
---	      slv_reg12 <= (others => '0');
---	      slv_reg13 <= (others => '0');
---	      slv_reg14 <= (others => '0');
---	      slv_reg15 <= (others => '0');
+	      slv_reg10 <= (others => '0');
+	      slv_reg11 <= (others => '0');
+	      slv_reg12 <= (others => '0');
+	      slv_reg13 <= (others => '0');
+	      slv_reg14 <= (others => '0');
+	      slv_reg15 <= (others => '0');
 	    else
 	      loc_addr := axi_awaddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	      if (slv_reg_wren = '1') then
@@ -388,22 +388,22 @@ begin
 	              end if;
 	            end loop;
 	          when others =>
---	            slv_reg0 <= slv_reg0;
---	            slv_reg1 <= slv_reg1;
---	            slv_reg2 <= slv_reg2;
---	            slv_reg3 <= slv_reg3;
+	            slv_reg0 <= slv_reg0;
+	            slv_reg1 <= slv_reg1;
+	            slv_reg2 <= slv_reg2;
+	            slv_reg3 <= slv_reg3;
 --	            slv_reg4 <= slv_reg4;
 --	            slv_reg5 <= slv_reg5;
 --	            slv_reg6 <= slv_reg6;
 --	            slv_reg7 <= slv_reg7;
 --	            slv_reg8 <= slv_reg8;
 --	            slv_reg9 <= slv_reg9;
---	            slv_reg10 <= slv_reg10;
---	            slv_reg11 <= slv_reg11;
---	            slv_reg12 <= slv_reg12;
---	            slv_reg13 <= slv_reg13;
---	            slv_reg14 <= slv_reg14;
---	            slv_reg15 <= slv_reg15;
+	            slv_reg10 <= slv_reg10;
+	            slv_reg11 <= slv_reg11;
+	            slv_reg12 <= slv_reg12;
+	            slv_reg13 <= slv_reg13;
+	            slv_reg14 <= slv_reg14;
+	            slv_reg15 <= slv_reg15;
 	        end case;
 	      end if;
 	    end if;
@@ -613,7 +613,12 @@ begin
     begin
         if(rising_edge(S_AXI_ACLK)) then
             if (S_AXI_ARESETN = '0') then
---
+                slv_reg4 <= (others => '0');
+                slv_reg5 <= (others => '0');
+                slv_reg6 <= (others => '0');
+                slv_reg7 <= (others => '0');
+                slv_reg8 <= (others => '0');
+                slv_reg9 <= (others => '0');
                 length_counter <= 0;
                 stability_counter <= 0;
                 sync <= '0';

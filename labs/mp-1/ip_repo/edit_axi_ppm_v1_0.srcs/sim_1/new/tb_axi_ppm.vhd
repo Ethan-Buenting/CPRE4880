@@ -60,7 +60,9 @@ architecture Behavioral of tb_axi_ppm is
     signal clk : std_logic;
     signal reset : std_logic;
     signal ppm_in : std_logic;
-    --signal ppm_out : std_logic;
+    signal ppm_out : std_logic;
+    signal axi_awaddr : std_logic_vector(5 downto 0) := (others => '0');
+    signal axi_wdata : std_logic_vector(31 downto 0) := (others => '0');
     
     constant clk_period : time := 10ns;
       
@@ -68,20 +70,20 @@ begin
 
     dut : axi_ppm_v1_0 port map (
         PPM_Input => ppm_in,
-        PPM_Output => open,
+        PPM_Output => ppm_out,
         s00_axi_aclk => clk,
         s00_axi_aresetn => reset,
-        s00_axi_awaddr => (others => '0'),
+        s00_axi_awaddr => axi_awaddr,
         s00_axi_awprot => (others => '0'),
-        s00_axi_awvalid => '0',
+        s00_axi_awvalid => '1',
         s00_axi_awready => open,
-        s00_axi_wdata => (others => '0'),
-        s00_axi_wstrb => (others => '0'),
-        s00_axi_wvalid => '0',
+        s00_axi_wdata => axi_wdata,
+        s00_axi_wstrb => (others => '1'),
+        s00_axi_wvalid => '1',
         s00_axi_wready => open,
         s00_axi_bresp => open,
         s00_axi_bvalid => open,
-        s00_axi_bready => '0',
+        s00_axi_bready => '1',
         s00_axi_araddr => (others => '0'),
         s00_axi_arprot => (others => '0'),
         s00_axi_arvalid => '0',
@@ -122,6 +124,34 @@ begin
         
         ppm_in <= '0'; wait for 400 us;
         ppm_in <= '1'; wait for 0.75 ms;
+        
+        wait;
+    end process;
+    
+    generate_test : process
+    begin
+        wait for 100 ns;
+        
+        axi_awaddr <= "101000"; wait for 20 ns;
+        axi_wdata <= x"000124F8"; wait for 40 ns;
+        
+        axi_awaddr <= "101100"; wait for 20 ns;
+        axi_wdata <= x"000186A0"; wait for 40 ns;
+        
+        axi_awaddr <= "110000"; wait for 20 ns;
+        axi_wdata <= x"0001E848"; wait for 40 ns;
+        
+        axi_awaddr <= "110100"; wait for 20 ns;
+        axi_wdata <= x"000124F8"; wait for 40 ns;
+        
+        axi_awaddr <= "111000"; wait for 20 ns;
+        axi_wdata <= x"000186A0"; wait for 40 ns;
+        
+        axi_awaddr <= "111100"; wait for 20 ns;
+        axi_wdata <= x"0001E848"; wait for 40 ns;
+        
+        axi_awaddr <= "000000"; wait for 20ns;
+        axi_wdata <= x"00000001"; wait for 40 ns;
         
         wait;
     end process;
